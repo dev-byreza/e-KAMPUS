@@ -112,7 +112,7 @@ export const StudentSubmissionPortal: React.FC = () => {
       const currentVer = currentPdfRecord?.activeArtifactVersion || 0;
       const nextVer = currentVer + 1;
 
-      await uploadPdfFile(selectedStudent.id, standardName, file.size);
+      await uploadPdfFile(selectedStudent.id, standardName, file.size, file);
 
       // Generate Ticket Receipt
       const receipt = {
