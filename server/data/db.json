@@ -1,0 +1,6354 @@
+{
+  "students": [
+    {
+      "id": "std-22603003",
+      "nim": "22603003",
+      "name": "Affan Farsyah",
+      "class": "1C"
+    },
+    {
+      "id": "std-22603004",
+      "nim": "22603004",
+      "name": "Afiqah Azwa Safrina",
+      "class": "1C"
+    },
+    {
+      "id": "std-22603006",
+      "nim": "22603006",
+      "name": "Anisah Maharani",
+      "class": "1C"
+    },
+    {
+      "id": "std-22603008",
+      "nim": "22603008",
+      "name": "Azizul Hakim",
+      "class": "1C"
+    },
+    {
+      "id": "std-22603010",
+      "nim": "22603010",
+      "name": "Danendra Fairuz S.",
+      "class": "1C"
+    },
+    {
+      "id": "std-22603012",
+      "nim": "22603012",
+      "name": "Fadhil Bima Wijaya",
+      "class": "1C"
+    },
+    {
+      "id": "std-22603014",
+      "nim": "22603014",
+      "name": "I Made Radithya P.",
+      "class": "1C"
+    },
+    {
+      "id": "std-22603017",
+      "nim": "22603017",
+      "name": "Muhamad Azril F.",
+      "class": "1C"
+    },
+    {
+      "id": "std-22603020",
+      "nim": "22603020",
+      "name": "Muhammad Haidar",
+      "class": "1C"
+    },
+    {
+      "id": "std-22603021",
+      "nim": "22603021",
+      "name": "Muhammad Rayyan",
+      "class": "1C"
+    },
+    {
+      "id": "std-22603025",
+      "nim": "22603025",
+      "name": "Nareswari Putri S.",
+      "class": "1C"
+    },
+    {
+      "id": "std-22603027",
+      "nim": "22603027",
+      "name": "Reihan Adi Putra",
+      "class": "1C"
+    },
+    {
+      "id": "std-22603001",
+      "nim": "22603001",
+      "name": "Achmad Fawzan",
+      "class": "1C"
+    },
+    {
+      "id": "std-22603005",
+      "nim": "22603005",
+      "name": "Andika Azis",
+      "class": "1C"
+    },
+    {
+      "id": "std-22603007",
+      "nim": "22603007",
+      "name": "Ayu Anugrah",
+      "class": "1C"
+    },
+    {
+      "id": "std-22603011",
+      "nim": "22603011",
+      "name": "Dede Irawan",
+      "class": "1C"
+    },
+    {
+      "id": "std-22603013",
+      "nim": "22603013",
+      "name": "Haura Hafizhah",
+      "class": "1C"
+    },
+    {
+      "id": "std-22603016",
+      "nim": "22603016",
+      "name": "M. Fauzan Adhitya Pratama H",
+      "class": "1C"
+    },
+    {
+      "id": "std-22603018",
+      "nim": "22603018",
+      "name": "Muh.Diaz Raditya B.",
+      "class": "1C"
+    },
+    {
+      "id": "std-22603024",
+      "nim": "22603024",
+      "name": "Nadya Zalzabila",
+      "class": "1C"
+    },
+    {
+      "id": "std-22603028",
+      "nim": "22603028",
+      "name": "Rudhi Adhana Zet",
+      "class": "1C"
+    },
+    {
+      "id": "std-22603029",
+      "nim": "22603029",
+      "name": "Salsabila Alifia",
+      "class": "1C"
+    },
+    {
+      "id": "std-22603031",
+      "nim": "22603031",
+      "name": "Syifa Nur Salsabila",
+      "class": "1C"
+    },
+    {
+      "id": "std-22603035",
+      "nim": "22603035",
+      "name": "Zahra Aulia Rahmadani",
+      "class": "1C"
+    },
+    {
+      "id": "std-22603002",
+      "nim": "22603002",
+      "name": "Ade Meilan Alifia Sulaeman",
+      "class": "1C"
+    },
+    {
+      "id": "std-22603009",
+      "nim": "22603009",
+      "name": "Bayu Aji Saputro",
+      "class": "1C"
+    },
+    {
+      "id": "std-22603015",
+      "nim": "22603015",
+      "name": "Lintang Kemala Putri",
+      "class": "1C"
+    },
+    {
+      "id": "std-22603019",
+      "nim": "22603019",
+      "name": "Muhammad Farel Pratama",
+      "class": "1C"
+    },
+    {
+      "id": "std-22603022",
+      "nim": "22603022",
+      "name": "Muhammad Rofi R.",
+      "class": "1C"
+    },
+    {
+      "id": "std-22603023",
+      "nim": "22603023",
+      "name": "Nabila Nur Azizah",
+      "class": "1C"
+    },
+    {
+      "id": "std-22603026",
+      "nim": "22603026",
+      "name": "Rafi Ahmad Fauzi",
+      "class": "1C"
+    },
+    {
+      "id": "std-22603030",
+      "nim": "22603030",
+      "name": "Satria Bintang Ramadhan",
+      "class": "1C"
+    },
+    {
+      "id": "std-22603032",
+      "nim": "22603032",
+      "name": "Taufik Hidayatullah",
+      "class": "1C"
+    },
+    {
+      "id": "std-22603033",
+      "nim": "22603033",
+      "name": "Vina Nur Anggraeni",
+      "class": "1C"
+    },
+    {
+      "id": "std-22603034",
+      "nim": "22603034",
+      "name": "Wildan Maulana",
+      "class": "1C"
+    },
+    {
+      "id": "std-22603036",
+      "nim": "22603036",
+      "name": "Zulfa Khoirunnisa",
+      "class": "1C"
+    }
+  ],
+  "offerings": [
+    {
+      "id": "CAD11-2026G-1C-P03",
+      "practiceCode": "CAD 1.1",
+      "semester": "Ganjil 2026/2027",
+      "class": "1C",
+      "semesterWeek": 3,
+      "calendarWeek": 34,
+      "dateRangeText": "17–21 Agustus 2026",
+      "startDate": "2026-08-17",
+      "endDate": "2026-08-21",
+      "studentIds": [
+        "std-22603003",
+        "std-22603004",
+        "std-22603006",
+        "std-22603008",
+        "std-22603010",
+        "std-22603012",
+        "std-22603014",
+        "std-22603017",
+        "std-22603020",
+        "std-22603021",
+        "std-22603025",
+        "std-22603027"
+      ],
+      "practiceVersionId": "CAD11-R1",
+      "instructorName": "Reza Febriadi Rauf, A.Md.T",
+      "isRosterVerified": true,
+      "areDatesVerified": true
+    },
+    {
+      "id": "CAD11-2026G-1C-P05",
+      "practiceCode": "CAD 1.1",
+      "semester": "Ganjil 2026/2027",
+      "class": "1C",
+      "semesterWeek": 5,
+      "calendarWeek": 36,
+      "dateRangeText": "31 Agustus–4 September 2026",
+      "startDate": "2026-08-31",
+      "endDate": "2026-09-04",
+      "studentIds": [
+        "std-22603001",
+        "std-22603005",
+        "std-22603007",
+        "std-22603011",
+        "std-22603013",
+        "std-22603016",
+        "std-22603018",
+        "std-22603024",
+        "std-22603028",
+        "std-22603029",
+        "std-22603031",
+        "std-22603035"
+      ],
+      "practiceVersionId": "CAD11-R1",
+      "instructorName": "Reza Febriadi Rauf, A.Md.T",
+      "isRosterVerified": true,
+      "areDatesVerified": false
+    },
+    {
+      "id": "CAD11-2026G-1C-P07",
+      "practiceCode": "CAD 1.1",
+      "semester": "Ganjil 2026/2027",
+      "class": "1C",
+      "semesterWeek": 7,
+      "calendarWeek": 38,
+      "dateRangeText": "14–18 September 2026",
+      "startDate": "2026-09-14",
+      "endDate": "2026-09-18",
+      "studentIds": [
+        "std-22603002",
+        "std-22603009",
+        "std-22603015",
+        "std-22603019",
+        "std-22603022",
+        "std-22603023",
+        "std-22603026",
+        "std-22603030",
+        "std-22603032",
+        "std-22603033",
+        "std-22603034",
+        "std-22603036"
+      ],
+      "practiceVersionId": "CAD11-R1",
+      "instructorName": "Reza Febriadi Rauf, A.Md.T",
+      "isRosterVerified": false,
+      "areDatesVerified": false
+    }
+  ],
+  "practiceVersions": [
+    {
+      "id": "CAD11-R1",
+      "name": "CAD 1.1 — Versi R1 (Standar 10 Latihan)",
+      "description": "Format baku praktik CAD 1.1: 10 Latihan, 1 PDF Gabungan, 4 Aspek Soft Skill, 5 Sesi Absensi.",
+      "status": "published",
+      "publishedAt": "2026-08-15T08:00:00Z",
+      "publishedBy": "Admin Unit CAD",
+      "componentWeights": {
+        "exercises": 60,
+        "pdf": 15,
+        "softskill": 15,
+        "attendance": 10
+      },
+      "sections": [
+        {
+          "id": "exercises",
+          "buttonLabel": "10 Latihan",
+          "order": 1,
+          "weight": 60
+        },
+        {
+          "id": "pdf",
+          "buttonLabel": "Output PDF",
+          "order": 2,
+          "weight": 15
+        },
+        {
+          "id": "softskill",
+          "buttonLabel": "Soft Skill",
+          "order": 3,
+          "weight": 15
+        },
+        {
+          "id": "attendance",
+          "buttonLabel": "Kehadiran 5 Hari",
+          "order": 4,
+          "weight": 10
+        }
+      ],
+      "exercises": [
+        {
+          "id": "ex-l01",
+          "code": "L01",
+          "title": "Garis & Koordinat Relatif",
+          "topic": "Dasar LINE, koordinat polar & kartesian",
+          "weight": 10,
+          "instructions": "Buat geometri kontur dasar menggunakan koordinat absolut dan relatif sesuai dimensi.",
+          "isReady": true,
+          "criteria": [
+            {
+              "id": "c-l01-k1",
+              "code": "K1",
+              "name": "Ketepatan Ukuran & Geometri",
+              "weight": 30,
+              "descriptors": {
+                "0": "Tidak ada usaha pembuatan atau gambar salah total.",
+                "1": "Banyak ukuran salah dan bentuk kontur terdistorsi.",
+                "2": "Terdapat 2-3 kesalahan dimensi atau penutupan garis tidak rapat.",
+                "3": "Ukuran tepat, ada 1 deviasi sudut minor < 0.5 derajat.",
+                "4": "Semua panjang segmen, sudut, dan hubungan geometri presisi 100%."
+              }
+            },
+            {
+              "id": "c-l01-k2",
+              "code": "K2",
+              "name": "Kerapian & Ketebalan Garis (Layer)",
+              "weight": 40,
+              "descriptors": {
+                "0": "Tidak ada pembagian layer sama sekali.",
+                "1": "Tidak menggunakan layer secara konsisten, tampilan garis berantakan.",
+                "2": "Beberapa objek digambar pada layer default (Layer 0) tanpa standardisasi.",
+                "3": "Layer dan tipe garis sesuai, ada 1 kesalahan kecil pada properti warna/lineweight.",
+                "4": "Layer, linetype, lineweight, dan penamaan objek sempurna sesuai standar ISO."
+              }
+            },
+            {
+              "id": "c-l01-k3",
+              "code": "K3",
+              "name": "Pemberian Dimensi & Notasi",
+              "weight": 20,
+              "descriptors": {
+                "0": "Tidak ada dimensi yang disertakan.",
+                "1": "Banyak dimensi hilang dan notasi membingungkan.",
+                "2": "Ada 1-2 dimensi utama terlewat, ukuran teks tidak proporsional.",
+                "3": "Dimensi lengkap, ada sedikit tumpang tindih teks dimensi minor.",
+                "4": "Dimensi lengkap, gaya teks standar, posisi anak panah dan jarak ekstensi rapi."
+              }
+            },
+            {
+              "id": "c-l01-k4",
+              "code": "K4",
+              "name": "Efisiensi Langkah & Kecepatan",
+              "weight": 10,
+              "descriptors": {
+                "0": "Tidak menyelesaikan latihan dalam batas sesi.",
+                "1": "Selesai terlambat > 30 menit atau membutuhkan bantuan intensif instruktur.",
+                "2": "Selesai terlambat < 15 menit dari batas waktu sesi.",
+                "3": "Selesai tepat waktu dengan beberapa pengulangan perintah minor.",
+                "4": "Selesai tepat waktu dengan alur perintah CAD yang efisien dan bersih."
+              }
+            }
+          ]
+        },
+        {
+          "id": "ex-l02",
+          "code": "L02",
+          "title": "Lingkaran, Busur & Tangensial",
+          "topic": "Circle, Arc, Tangent Osnap",
+          "weight": 10,
+          "instructions": "Konstruksi hubungan tangensial halus antara busur lingkaran dan garis lurus.",
+          "isReady": true,
+          "criteria": [
+            {
+              "id": "c-l02-k1",
+              "code": "K1",
+              "name": "Ketepatan Radius & Tangensial",
+              "weight": 30,
+              "descriptors": {
+                "0": "Tidak dikerjakan.",
+                "1": "Banyak kesalahan radius dan tidak terbentuk kurva tangensial.",
+                "2": "Radius tidak sesuai pada 1-2 segmen, transisi terlihat patah.",
+                "3": "Hubungan tangensial tepat, ada 1 titik sambung sedikit kurang presisi.",
+                "4": "Semua titik temu busur dan garis mulus sempurna tanpa sudut patah."
+              }
+            },
+            {
+              "id": "c-l02-k2",
+              "code": "K2",
+              "name": "Kerapian Garis Sumbu & Centerline",
+              "weight": 40,
+              "descriptors": {
+                "0": "Format garis tidak teratur.",
+                "1": "Tidak ada garis sumbu standar pada lingkaran/busur.",
+                "2": "Beberapa lingkaran tidak memiliki garis sumbu/center mark.",
+                "3": "Garis sumbu terpasang, panjang ekstensi sedikit tidak seragam.",
+                "4": "Garis sumbu simetri dan tanda pusat lingkaran terpasang rapi sesuai standar."
+              }
+            },
+            {
+              "id": "c-l02-k3",
+              "code": "K3",
+              "name": "Pemberian Dimensi Radius & Diameter",
+              "weight": 20,
+              "descriptors": {
+                "0": "Tanpa dimensi.",
+                "1": "Banyak dimensi radius tidak tercantum.",
+                "2": "Tertukar penggunaan notasi R dan Ø pada fitur lingkaran.",
+                "3": "Simbol dimensi tepat, ada 1 penempatan teks dimensi kurang ideal.",
+                "4": "Simbol R dan Ø ditempatkan sesuai kaidah gambar teknik."
+              }
+            },
+            {
+              "id": "c-l02-k4",
+              "code": "K4",
+              "name": "Efisiensi Perintah CAD",
+              "weight": 10,
+              "descriptors": {
+                "0": "Tidak tuntas.",
+                "1": "Metode pembuatan manual tanpa bantuan snap yang memadai.",
+                "2": "Beberapa kali kesulitan menentukan titik tangen.",
+                "3": "Penggunaan snap baik dan alur lancar.",
+                "4": "Menggunakan object snap (tan, cen, quad) dengan sangat tangkas."
+              }
+            }
+          ]
+        },
+        {
+          "id": "ex-l03",
+          "code": "L03",
+          "title": "Modifikasi Objek & Transformasi",
+          "topic": "Offset, Trim, Extend, Fillet, Chamfer",
+          "weight": 10,
+          "instructions": "Gunakan perintah modifikasi untuk membentuk kontur profil mekanikal kompleks.",
+          "isReady": true,
+          "criteria": [
+            {
+              "id": "c-l03-k1",
+              "code": "K1",
+              "name": "Ketepatan Offset & Fillet",
+              "weight": 30,
+              "descriptors": {
+                "0": "Tidak ada hasil modifikasi.",
+                "1": "Banyak geometri rusak akibat salah pemotongan (trim).",
+                "2": "Offset tidak sejajar sempurna atau ada garis dobel.",
+                "3": "Ada 1 fillet yang memiliki radius menyimpang minor.",
+                "4": "Jarak offset dan radius fillet presisi di setiap lekukan."
+              }
+            },
+            {
+              "id": "c-l03-k2",
+              "code": "K2",
+              "name": "Kebersihan Garis Hasil Trim",
+              "weight": 40,
+              "descriptors": {
+                "0": "Kotor dan tidak dirapikan.",
+                "1": "Banyak garis tumpang tindih yang merusak tampilan.",
+                "2": "Terdapat 2-3 sisa garis potong yang tidak dibersihkan.",
+                "3": "Hasil trim bersih, ada 1 titik garis overlap mikroskopis.",
+                "4": "Tidak ada segmen garis sisa/overlap yang tertinggal."
+              }
+            },
+            {
+              "id": "c-l03-k3",
+              "code": "K3",
+              "name": "Dimensi Profil Hasil Modifikasi",
+              "weight": 20,
+              "descriptors": {
+                "0": "Tanpa dimensi.",
+                "1": "Banyak dimensi salah.",
+                "2": "Dimensi tidak lengkap.",
+                "3": "Ada 1 dimensi chamfer kurang jelas.",
+                "4": "Seluruh fillet, chamfer, dan jarak terukur rapi."
+              }
+            },
+            {
+              "id": "c-l03-k4",
+              "code": "K4",
+              "name": "Kemandirian Kerja",
+              "weight": 10,
+              "descriptors": {
+                "0": "Tidak mampu menyelesaikan.",
+                "1": "Bergantung pada panduan teman/instruktur.",
+                "2": "Memerlukan bimbingan pada langkah kompleks.",
+                "3": "Mandiri dengan 1 kali konfirmasi instruktur.",
+                "4": "Mandiri dan menguasai variasi opsi perintah (Trim/Extend)."
+              }
+            }
+          ]
+        },
+        {
+          "id": "ex-l04",
+          "code": "L04",
+          "title": "Pola Duplikasi Array & Mirror",
+          "topic": "Rectangular & Polar Array, Mirror",
+          "weight": 10,
+          "instructions": "Buat komponen simetris dan pola lubang melingkar flange menggunakan Array dan Mirror.",
+          "isReady": true,
+          "criteria": [
+            {
+              "id": "c-l04-k1",
+              "code": "K1",
+              "name": "Pola Distribusi & Jumlah Objek",
+              "weight": 30,
+              "descriptors": {
+                "0": "Tidak selesai.",
+                "1": "Pola berantakan dan tidak simetris.",
+                "2": "Jumlah item benar tapi jarak/radius PCD meleset.",
+                "3": "Pola tepat, ada 1 sudut orientasi objek array tidak memutar.",
+                "4": "Jumlah item, sudut sebar 360°, dan jarak antar elemen 100% presisi."
+              }
+            },
+            {
+              "id": "c-l04-k2",
+              "code": "K2",
+              "name": "Simetri & Garis Referensi",
+              "weight": 40,
+              "descriptors": {
+                "0": "Salah total.",
+                "1": "Tidak menggunakan sumbu simetri standar.",
+                "2": "Sumbu cermin bergeser dari titik tengah.",
+                "3": "Pola simetris, tipe garis PCD sedikit kurang jelas.",
+                "4": "Sumbu cermin tepat, garis PCD (Pitch Circle Diameter) berstandar ISO."
+              }
+            },
+            {
+              "id": "c-l04-k3",
+              "code": "K3",
+              "name": "Dimensi Sudut & Pola",
+              "weight": 20,
+              "descriptors": {
+                "0": "Tanpa dimensi.",
+                "1": "Dimensi tidak lengkap.",
+                "2": "Hanya mencantumkan ukuran 1 lubang tanpa notasi jumlah pola.",
+                "3": "Notasi ada dengan penulisan sedikit berbeda.",
+                "4": "Notasi misal \"6x Ø10 EQ SP ON Ø80 PCD\" tercantum sempurna."
+              }
+            },
+            {
+              "id": "c-l04-k4",
+              "code": "K4",
+              "name": "Waktu Penyelesaian",
+              "weight": 10,
+              "descriptors": {
+                "0": "Tidak selesai.",
+                "1": "Membuat satu per satu tanpa fitur array.",
+                "2": "Selesai dengan keterlambatan minor.",
+                "3": "Selesai tepat waktu.",
+                "4": "Selesai sangat cepat memanfaatkan fitur array."
+              }
+            }
+          ]
+        },
+        {
+          "id": "ex-l05",
+          "code": "L05",
+          "title": "Arsir (Hatch) & Garis Potongan",
+          "topic": "Hatch pattern, Section lines, Cutting Plane",
+          "weight": 10,
+          "instructions": "Gambarkan tampak potongan parsial dan terapkan pola arsir ANSI31 dengan skala proporsional.",
+          "isReady": true,
+          "criteria": [
+            {
+              "id": "c-l05-k1",
+              "code": "K1",
+              "name": "Skala & Sudut Arsir (Hatch)",
+              "weight": 30,
+              "descriptors": {
+                "0": "Tidak ada arsir.",
+                "1": "Pola arsir bocor keluar bidang potong.",
+                "2": "Arsir menimpa teks/dimensi atau skala arsir tidak proporsional.",
+                "3": "Pola arsir baik, skala sedikit terlalu rapat/renggang.",
+                "4": "Pola ANSI31/ISO rapat proporsional, sudut 45°, tidak menembus batas kontur."
+              }
+            },
+            {
+              "id": "c-l05-k2",
+              "code": "K2",
+              "name": "Garis Bidang Potong & Arah Panah",
+              "weight": 40,
+              "descriptors": {
+                "0": "Salah konsep potongan.",
+                "1": "Tidak ada notasi arah potong.",
+                "2": "Garis potong menggunakan tipe garis standar biasa.",
+                "3": "Garis potong ada, panah arah pandang sedikit kurang proporsional.",
+                "4": "Garis potong tebal bertitik dengan tanda panah arah pandang A-A sempurna."
+              }
+            },
+            {
+              "id": "c-l05-k3",
+              "code": "K3",
+              "name": "Pemberian Label Potongan",
+              "weight": 20,
+              "descriptors": {
+                "0": "Tanpa label.",
+                "1": "Tidak diberi label penjelas.",
+                "2": "Label tidak lengkap.",
+                "3": "Label ada, ukuran teks sedikit berbeda.",
+                "4": "Judul potongan \"POTONGAN A-A\" dan skala tercantum rapi."
+              }
+            },
+            {
+              "id": "c-l05-k4",
+              "code": "K4",
+              "name": "Pengaturan Boundary Hatch",
+              "weight": 10,
+              "descriptors": {
+                "0": "Gagal membuat hatch.",
+                "1": "Mengalami error boundary berkali-kali.",
+                "2": "Beberapa area tertutup tidak terarsir.",
+                "3": "Boundary baik.",
+                "4": "Boundary asosiatif dan terpisah pada setiap pulau komponen."
+              }
+            }
+          ]
+        },
+        {
+          "id": "ex-l06",
+          "code": "L06",
+          "title": "Blok Standar & Atribut",
+          "topic": "Block Creation, Attribute Definition, Library",
+          "weight": 10,
+          "instructions": "Buat library blok baut/mur dan etiket dinamis dengan atribut teks NIM/Nama/Judul.",
+          "isReady": true,
+          "criteria": [
+            {
+              "id": "c-l06-k1",
+              "code": "K1",
+              "name": "Titik Acuan (Base Point) Blok",
+              "weight": 30,
+              "descriptors": {
+                "0": "Tidak dibuat sebagai blok.",
+                "1": "Kesulitan saat memasukkan blok ke gambar utama.",
+                "2": "Base point berada di koordinat (0,0) jauh dari objek.",
+                "3": "Base point baik, sedikit bergeser dari titik tengah simetri.",
+                "4": "Base point berada di titik logis (tengah/sudut acuan) memudahkan insert."
+              }
+            },
+            {
+              "id": "c-l06-k2",
+              "code": "K2",
+              "name": "Atribut Teks & Penamaan Blok",
+              "weight": 40,
+              "descriptors": {
+                "0": "Tidak ada atribut.",
+                "1": "Teks statis, tidak memanfaatkan fitur atribut dinamis.",
+                "2": "Atribut tidak menggunakan justifikasi teks yang tepat (tumpah dari kotak).",
+                "3": "Atribut berfungsi, ada 1 prompt kurang deskriptif.",
+                "4": "Atribut tag, prompt, dan default value terdefinisi rapi."
+              }
+            },
+            {
+              "id": "c-l06-k3",
+              "code": "K3",
+              "name": "Konsistensi Layer Blok",
+              "weight": 20,
+              "descriptors": {
+                "0": "Tidak terstruktur.",
+                "1": "Sifat layer bentrok.",
+                "2": "Blok terkunci pada layer tertentu.",
+                "3": "Layer blok baik.",
+                "4": "Blok dibuat pada Layer 0 sehingga mewarisi layer saat disisipkan."
+              }
+            },
+            {
+              "id": "c-l06-k4",
+              "code": "K4",
+              "name": "Kemandirian Pengujian",
+              "weight": 10,
+              "descriptors": {
+                "0": "Gagal.",
+                "1": "Tidak mengerti konsep atribut.",
+                "2": "Perlu panduan instruktur saat edit blok.",
+                "3": "Pengujian mandiri.",
+                "4": "Menguji blok dengan perintah Insert dan BEdit secara mandiri."
+              }
+            }
+          ]
+        },
+        {
+          "id": "ex-l07",
+          "code": "L07",
+          "title": "Proyeksi Orthogonal & Isometri",
+          "topic": "Orthographic 3 Pandangan & Isodraft",
+          "weight": 10,
+          "instructions": "Gambarkan 3 pandangan proyeksi Amerika/Eropa dan gambar isometrik objek mesin 3D semu.",
+          "isReady": true,
+          "criteria": [
+            {
+              "id": "c-l07-k1",
+              "code": "K1",
+              "name": "Keselarasan Proyeksi (Alignment)",
+              "weight": 30,
+              "descriptors": {
+                "0": "Bukan gambar proyeksi standar.",
+                "1": "Salah meletakkan posisi pandangan (tertukar atas/samping).",
+                "2": "Jarak antar pandangan tidak seimbang atau tidak selaras.",
+                "3": "Proyeksi sejajar, ada 1 garis proyeksi bantu belum dihapus.",
+                "4": "Pandangan depan, atas, dan samping terproyeksi lurus dan sejajar sempurna."
+              }
+            },
+            {
+              "id": "c-l07-k2",
+              "code": "K2",
+              "name": "Garis Tersembunyi (Hidden Lines)",
+              "weight": 40,
+              "descriptors": {
+                "0": "Tidak ada garis tersembunyi.",
+                "1": "Garis tersembunyi digambar garis kontinu padat.",
+                "2": "Ada 1-2 fitur tersembunyi tidak digambar dengan garis putus-putus.",
+                "3": "Garis tersembunyi ada, ada 1 segmen kurang proporsional.",
+                "4": "Garis putus-putus (DASHED) fitur tak terlihat lengkap dan berskala tepat."
+              }
+            },
+            {
+              "id": "c-l07-k3",
+              "code": "K3",
+              "name": "Gambar Isometri (Sudut 30°)",
+              "weight": 20,
+              "descriptors": {
+                "0": "Tidak ada gambar isometri.",
+                "1": "Gambar isometri terdistorsi.",
+                "2": "Gambar isometri tidak menggunakan sudut 30° standar.",
+                "3": "Isometri rapi, ada 1 elips isocircle sedikit salah orientasi.",
+                "4": "Isocircle pada isoplane (top, left, right) presisi sempurna."
+              }
+            },
+            {
+              "id": "c-l07-k4",
+              "code": "K4",
+              "name": "Kerapian Etiket & Layout",
+              "weight": 10,
+              "descriptors": {
+                "0": "Berantakan.",
+                "1": "Gambar keluar dari garis tepi.",
+                "2": "Gambar terlalu padat di satu sudut kertas.",
+                "3": "Penataan baik.",
+                "4": "Penataan gambar di dalam kertas sangat proporsional."
+              }
+            }
+          ]
+        },
+        {
+          "id": "ex-l08",
+          "code": "L08",
+          "title": "Toleransi Geometris & Fit",
+          "topic": "GD&T, Fit Tolerances, Surface Finish",
+          "weight": 10,
+          "instructions": "Lengkapi gambar kerja dengan simbol toleransi bentuk/posisi (GD&T) dan nilai kekasaran permukaan.",
+          "isReady": true,
+          "criteria": [
+            {
+              "id": "c-l08-k1",
+              "code": "K1",
+              "name": "Simbol GD&T & Datum Acuan",
+              "weight": 30,
+              "descriptors": {
+                "0": "Tanpa GD&T.",
+                "1": "Penulisan simbol manual tanpa menggunakan perintah Tolerance CAD.",
+                "2": "Simbol toleransi salah kategori (misal paralelisme pada sumbu silinder).",
+                "3": "Simbol GD&T tepat, panah datum sedikit miring.",
+                "4": "Kotak kontrol fitur toleransi (Feature Control Frame) dan datum A, B terpasang benar."
+              }
+            },
+            {
+              "id": "c-l08-k2",
+              "code": "K2",
+              "name": "Notasi Toleransi Linear (Fit H7/g6)",
+              "weight": 40,
+              "descriptors": {
+                "0": "Tanpa toleransi.",
+                "1": "Nilai toleransi salah atau asal-asalan.",
+                "2": "Format tulisan toleransi tidak sejajar dengan ukuran nominal.",
+                "3": "Toleransi tercantum, angka deviasi atas/bawah sesuai.",
+                "4": "Toleransi poros dan lubang dicantumkan dengan kelas suaian standar ISO."
+              }
+            },
+            {
+              "id": "c-l08-k3",
+              "code": "K3",
+              "name": "Simbol Tuntutan Permukaan (Roughness)",
+              "weight": 20,
+              "descriptors": {
+                "0": "Tanpa simbol permukaan.",
+                "1": "Simbol salah bentuk.",
+                "2": "Penempatan simbol terbalik terhadap orientasi pembacaan gambar.",
+                "3": "Simbol permukaan ada dan terbaca jelas.",
+                "4": "Simbol segitiga Ra ditempatkan tegak lurus pada bidang kerja."
+              }
+            },
+            {
+              "id": "c-l08-k4",
+              "code": "K4",
+              "name": "Kerapian Notasi Khusus",
+              "weight": 10,
+              "descriptors": {
+                "0": "Gagal.",
+                "1": "Gambar sulit dibaca oleh operator.",
+                "2": "Notasi terlalu berdesakan dengan dimensi utama.",
+                "3": "Gambar rapi.",
+                "4": "Gambar terlihat profesional memenuhi standar manufaktur industri."
+              }
+            }
+          ]
+        },
+        {
+          "id": "ex-l09",
+          "code": "L09",
+          "title": "Gambar Rakitan Sederhana (Assembly)",
+          "topic": "Komponen Rakitan 2D & Bill of Materials (BOM)",
+          "weight": 10,
+          "instructions": "Susun komponen pasangan (pin, bushing, link) menjadi rakitan utuh dan buat tabel daftar bagian (BOM).",
+          "isReady": true,
+          "criteria": [
+            {
+              "id": "c-l09-k1",
+              "code": "K1",
+              "name": "Kesesuaian Rakitan & Posisi Pasangan",
+              "weight": 30,
+              "descriptors": {
+                "0": "Tidak ada gambar rakitan.",
+                "1": "Rakitan salah posisi dan tidak berfungsi.",
+                "2": "Terdapat komponen yang melayang (tidak duduk pada bidang acuan).",
+                "3": "Rakitan tepat, ada sedikit pergeseran pada posisi ring pengunci.",
+                "4": "Semua komponen terpasang pada sumbu kontak yang benar tanpa benturan/clash."
+              }
+            },
+            {
+              "id": "c-l09-k2",
+              "code": "K2",
+              "name": "Tabel Daftar Bagian (Bill of Materials)",
+              "weight": 40,
+              "descriptors": {
+                "0": "Tanpa tabel BOM.",
+                "1": "Banyak komponen rakitan terlewat dari daftar BOM.",
+                "2": "Tabel dibuat manual tanpa struktur kolom standar CAD.",
+                "3": "Tabel BOM rapi, ada 1 spesifikasi material belum dicantumkan.",
+                "4": "Kolom No, Nama Bagian, Jumlah, Material, dan Keterangan terisi lengkap."
+              }
+            },
+            {
+              "id": "c-l09-k3",
+              "code": "K3",
+              "name": "Nomor Balon Penunjuk (Item Balloons)",
+              "weight": 20,
+              "descriptors": {
+                "0": "Tanpa balon penunjuk.",
+                "1": "Nomor penunjuk tidak jelas.",
+                "2": "Ada nomor balon yang tidak cocok dengan nomor baris tabel BOM.",
+                "3": "Balon nomor ada, garis penunjuk sedikit berpotongan.",
+                "4": "Balon penunjuk bernomor terhubung dengan panah ke setiap komponen dan berurutan."
+              }
+            },
+            {
+              "id": "c-l09-k4",
+              "code": "K4",
+              "name": "Dimensi Utama Rakitan (Overall Dimensions)",
+              "weight": 10,
+              "descriptors": {
+                "0": "Tanpa dimensi.",
+                "1": "Dimensi rakitan membingungkan.",
+                "2": "Masih mencantumkan terlalu banyak dimensi detail komponen.",
+                "3": "Dimensi utama lengkap.",
+                "4": "Hanya mencantumkan dimensi total dan jarak pusat fungsional (bukan dimensi detail)."
+              }
+            }
+          ]
+        },
+        {
+          "id": "ex-l10",
+          "code": "L10",
+          "title": "Tata Letak Layout & Konfigurasi Plotting",
+          "topic": "Paper Space Layout, Viewport Scaling, Page Setup",
+          "weight": 10,
+          "instructions": "Atur gambar pada Layout kertas A4/A3, kunci skala viewport (1:1, 1:2), dan siapkan etiket resmi.",
+          "isReady": true,
+          "criteria": [
+            {
+              "id": "c-l10-k1",
+              "code": "K1",
+              "name": "Skala Viewport & Kunci Tampilan",
+              "weight": 30,
+              "descriptors": {
+                "0": "Tidak menggunakan paper space layout.",
+                "1": "Gambar tidak masuk ke dalam viewport dengan benar.",
+                "2": "Skala viewport menggunakan angka desimal tidak standar (misal 1:1.37).",
+                "3": "Skala tepat, viewport lupa dikunci.",
+                "4": "Skala viewport standar tepat (misal 1:1), viewport terkunci (Display Locked: Yes)."
+              }
+            },
+            {
+              "id": "c-l10-k2",
+              "code": "K2",
+              "name": "Kelengkapan Etiket Gambar (Title Block)",
+              "weight": 40,
+              "descriptors": {
+                "0": "Tanpa etiket.",
+                "1": "Etiket dibuat tidak standar.",
+                "2": "Etiket terpotong oleh batas margin cetak kertas.",
+                "3": "Etiket terisi lengkap, ada 1 data minor belum diisi.",
+                "4": "Etiket resmi terisi lengkap: Nama, NIM, Kelas, Tanggal, Skala, No Lembar, TTD Instruktur."
+              }
+            },
+            {
+              "id": "c-l10-k3",
+              "code": "K3",
+              "name": "Pengaturan Cetak & Plot Style (CTB/Monochrome)",
+              "weight": 20,
+              "descriptors": {
+                "0": "Gagal plot.",
+                "1": "Warna kuning/hijau tercetak terang dan tidak terbaca di kertas putih.",
+                "2": "Semua garis tercetak dengan satu ketebalan tipis yang sama.",
+                "3": "Plot style baik, hasil cetak terbaca jelas.",
+                "4": "Konfigurasi pen table hitam/putih tajam dengan variasi tebal garis terdefinisi jelas."
+              }
+            },
+            {
+              "id": "c-l10-k4",
+              "code": "K4",
+              "name": "Kerapian Tata Letak Multi-Viewport",
+              "weight": 10,
+              "descriptors": {
+                "0": "Layout berantakan.",
+                "1": "Garis border viewport ikut tercetak mengotori gambar.",
+                "2": "Jarak antar viewport terlalu sempit.",
+                "3": "Tata letak rapi.",
+                "4": "Susunan tampak depan, samping, dan detail diatur sangat harmonis dan estetik."
+              }
+            }
+          ]
+        }
+      ],
+      "pdfRubric": [
+        {
+          "id": "c-pdf-k1",
+          "code": "K1",
+          "name": "Kelengkapan Lembar Gambar & Etiket",
+          "weight": 40,
+          "descriptors": {
+            "0": "Berkas rusak, kosong, atau tidak mengumpulkan berkas PDF.",
+            "1": "Banyak lembar latihan hilang (>3 lembar) atau etiket tidak diisi.",
+            "2": "Terdapat 1-2 lembar latihan tidak disertakan dalam berkas PDF gabungan.",
+            "3": "Semua lembar ada, urutan lembar ada 1 yang tertukar atau etiket ada data minor kosong.",
+            "4": "Seluruh lembar latihan (L01–L10) terkumpul lengkap dalam 1 file PDF urut dengan etiket terisi penuh."
+          }
+        },
+        {
+          "id": "c-pdf-k2",
+          "code": "K2",
+          "name": "Kualitas Garis & Standar Proyeksi ISO",
+          "weight": 30,
+          "descriptors": {
+            "0": "Gambar tidak dapat diidentifikasi.",
+            "1": "Resolusi pecah (raster buram) dan standar gambar tidak dipatuhi.",
+            "2": "Garis tampak pudar atau semua garis tercetak dengan ketebalan sama.",
+            "3": "Kualitas garis tajam, ada sedikit ketidakkonsistenan tebal garis pada 1 lembar.",
+            "4": "Resolusi vektor tajam, ketebalan garis (lineweight) kontras jelas, simbol proyeksi ISO presisi."
+          }
+        },
+        {
+          "id": "c-pdf-k3",
+          "code": "K3",
+          "name": "Kesesuaian Dimensi & Keterbacaan Teks",
+          "weight": 20,
+          "descriptors": {
+            "0": "Tanpa dimensi.",
+            "1": "Banyak dimensi buram dan tidak terbaca.",
+            "2": "Beberapa teks dimensi terlalu kecil atau terpotong margin cetak.",
+            "3": "Teks terbaca jelas, ada 1 dimensi sedikit terlalu dekat dengan kontur gambar.",
+            "4": "Semua dimensi dan teks notasi terbaca jelas, ukuran font proporsional, tidak ada tumpang tindih."
+          }
+        },
+        {
+          "id": "c-pdf-k4",
+          "code": "K4",
+          "name": "Format & Ukuran Berkas Sesuai Ketentuan",
+          "weight": 10,
+          "descriptors": {
+            "0": "Salah format total.",
+            "1": "Format file bukan PDF (misal tangkapan layar JPG/PNG).",
+            "2": "Ukuran file terlalu besar (> 20MB) tanpa optimasi atau nama file tidak menyertakan NIM.",
+            "3": "Format nama file sedikit berbeda, ukuran berkas normal.",
+            "4": "Nama file sesuai format baku (NIM_Nama_CAD1.1.pdf), ukuran file optimal (< 15MB)."
+          }
+        }
+      ],
+      "softSkillRubric": [
+        {
+          "id": "c-soft-k1",
+          "code": "K1",
+          "name": "Disiplin Proses & Kebersihan Lab",
+          "weight": 25,
+          "descriptors": {
+            "0": "Melanggar aturan keselamatan kerja lab secara fatal.",
+            "1": "Terlambat berulang, makan/minum di dekat workstation CAD.",
+            "2": "Terlambat < 15 menit atau meninggalkan meja kerja dalam kondisi kurang rapi.",
+            "3": "Hadir tepat waktu, merapikan meja kerja dengan 1 kali pengingat.",
+            "4": "Hadir tepat waktu, mengikuti SOP lab, mematikan workstation dan merapikan meja kerja."
+          }
+        },
+        {
+          "id": "c-soft-k2",
+          "code": "K2",
+          "name": "Tanggung Jawab & Ketuntasan Tugas",
+          "weight": 25,
+          "descriptors": {
+            "0": "Tidak mengerjakan tugas yang diinstruksikan.",
+            "1": "Meninggalkan sesi sebelum target harian selesai tanpa izin.",
+            "2": "Sering menunda pengerjaan sehingga membutuhkan tambahan waktu sesi.",
+            "3": "Menyelesaikan target harian tepat waktu.",
+            "4": "Fokus penuh selama jam praktik, menyelesaikan target harian dengan standar mutu tinggi."
+          }
+        },
+        {
+          "id": "c-soft-k3",
+          "code": "K3",
+          "name": "Kemandirian & Pemecahan Masalah",
+          "weight": 25,
+          "descriptors": {
+            "0": "Menyalin file pekerjaan mahasiswa lain secara langsung.",
+            "1": "Pasif dan menunggu disuapi instruktur/rekan kerja.",
+            "2": "Cepat menyerah saat menghadapi pesan kesalahan CAD.",
+            "3": "Berusaha mandiri, bertanya pada hal-hal yang bersifat prinsip.",
+            "4": "Mampu menganalisis kendala geometri CAD secara mandiri sebelum bertanya ke instruktur."
+          }
+        },
+        {
+          "id": "c-soft-k4",
+          "code": "K4",
+          "name": "Komunikasi & Etika Kerja",
+          "weight": 25,
+          "descriptors": {
+            "0": "Berperilaku tidak etis atau menolak arahan instruktur.",
+            "1": "Membuat kegaduhan yang mengganggu konsentrasi mahasiswa lain.",
+            "2": "Kurang responsif saat instruktur memberikan arahan klasikal.",
+            "3": "Berkomunikasi dengan baik dan kooperatif.",
+            "4": "Sopan, santun dalam berkonsultasi, membantu diskusi teknis yang membangun di ruang praktik."
+          }
+        }
+      ],
+      "exerciseCriteria": [
+        {
+          "id": "crit-ex-k1",
+          "code": "K1",
+          "name": "Presisi Ukuran & Ketepatan Geometri",
+          "weight": 30,
+          "descriptors": {
+            "0": "Tidak ada gambar yang valid.",
+            "1": "Banyak ukuran salah.",
+            "2": "Terdapat 2-3 kesalahan ukuran.",
+            "3": "Dimensi tepat, ada 1 deviasi minor.",
+            "4": "Semua dimensi, sudut, dan hubungan geometri presisi 100%."
+          }
+        },
+        {
+          "id": "crit-ex-k2",
+          "code": "K2",
+          "name": "Kerapian Garis, Layer & Standardisasi",
+          "weight": 40,
+          "descriptors": {
+            "0": "Tanpa pembagian layer.",
+            "1": "Tidak menggunakan layer secara konsisten.",
+            "2": "Beberapa objek digambar pada layer default.",
+            "3": "Layer dan tipe garis sesuai standar.",
+            "4": "Layer, linetype, lineweight terdefinisi sempurna standar ISO."
+          }
+        },
+        {
+          "id": "crit-ex-k3",
+          "code": "K3",
+          "name": "Pemberian Dimensi & Keterbacaan Notasi",
+          "weight": 20,
+          "descriptors": {
+            "0": "Tanpa dimensi.",
+            "1": "Banyak dimensi hilang.",
+            "2": "Ada dimensi utama terlewat.",
+            "3": "Dimensi lengkap dengan sedikit tumpang tindih minor.",
+            "4": "Dimensi lengkap, gaya teks standar, posisi rapi."
+          }
+        },
+        {
+          "id": "crit-ex-k4",
+          "code": "K4",
+          "name": "Efisiensi Langkah & Kecepatan Kerja",
+          "weight": 10,
+          "descriptors": {
+            "0": "Tidak menyelesaikan latihan.",
+            "1": "Selesai terlambat > 30 menit.",
+            "2": "Selesai terlambat < 15 menit.",
+            "3": "Selesai tepat waktu.",
+            "4": "Selesai tepat waktu dengan alur perintah CAD efisien."
+          }
+        }
+      ],
+      "attendancePolicy": {
+        "sessionsCount": 5,
+        "scores": {
+          "hadir": 4,
+          "izin": null,
+          "sakit": null,
+          "alpa": 0
+        }
+      },
+      "passingThreshold": 75,
+      "minimumSoftSkillObservations": 1,
+      "maxPdfSizeMb": 20
+    }
+  ],
+  "exerciseRecords": [
+    {
+      "id": "rec-ex-std-22603018-ex-l01",
+      "studentId": "std-22603018",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "exerciseId": "ex-l01",
+      "scores": {
+        "crit-ex-k1": 3,
+        "crit-ex-k2": null,
+        "crit-ex-k3": 4,
+        "crit-ex-k4": 4
+      },
+      "status": "draf",
+      "notes": "Perlu ketelitian fillet.",
+      "updatedAt": "2026-08-31T12:33:57.541Z",
+      "revision": 3
+    }
+  ],
+  "pdfRecords": [
+    {
+      "id": "pdf-CAD11-2026G-1C-P03-std-22603003",
+      "studentId": "std-22603003",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "submissionStatus": "dikumpulkan",
+      "inspectionStatus": "diterima",
+      "scores": {
+        "c-pdf-k1": 4,
+        "c-pdf-k2": 3,
+        "c-pdf-k3": 4,
+        "c-pdf-k4": 3
+      },
+      "updatedAt": "2026-08-31T09:57:57.550Z",
+      "revision": 1
+    },
+    {
+      "id": "pdf-CAD11-2026G-1C-P03-std-22603004",
+      "studentId": "std-22603004",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "submissionStatus": "dikumpulkan",
+      "inspectionStatus": "diterima",
+      "scores": {
+        "c-pdf-k1": 4,
+        "c-pdf-k2": 3,
+        "c-pdf-k3": 4,
+        "c-pdf-k4": 3
+      },
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "pdf-CAD11-2026G-1C-P03-std-22603006",
+      "studentId": "std-22603006",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "submissionStatus": "dikumpulkan",
+      "inspectionStatus": "diterima",
+      "scores": {
+        "c-pdf-k1": 4,
+        "c-pdf-k2": 3,
+        "c-pdf-k3": 4,
+        "c-pdf-k4": 3
+      },
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "pdf-CAD11-2026G-1C-P03-std-22603008",
+      "studentId": "std-22603008",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "submissionStatus": "dikumpulkan",
+      "inspectionStatus": "diterima",
+      "scores": {
+        "c-pdf-k1": 4,
+        "c-pdf-k2": 3,
+        "c-pdf-k3": 4,
+        "c-pdf-k4": 3
+      },
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "pdf-CAD11-2026G-1C-P03-std-22603010",
+      "studentId": "std-22603010",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "submissionStatus": "dikumpulkan",
+      "inspectionStatus": "diterima",
+      "scores": {
+        "c-pdf-k1": 4,
+        "c-pdf-k2": 3,
+        "c-pdf-k3": 4,
+        "c-pdf-k4": 3
+      },
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "pdf-CAD11-2026G-1C-P03-std-22603012",
+      "studentId": "std-22603012",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "submissionStatus": "dikumpulkan",
+      "inspectionStatus": "diterima",
+      "scores": {
+        "c-pdf-k1": 4,
+        "c-pdf-k2": 3,
+        "c-pdf-k3": 4,
+        "c-pdf-k4": 3
+      },
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "pdf-CAD11-2026G-1C-P03-std-22603014",
+      "studentId": "std-22603014",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "submissionStatus": "dikumpulkan",
+      "inspectionStatus": "diterima",
+      "scores": {
+        "c-pdf-k1": 4,
+        "c-pdf-k2": 3,
+        "c-pdf-k3": 4,
+        "c-pdf-k4": 3
+      },
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "pdf-CAD11-2026G-1C-P03-std-22603017",
+      "studentId": "std-22603017",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "submissionStatus": "dikumpulkan",
+      "inspectionStatus": "diterima",
+      "scores": {
+        "c-pdf-k1": 4,
+        "c-pdf-k2": 3,
+        "c-pdf-k3": 4,
+        "c-pdf-k4": 3
+      },
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "pdf-CAD11-2026G-1C-P03-std-22603020",
+      "studentId": "std-22603020",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "submissionStatus": "dikumpulkan",
+      "inspectionStatus": "diterima",
+      "scores": {
+        "c-pdf-k1": 4,
+        "c-pdf-k2": 3,
+        "c-pdf-k3": 4,
+        "c-pdf-k4": 3
+      },
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "pdf-CAD11-2026G-1C-P03-std-22603021",
+      "studentId": "std-22603021",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "submissionStatus": "dikumpulkan",
+      "inspectionStatus": "diterima",
+      "scores": {
+        "c-pdf-k1": 4,
+        "c-pdf-k2": 3,
+        "c-pdf-k3": 4,
+        "c-pdf-k4": 3
+      },
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "pdf-CAD11-2026G-1C-P03-std-22603025",
+      "studentId": "std-22603025",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "submissionStatus": "dikumpulkan",
+      "inspectionStatus": "diterima",
+      "scores": {
+        "c-pdf-k1": 4,
+        "c-pdf-k2": 3,
+        "c-pdf-k3": 4,
+        "c-pdf-k4": 3
+      },
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "pdf-CAD11-2026G-1C-P03-std-22603027",
+      "studentId": "std-22603027",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "submissionStatus": "dikumpulkan",
+      "inspectionStatus": "diterima",
+      "scores": {
+        "c-pdf-k1": 4,
+        "c-pdf-k2": 3,
+        "c-pdf-k3": 4,
+        "c-pdf-k4": 3
+      },
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "pdf-CAD11-2026G-1C-P05-std-22603001",
+      "studentId": "std-22603001",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "submissionStatus": "dikumpulkan",
+      "inspectionStatus": "diterima",
+      "scores": {
+        "c-pdf-k1": 4,
+        "c-pdf-k2": 3,
+        "c-pdf-k3": 4,
+        "c-pdf-k4": 3
+      },
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "pdf-CAD11-2026G-1C-P05-std-22603005",
+      "studentId": "std-22603005",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "submissionStatus": "dikumpulkan",
+      "inspectionStatus": "diterima",
+      "scores": {
+        "c-pdf-k1": 4,
+        "c-pdf-k2": 3,
+        "c-pdf-k3": 4,
+        "c-pdf-k4": 3
+      },
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "pdf-CAD11-2026G-1C-P05-std-22603007",
+      "studentId": "std-22603007",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "submissionStatus": "dikumpulkan",
+      "inspectionStatus": "diterima",
+      "scores": {
+        "c-pdf-k1": 4,
+        "c-pdf-k2": 3,
+        "c-pdf-k3": 4,
+        "c-pdf-k4": 3
+      },
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "pdf-CAD11-2026G-1C-P05-std-22603011",
+      "studentId": "std-22603011",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "submissionStatus": "dikumpulkan",
+      "inspectionStatus": "diterima",
+      "scores": {
+        "c-pdf-k1": 4,
+        "c-pdf-k2": 3,
+        "c-pdf-k3": 4,
+        "c-pdf-k4": 3
+      },
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "pdf-CAD11-2026G-1C-P05-std-22603013",
+      "studentId": "std-22603013",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "submissionStatus": "dikumpulkan",
+      "inspectionStatus": "diterima",
+      "scores": {
+        "c-pdf-k1": 4,
+        "c-pdf-k2": 3,
+        "c-pdf-k3": 4,
+        "c-pdf-k4": 3
+      },
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "pdf-CAD11-2026G-1C-P05-std-22603016",
+      "studentId": "std-22603016",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "submissionStatus": "dikumpulkan",
+      "inspectionStatus": "diterima",
+      "scores": {
+        "c-pdf-k1": 4,
+        "c-pdf-k2": 3,
+        "c-pdf-k3": 4,
+        "c-pdf-k4": 3
+      },
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "pdf-CAD11-2026G-1C-P05-std-22603018",
+      "studentId": "std-22603018",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "submissionStatus": "dikumpulkan",
+      "inspectionStatus": "diterima",
+      "scores": {
+        "c-pdf-k1": 4,
+        "c-pdf-k2": 3,
+        "c-pdf-k3": 4,
+        "c-pdf-k4": 3
+      },
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "pdf-CAD11-2026G-1C-P05-std-22603024",
+      "studentId": "std-22603024",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "submissionStatus": "dikumpulkan",
+      "inspectionStatus": "diterima",
+      "scores": {
+        "c-pdf-k1": 4,
+        "c-pdf-k2": 3,
+        "c-pdf-k3": 4,
+        "c-pdf-k4": 3
+      },
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "pdf-CAD11-2026G-1C-P05-std-22603028",
+      "studentId": "std-22603028",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "submissionStatus": "dikumpulkan",
+      "inspectionStatus": "diterima",
+      "scores": {
+        "c-pdf-k1": 4,
+        "c-pdf-k2": 3,
+        "c-pdf-k3": 4,
+        "c-pdf-k4": 3
+      },
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "pdf-CAD11-2026G-1C-P05-std-22603029",
+      "studentId": "std-22603029",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "submissionStatus": "dikumpulkan",
+      "inspectionStatus": "diterima",
+      "scores": {
+        "c-pdf-k1": 4,
+        "c-pdf-k2": 3,
+        "c-pdf-k3": 4,
+        "c-pdf-k4": 3
+      },
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "pdf-CAD11-2026G-1C-P05-std-22603031",
+      "studentId": "std-22603031",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "submissionStatus": "dikumpulkan",
+      "inspectionStatus": "diterima",
+      "scores": {
+        "c-pdf-k1": 4,
+        "c-pdf-k2": 3,
+        "c-pdf-k3": 4,
+        "c-pdf-k4": 3
+      },
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "pdf-CAD11-2026G-1C-P05-std-22603035",
+      "studentId": "std-22603035",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "submissionStatus": "dikumpulkan",
+      "inspectionStatus": "diterima",
+      "scores": {
+        "c-pdf-k1": 4,
+        "c-pdf-k2": 3,
+        "c-pdf-k3": 4,
+        "c-pdf-k4": 3
+      },
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "pdf-CAD11-2026G-1C-P07-std-22603002",
+      "studentId": "std-22603002",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "submissionStatus": "dikumpulkan",
+      "inspectionStatus": "diterima",
+      "scores": {
+        "c-pdf-k1": 4,
+        "c-pdf-k2": 3,
+        "c-pdf-k3": 4,
+        "c-pdf-k4": 3
+      },
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "pdf-CAD11-2026G-1C-P07-std-22603009",
+      "studentId": "std-22603009",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "submissionStatus": "dikumpulkan",
+      "inspectionStatus": "diterima",
+      "scores": {
+        "c-pdf-k1": 4,
+        "c-pdf-k2": 3,
+        "c-pdf-k3": 4,
+        "c-pdf-k4": 3
+      },
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "pdf-CAD11-2026G-1C-P07-std-22603015",
+      "studentId": "std-22603015",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "submissionStatus": "dikumpulkan",
+      "inspectionStatus": "diterima",
+      "scores": {
+        "c-pdf-k1": 4,
+        "c-pdf-k2": 3,
+        "c-pdf-k3": 4,
+        "c-pdf-k4": 3
+      },
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "pdf-CAD11-2026G-1C-P07-std-22603019",
+      "studentId": "std-22603019",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "submissionStatus": "dikumpulkan",
+      "inspectionStatus": "diterima",
+      "scores": {
+        "c-pdf-k1": 4,
+        "c-pdf-k2": 3,
+        "c-pdf-k3": 4,
+        "c-pdf-k4": 3
+      },
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "pdf-CAD11-2026G-1C-P07-std-22603022",
+      "studentId": "std-22603022",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "submissionStatus": "dikumpulkan",
+      "inspectionStatus": "diterima",
+      "scores": {
+        "c-pdf-k1": 4,
+        "c-pdf-k2": 3,
+        "c-pdf-k3": 4,
+        "c-pdf-k4": 3
+      },
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "pdf-CAD11-2026G-1C-P07-std-22603023",
+      "studentId": "std-22603023",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "submissionStatus": "dikumpulkan",
+      "inspectionStatus": "diterima",
+      "scores": {
+        "c-pdf-k1": 4,
+        "c-pdf-k2": 3,
+        "c-pdf-k3": 4,
+        "c-pdf-k4": 3
+      },
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "pdf-CAD11-2026G-1C-P07-std-22603026",
+      "studentId": "std-22603026",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "submissionStatus": "dikumpulkan",
+      "inspectionStatus": "diterima",
+      "scores": {
+        "c-pdf-k1": 4,
+        "c-pdf-k2": 3,
+        "c-pdf-k3": 4,
+        "c-pdf-k4": 3
+      },
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "pdf-CAD11-2026G-1C-P07-std-22603030",
+      "studentId": "std-22603030",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "submissionStatus": "dikumpulkan",
+      "inspectionStatus": "diterima",
+      "scores": {
+        "c-pdf-k1": 4,
+        "c-pdf-k2": 3,
+        "c-pdf-k3": 4,
+        "c-pdf-k4": 3
+      },
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "pdf-CAD11-2026G-1C-P07-std-22603032",
+      "studentId": "std-22603032",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "submissionStatus": "dikumpulkan",
+      "inspectionStatus": "diterima",
+      "scores": {
+        "c-pdf-k1": 4,
+        "c-pdf-k2": 3,
+        "c-pdf-k3": 4,
+        "c-pdf-k4": 3
+      },
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "pdf-CAD11-2026G-1C-P07-std-22603033",
+      "studentId": "std-22603033",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "submissionStatus": "dikumpulkan",
+      "inspectionStatus": "diterima",
+      "scores": {
+        "c-pdf-k1": 4,
+        "c-pdf-k2": 3,
+        "c-pdf-k3": 4,
+        "c-pdf-k4": 3
+      },
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "pdf-CAD11-2026G-1C-P07-std-22603034",
+      "studentId": "std-22603034",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "submissionStatus": "dikumpulkan",
+      "inspectionStatus": "diterima",
+      "scores": {
+        "c-pdf-k1": 4,
+        "c-pdf-k2": 3,
+        "c-pdf-k3": 4,
+        "c-pdf-k4": 3
+      },
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "pdf-CAD11-2026G-1C-P07-std-22603036",
+      "studentId": "std-22603036",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "submissionStatus": "dikumpulkan",
+      "inspectionStatus": "diterima",
+      "scores": {
+        "c-pdf-k1": 4,
+        "c-pdf-k2": 3,
+        "c-pdf-k3": 4,
+        "c-pdf-k4": 3
+      },
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "rec-pdf-std-22603001",
+      "studentId": "std-22603001",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "artifacts": [
+        {
+          "id": "art-fawzan-v1",
+          "version": 1,
+          "fileName": "CAD1.1_1C_22603001_Achmad_Fawzan.pdf",
+          "fileSize": 4820192,
+          "uploadedAt": "2026-08-31T08:30:00Z",
+          "uploadedBy": "Instruktur",
+          "fileUrl": "#"
+        }
+      ],
+      "activeArtifactVersion": 1,
+      "submissionStatus": "dikumpulkan",
+      "inspectionStatus": "belum_diperiksa",
+      "scores": {
+        "crit-pdf-k1": 4,
+        "crit-pdf-k2": 3,
+        "crit-pdf-k3": 4,
+        "crit-pdf-k4": 3
+      },
+      "notes": "Kertas A4 landscape terpusat, garis etiket terbaca rapi.",
+      "updatedAt": "2026-08-31T12:28:50.037Z",
+      "revision": 4
+    }
+  ],
+  "softSkillRecords": [
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603003-1",
+      "studentId": "std-22603003",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 1,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603003-2",
+      "studentId": "std-22603003",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 2,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603003-3",
+      "studentId": "std-22603003",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 3,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603003-4",
+      "studentId": "std-22603003",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 4,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603003-5",
+      "studentId": "std-22603003",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 5,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603004-1",
+      "studentId": "std-22603004",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 1,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603004-2",
+      "studentId": "std-22603004",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 2,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603004-3",
+      "studentId": "std-22603004",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 3,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603004-4",
+      "studentId": "std-22603004",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 4,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603004-5",
+      "studentId": "std-22603004",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 5,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603006-1",
+      "studentId": "std-22603006",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 1,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603006-2",
+      "studentId": "std-22603006",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 2,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603006-3",
+      "studentId": "std-22603006",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 3,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603006-4",
+      "studentId": "std-22603006",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 4,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603006-5",
+      "studentId": "std-22603006",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 5,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603008-1",
+      "studentId": "std-22603008",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 1,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603008-2",
+      "studentId": "std-22603008",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 2,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603008-3",
+      "studentId": "std-22603008",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 3,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603008-4",
+      "studentId": "std-22603008",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 4,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603008-5",
+      "studentId": "std-22603008",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 5,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603010-1",
+      "studentId": "std-22603010",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 1,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603010-2",
+      "studentId": "std-22603010",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 2,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603010-3",
+      "studentId": "std-22603010",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 3,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603010-4",
+      "studentId": "std-22603010",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 4,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603010-5",
+      "studentId": "std-22603010",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 5,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603012-1",
+      "studentId": "std-22603012",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 1,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603012-2",
+      "studentId": "std-22603012",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 2,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603012-3",
+      "studentId": "std-22603012",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 3,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603012-4",
+      "studentId": "std-22603012",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 4,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603012-5",
+      "studentId": "std-22603012",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 5,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603014-1",
+      "studentId": "std-22603014",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 1,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603014-2",
+      "studentId": "std-22603014",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 2,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603014-3",
+      "studentId": "std-22603014",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 3,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603014-4",
+      "studentId": "std-22603014",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 4,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603014-5",
+      "studentId": "std-22603014",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 5,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603017-1",
+      "studentId": "std-22603017",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 1,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603017-2",
+      "studentId": "std-22603017",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 2,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603017-3",
+      "studentId": "std-22603017",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 3,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603017-4",
+      "studentId": "std-22603017",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 4,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603017-5",
+      "studentId": "std-22603017",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 5,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603020-1",
+      "studentId": "std-22603020",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 1,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603020-2",
+      "studentId": "std-22603020",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 2,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603020-3",
+      "studentId": "std-22603020",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 3,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603020-4",
+      "studentId": "std-22603020",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 4,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603020-5",
+      "studentId": "std-22603020",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 5,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603021-1",
+      "studentId": "std-22603021",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 1,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603021-2",
+      "studentId": "std-22603021",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 2,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603021-3",
+      "studentId": "std-22603021",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 3,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603021-4",
+      "studentId": "std-22603021",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 4,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603021-5",
+      "studentId": "std-22603021",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 5,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603025-1",
+      "studentId": "std-22603025",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 1,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603025-2",
+      "studentId": "std-22603025",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 2,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603025-3",
+      "studentId": "std-22603025",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 3,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603025-4",
+      "studentId": "std-22603025",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 4,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603025-5",
+      "studentId": "std-22603025",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 5,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603027-1",
+      "studentId": "std-22603027",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 1,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603027-2",
+      "studentId": "std-22603027",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 2,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603027-3",
+      "studentId": "std-22603027",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 3,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603027-4",
+      "studentId": "std-22603027",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 4,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P03-std-22603027-5",
+      "studentId": "std-22603027",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 5,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603001-1",
+      "studentId": "std-22603001",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 1,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603001-2",
+      "studentId": "std-22603001",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 2,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603001-3",
+      "studentId": "std-22603001",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 3,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603001-4",
+      "studentId": "std-22603001",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 4,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603001-5",
+      "studentId": "std-22603001",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 5,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603005-1",
+      "studentId": "std-22603005",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 1,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603005-2",
+      "studentId": "std-22603005",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 2,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603005-3",
+      "studentId": "std-22603005",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 3,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603005-4",
+      "studentId": "std-22603005",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 4,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603005-5",
+      "studentId": "std-22603005",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 5,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603007-1",
+      "studentId": "std-22603007",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 1,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603007-2",
+      "studentId": "std-22603007",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 2,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603007-3",
+      "studentId": "std-22603007",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 3,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603007-4",
+      "studentId": "std-22603007",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 4,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603007-5",
+      "studentId": "std-22603007",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 5,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603011-1",
+      "studentId": "std-22603011",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 1,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603011-2",
+      "studentId": "std-22603011",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 2,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603011-3",
+      "studentId": "std-22603011",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 3,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603011-4",
+      "studentId": "std-22603011",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 4,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603011-5",
+      "studentId": "std-22603011",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 5,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603013-1",
+      "studentId": "std-22603013",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 1,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603013-2",
+      "studentId": "std-22603013",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 2,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603013-3",
+      "studentId": "std-22603013",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 3,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603013-4",
+      "studentId": "std-22603013",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 4,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603013-5",
+      "studentId": "std-22603013",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 5,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603016-1",
+      "studentId": "std-22603016",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 1,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603016-2",
+      "studentId": "std-22603016",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 2,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603016-3",
+      "studentId": "std-22603016",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 3,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603016-4",
+      "studentId": "std-22603016",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 4,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603016-5",
+      "studentId": "std-22603016",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 5,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603018-1",
+      "studentId": "std-22603018",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 1,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603018-2",
+      "studentId": "std-22603018",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 2,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603018-3",
+      "studentId": "std-22603018",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 3,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603018-4",
+      "studentId": "std-22603018",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 4,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603018-5",
+      "studentId": "std-22603018",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 5,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603024-1",
+      "studentId": "std-22603024",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 1,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603024-2",
+      "studentId": "std-22603024",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 2,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603024-3",
+      "studentId": "std-22603024",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 3,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603024-4",
+      "studentId": "std-22603024",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 4,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603024-5",
+      "studentId": "std-22603024",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 5,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603028-1",
+      "studentId": "std-22603028",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 1,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603028-2",
+      "studentId": "std-22603028",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 2,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603028-3",
+      "studentId": "std-22603028",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 3,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603028-4",
+      "studentId": "std-22603028",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 4,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603028-5",
+      "studentId": "std-22603028",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 5,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603029-1",
+      "studentId": "std-22603029",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 1,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603029-2",
+      "studentId": "std-22603029",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 2,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603029-3",
+      "studentId": "std-22603029",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 3,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603029-4",
+      "studentId": "std-22603029",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 4,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603029-5",
+      "studentId": "std-22603029",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 5,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603031-1",
+      "studentId": "std-22603031",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 1,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603031-2",
+      "studentId": "std-22603031",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 2,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603031-3",
+      "studentId": "std-22603031",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 3,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603031-4",
+      "studentId": "std-22603031",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 4,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603031-5",
+      "studentId": "std-22603031",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 5,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603035-1",
+      "studentId": "std-22603035",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 1,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603035-2",
+      "studentId": "std-22603035",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 2,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603035-3",
+      "studentId": "std-22603035",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 3,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603035-4",
+      "studentId": "std-22603035",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 4,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P05-std-22603035-5",
+      "studentId": "std-22603035",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 5,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603002-1",
+      "studentId": "std-22603002",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 1,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603002-2",
+      "studentId": "std-22603002",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 2,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603002-3",
+      "studentId": "std-22603002",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 3,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603002-4",
+      "studentId": "std-22603002",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 4,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603002-5",
+      "studentId": "std-22603002",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 5,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603009-1",
+      "studentId": "std-22603009",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 1,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603009-2",
+      "studentId": "std-22603009",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 2,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603009-3",
+      "studentId": "std-22603009",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 3,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603009-4",
+      "studentId": "std-22603009",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 4,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603009-5",
+      "studentId": "std-22603009",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 5,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603015-1",
+      "studentId": "std-22603015",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 1,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603015-2",
+      "studentId": "std-22603015",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 2,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603015-3",
+      "studentId": "std-22603015",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 3,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603015-4",
+      "studentId": "std-22603015",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 4,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603015-5",
+      "studentId": "std-22603015",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 5,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603019-1",
+      "studentId": "std-22603019",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 1,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603019-2",
+      "studentId": "std-22603019",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 2,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603019-3",
+      "studentId": "std-22603019",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 3,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603019-4",
+      "studentId": "std-22603019",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 4,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603019-5",
+      "studentId": "std-22603019",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 5,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603022-1",
+      "studentId": "std-22603022",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 1,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603022-2",
+      "studentId": "std-22603022",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 2,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603022-3",
+      "studentId": "std-22603022",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 3,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603022-4",
+      "studentId": "std-22603022",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 4,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603022-5",
+      "studentId": "std-22603022",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 5,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603023-1",
+      "studentId": "std-22603023",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 1,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603023-2",
+      "studentId": "std-22603023",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 2,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603023-3",
+      "studentId": "std-22603023",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 3,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603023-4",
+      "studentId": "std-22603023",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 4,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603023-5",
+      "studentId": "std-22603023",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 5,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603026-1",
+      "studentId": "std-22603026",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 1,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603026-2",
+      "studentId": "std-22603026",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 2,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603026-3",
+      "studentId": "std-22603026",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 3,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603026-4",
+      "studentId": "std-22603026",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 4,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603026-5",
+      "studentId": "std-22603026",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 5,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603030-1",
+      "studentId": "std-22603030",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 1,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603030-2",
+      "studentId": "std-22603030",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 2,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603030-3",
+      "studentId": "std-22603030",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 3,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603030-4",
+      "studentId": "std-22603030",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 4,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603030-5",
+      "studentId": "std-22603030",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 5,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603032-1",
+      "studentId": "std-22603032",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 1,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603032-2",
+      "studentId": "std-22603032",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 2,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603032-3",
+      "studentId": "std-22603032",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 3,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603032-4",
+      "studentId": "std-22603032",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 4,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603032-5",
+      "studentId": "std-22603032",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 5,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603033-1",
+      "studentId": "std-22603033",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 1,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603033-2",
+      "studentId": "std-22603033",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 2,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603033-3",
+      "studentId": "std-22603033",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 3,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603033-4",
+      "studentId": "std-22603033",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 4,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603033-5",
+      "studentId": "std-22603033",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 5,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603034-1",
+      "studentId": "std-22603034",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 1,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603034-2",
+      "studentId": "std-22603034",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 2,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603034-3",
+      "studentId": "std-22603034",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 3,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603034-4",
+      "studentId": "std-22603034",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 4,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603034-5",
+      "studentId": "std-22603034",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 5,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603036-1",
+      "studentId": "std-22603036",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 1,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603036-2",
+      "studentId": "std-22603036",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 2,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603036-3",
+      "studentId": "std-22603036",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 3,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603036-4",
+      "studentId": "std-22603036",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 4,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "soft-CAD11-2026G-1C-P07-std-22603036-5",
+      "studentId": "std-22603036",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 5,
+      "scores": {
+        "c-soft-k1": 4,
+        "c-soft-k2": 4,
+        "c-soft-k3": 3,
+        "c-soft-k4": 3
+      },
+      "status": "lengkap",
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    }
+  ],
+  "attendanceRecords": [
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603003-1",
+      "studentId": "std-22603003",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 1,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603003-2",
+      "studentId": "std-22603003",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 2,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603003-3",
+      "studentId": "std-22603003",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 3,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603003-4",
+      "studentId": "std-22603003",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 4,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603003-5",
+      "studentId": "std-22603003",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 5,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603004-1",
+      "studentId": "std-22603004",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 1,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603004-2",
+      "studentId": "std-22603004",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 2,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603004-3",
+      "studentId": "std-22603004",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 3,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603004-4",
+      "studentId": "std-22603004",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 4,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603004-5",
+      "studentId": "std-22603004",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 5,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603006-1",
+      "studentId": "std-22603006",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 1,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603006-2",
+      "studentId": "std-22603006",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 2,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603006-3",
+      "studentId": "std-22603006",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 3,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603006-4",
+      "studentId": "std-22603006",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 4,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603006-5",
+      "studentId": "std-22603006",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 5,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603008-1",
+      "studentId": "std-22603008",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 1,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603008-2",
+      "studentId": "std-22603008",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 2,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603008-3",
+      "studentId": "std-22603008",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 3,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603008-4",
+      "studentId": "std-22603008",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 4,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603008-5",
+      "studentId": "std-22603008",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 5,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603010-1",
+      "studentId": "std-22603010",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 1,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603010-2",
+      "studentId": "std-22603010",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 2,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603010-3",
+      "studentId": "std-22603010",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 3,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603010-4",
+      "studentId": "std-22603010",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 4,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603010-5",
+      "studentId": "std-22603010",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 5,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603012-1",
+      "studentId": "std-22603012",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 1,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603012-2",
+      "studentId": "std-22603012",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 2,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603012-3",
+      "studentId": "std-22603012",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 3,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603012-4",
+      "studentId": "std-22603012",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 4,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603012-5",
+      "studentId": "std-22603012",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 5,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603014-1",
+      "studentId": "std-22603014",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 1,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603014-2",
+      "studentId": "std-22603014",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 2,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603014-3",
+      "studentId": "std-22603014",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 3,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603014-4",
+      "studentId": "std-22603014",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 4,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603014-5",
+      "studentId": "std-22603014",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 5,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603017-1",
+      "studentId": "std-22603017",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 1,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603017-2",
+      "studentId": "std-22603017",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 2,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603017-3",
+      "studentId": "std-22603017",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 3,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603017-4",
+      "studentId": "std-22603017",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 4,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603017-5",
+      "studentId": "std-22603017",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 5,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603020-1",
+      "studentId": "std-22603020",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 1,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603020-2",
+      "studentId": "std-22603020",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 2,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603020-3",
+      "studentId": "std-22603020",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 3,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603020-4",
+      "studentId": "std-22603020",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 4,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603020-5",
+      "studentId": "std-22603020",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 5,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603021-1",
+      "studentId": "std-22603021",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 1,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603021-2",
+      "studentId": "std-22603021",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 2,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603021-3",
+      "studentId": "std-22603021",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 3,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603021-4",
+      "studentId": "std-22603021",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 4,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603021-5",
+      "studentId": "std-22603021",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 5,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603025-1",
+      "studentId": "std-22603025",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 1,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603025-2",
+      "studentId": "std-22603025",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 2,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603025-3",
+      "studentId": "std-22603025",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 3,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603025-4",
+      "studentId": "std-22603025",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 4,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603025-5",
+      "studentId": "std-22603025",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 5,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603027-1",
+      "studentId": "std-22603027",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 1,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603027-2",
+      "studentId": "std-22603027",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 2,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603027-3",
+      "studentId": "std-22603027",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 3,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603027-4",
+      "studentId": "std-22603027",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 4,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P03-std-22603027-5",
+      "studentId": "std-22603027",
+      "offeringId": "CAD11-2026G-1C-P03",
+      "sessionOrdinal": 5,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603001-1",
+      "studentId": "std-22603001",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 1,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603001-2",
+      "studentId": "std-22603001",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 2,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603001-3",
+      "studentId": "std-22603001",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 3,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603001-4",
+      "studentId": "std-22603001",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 4,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603001-5",
+      "studentId": "std-22603001",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 5,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603005-1",
+      "studentId": "std-22603005",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 1,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603005-2",
+      "studentId": "std-22603005",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 2,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603005-3",
+      "studentId": "std-22603005",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 3,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603005-4",
+      "studentId": "std-22603005",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 4,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603005-5",
+      "studentId": "std-22603005",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 5,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603007-1",
+      "studentId": "std-22603007",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 1,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603007-2",
+      "studentId": "std-22603007",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 2,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603007-3",
+      "studentId": "std-22603007",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 3,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603007-4",
+      "studentId": "std-22603007",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 4,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603007-5",
+      "studentId": "std-22603007",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 5,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603011-1",
+      "studentId": "std-22603011",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 1,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603011-2",
+      "studentId": "std-22603011",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 2,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603011-3",
+      "studentId": "std-22603011",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 3,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603011-4",
+      "studentId": "std-22603011",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 4,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603011-5",
+      "studentId": "std-22603011",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 5,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603013-1",
+      "studentId": "std-22603013",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 1,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603013-2",
+      "studentId": "std-22603013",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 2,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603013-3",
+      "studentId": "std-22603013",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 3,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603013-4",
+      "studentId": "std-22603013",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 4,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603013-5",
+      "studentId": "std-22603013",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 5,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603016-1",
+      "studentId": "std-22603016",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 1,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603016-2",
+      "studentId": "std-22603016",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 2,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603016-3",
+      "studentId": "std-22603016",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 3,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603016-4",
+      "studentId": "std-22603016",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 4,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603016-5",
+      "studentId": "std-22603016",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 5,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603018-1",
+      "studentId": "std-22603018",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 1,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603018-2",
+      "studentId": "std-22603018",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 2,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603018-3",
+      "studentId": "std-22603018",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 3,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603018-4",
+      "studentId": "std-22603018",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 4,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603018-5",
+      "studentId": "std-22603018",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 5,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.551Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603024-1",
+      "studentId": "std-22603024",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 1,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603024-2",
+      "studentId": "std-22603024",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 2,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603024-3",
+      "studentId": "std-22603024",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 3,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603024-4",
+      "studentId": "std-22603024",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 4,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603024-5",
+      "studentId": "std-22603024",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 5,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603028-1",
+      "studentId": "std-22603028",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 1,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603028-2",
+      "studentId": "std-22603028",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 2,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603028-3",
+      "studentId": "std-22603028",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 3,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603028-4",
+      "studentId": "std-22603028",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 4,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603028-5",
+      "studentId": "std-22603028",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 5,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603029-1",
+      "studentId": "std-22603029",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 1,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603029-2",
+      "studentId": "std-22603029",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 2,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603029-3",
+      "studentId": "std-22603029",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 3,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603029-4",
+      "studentId": "std-22603029",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 4,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603029-5",
+      "studentId": "std-22603029",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 5,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603031-1",
+      "studentId": "std-22603031",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 1,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603031-2",
+      "studentId": "std-22603031",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 2,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603031-3",
+      "studentId": "std-22603031",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 3,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603031-4",
+      "studentId": "std-22603031",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 4,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603031-5",
+      "studentId": "std-22603031",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 5,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603035-1",
+      "studentId": "std-22603035",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 1,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603035-2",
+      "studentId": "std-22603035",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 2,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603035-3",
+      "studentId": "std-22603035",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 3,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603035-4",
+      "studentId": "std-22603035",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 4,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P05-std-22603035-5",
+      "studentId": "std-22603035",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 5,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603002-1",
+      "studentId": "std-22603002",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 1,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603002-2",
+      "studentId": "std-22603002",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 2,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603002-3",
+      "studentId": "std-22603002",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 3,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603002-4",
+      "studentId": "std-22603002",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 4,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603002-5",
+      "studentId": "std-22603002",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 5,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603009-1",
+      "studentId": "std-22603009",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 1,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603009-2",
+      "studentId": "std-22603009",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 2,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603009-3",
+      "studentId": "std-22603009",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 3,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603009-4",
+      "studentId": "std-22603009",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 4,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603009-5",
+      "studentId": "std-22603009",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 5,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603015-1",
+      "studentId": "std-22603015",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 1,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603015-2",
+      "studentId": "std-22603015",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 2,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603015-3",
+      "studentId": "std-22603015",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 3,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603015-4",
+      "studentId": "std-22603015",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 4,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603015-5",
+      "studentId": "std-22603015",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 5,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603019-1",
+      "studentId": "std-22603019",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 1,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603019-2",
+      "studentId": "std-22603019",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 2,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603019-3",
+      "studentId": "std-22603019",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 3,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603019-4",
+      "studentId": "std-22603019",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 4,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603019-5",
+      "studentId": "std-22603019",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 5,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603022-1",
+      "studentId": "std-22603022",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 1,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603022-2",
+      "studentId": "std-22603022",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 2,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603022-3",
+      "studentId": "std-22603022",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 3,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603022-4",
+      "studentId": "std-22603022",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 4,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603022-5",
+      "studentId": "std-22603022",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 5,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603023-1",
+      "studentId": "std-22603023",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 1,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603023-2",
+      "studentId": "std-22603023",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 2,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603023-3",
+      "studentId": "std-22603023",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 3,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603023-4",
+      "studentId": "std-22603023",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 4,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603023-5",
+      "studentId": "std-22603023",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 5,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603026-1",
+      "studentId": "std-22603026",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 1,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603026-2",
+      "studentId": "std-22603026",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 2,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603026-3",
+      "studentId": "std-22603026",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 3,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603026-4",
+      "studentId": "std-22603026",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 4,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603026-5",
+      "studentId": "std-22603026",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 5,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603030-1",
+      "studentId": "std-22603030",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 1,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603030-2",
+      "studentId": "std-22603030",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 2,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603030-3",
+      "studentId": "std-22603030",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 3,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603030-4",
+      "studentId": "std-22603030",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 4,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603030-5",
+      "studentId": "std-22603030",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 5,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603032-1",
+      "studentId": "std-22603032",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 1,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603032-2",
+      "studentId": "std-22603032",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 2,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603032-3",
+      "studentId": "std-22603032",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 3,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603032-4",
+      "studentId": "std-22603032",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 4,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603032-5",
+      "studentId": "std-22603032",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 5,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603033-1",
+      "studentId": "std-22603033",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 1,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603033-2",
+      "studentId": "std-22603033",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 2,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603033-3",
+      "studentId": "std-22603033",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 3,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603033-4",
+      "studentId": "std-22603033",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 4,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603033-5",
+      "studentId": "std-22603033",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 5,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603034-1",
+      "studentId": "std-22603034",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 1,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603034-2",
+      "studentId": "std-22603034",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 2,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603034-3",
+      "studentId": "std-22603034",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 3,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603034-4",
+      "studentId": "std-22603034",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 4,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603034-5",
+      "studentId": "std-22603034",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 5,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603036-1",
+      "studentId": "std-22603036",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 1,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603036-2",
+      "studentId": "std-22603036",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 2,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603036-3",
+      "studentId": "std-22603036",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 3,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603036-4",
+      "studentId": "std-22603036",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 4,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "att-CAD11-2026G-1C-P07-std-22603036-5",
+      "studentId": "std-22603036",
+      "offeringId": "CAD11-2026G-1C-P07",
+      "sessionOrdinal": 5,
+      "status": "hadir",
+      "score": 4,
+      "updatedAt": "2026-08-31T09:57:57.552Z",
+      "revision": 1
+    },
+    {
+      "id": "rec-att-std-22603001-h5",
+      "studentId": "std-22603001",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 5,
+      "status": "tidak_hadir",
+      "notes": "Hadir tepat waktu 08:00 WITA",
+      "updatedAt": "2026-08-31T12:12:33.409Z",
+      "revision": 13
+    },
+    {
+      "id": "rec-att-std-22603001-h1",
+      "studentId": "std-22603001",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 1,
+      "status": "hadir",
+      "notes": "Hadir tepat waktu 08:00 WITA",
+      "updatedAt": "2026-08-31T12:12:17.366Z",
+      "revision": 4
+    },
+    {
+      "id": "rec-att-std-22603001-h4",
+      "studentId": "std-22603001",
+      "offeringId": "CAD11-2026G-1C-P05",
+      "sessionOrdinal": 4,
+      "status": "hadir",
+      "notes": "Hadir tepat waktu 08:00 WITA",
+      "updatedAt": "2026-08-31T12:12:29.422Z",
+      "revision": 4
+    }
+  ],
+  "snapshots": [],
+  "auditEvents": [
+    {
+      "id": "audit-1788170277552",
+      "timestamp": "2026-08-31T09:57:57.552Z",
+      "actor": "System Auto-Seed",
+      "action": "init_database",
+      "targetType": "system",
+      "targetId": "CAD11-R1",
+      "details": "Database seeded with 36 students, 3 offerings, and CAD11-R1 practice version."
+    },
+    {
+      "id": "audit-1788171835042",
+      "timestamp": "2026-08-31T10:23:55.042Z",
+      "actor": "Instruktur",
+      "action": "toggle_roster_verification",
+      "targetType": "offering",
+      "targetId": "CAD11-2026G-1C-P03",
+      "details": "Status verifikasi roster diubah menjadi: BELUM TERVERIFIKASI"
+    },
+    {
+      "id": "audit-1788171835974",
+      "timestamp": "2026-08-31T10:23:55.974Z",
+      "actor": "Instruktur",
+      "action": "toggle_roster_verification",
+      "targetType": "offering",
+      "targetId": "CAD11-2026G-1C-P03",
+      "details": "Status verifikasi roster diubah menjadi: TERVERIFIKASI"
+    },
+    {
+      "id": "audit-1788171837313",
+      "timestamp": "2026-08-31T10:23:57.313Z",
+      "actor": "Instruktur",
+      "action": "toggle_dates_verification",
+      "targetType": "offering",
+      "targetId": "CAD11-2026G-1C-P03",
+      "details": "Status verifikasi tanggal diubah menjadi: BELUM TERVERIFIKASI"
+    },
+    {
+      "id": "audit-1788171838396",
+      "timestamp": "2026-08-31T10:23:58.396Z",
+      "actor": "Instruktur",
+      "action": "toggle_dates_verification",
+      "targetType": "offering",
+      "targetId": "CAD11-2026G-1C-P03",
+      "details": "Status verifikasi tanggal diubah menjadi: TERVERIFIKASI"
+    },
+    {
+      "id": "audit-1788178030101",
+      "timestamp": "2026-08-31T12:07:10.101Z",
+      "actor": "Instruktur",
+      "action": "toggle_roster_verification",
+      "targetType": "offering",
+      "targetId": "CAD11-2026G-1C-P05",
+      "details": "Status verifikasi roster diubah menjadi: TERVERIFIKASI"
+    },
+    {
+      "id": "audit-1788178034508",
+      "timestamp": "2026-08-31T12:07:14.508Z",
+      "actor": "Instruktur",
+      "action": "toggle_roster_verification",
+      "targetType": "offering",
+      "targetId": "CAD11-2026G-1C-P05",
+      "details": "Status verifikasi roster diubah menjadi: BELUM TERVERIFIKASI"
+    },
+    {
+      "id": "audit-1788178035656",
+      "timestamp": "2026-08-31T12:07:15.656Z",
+      "actor": "Instruktur",
+      "action": "toggle_roster_verification",
+      "targetType": "offering",
+      "targetId": "CAD11-2026G-1C-P05",
+      "details": "Status verifikasi roster diubah menjadi: TERVERIFIKASI"
+    }
+  ]
+}
