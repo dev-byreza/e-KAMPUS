@@ -78,72 +78,14 @@ class Database {
   }
 
   private seed() {
-    console.log('Seeding initial data (36 students, offerings, CAD11-R1)...');
+    console.log('Seeding clean master data (36 students, offerings, CAD11-R1)...');
     this.data.students = [...SEED_STUDENTS];
     this.data.offerings = [...SEED_OFFERINGS];
     this.data.practiceVersions = [...SEED_PRACTICE_VERSIONS];
-
-    // Seed initial PDF records and soft skills for students
-    const initialPdfs: PdfGradeRecord[] = [];
-    const initialSofts: SoftSkillGradeRecord[] = [];
-    const initialAtts: AttendanceRecord[] = [];
-
-    SEED_OFFERINGS.forEach((off) => {
-      off.studentIds.forEach((stdId) => {
-        // PDF record
-        initialPdfs.push({
-          id: `pdf-${off.id}-${stdId}`,
-          studentId: stdId,
-          offeringId: off.id,
-          submissionStatus: 'dikumpulkan',
-          inspectionStatus: 'diterima',
-          scores: {
-            'c-pdf-k1': 4,
-            'c-pdf-k2': 3,
-            'c-pdf-k3': 4,
-            'c-pdf-k4': 3,
-          },
-          updatedAt: new Date().toISOString(),
-          revision: 1,
-        });
-
-        // 5 Days Attendance
-        for (let ord = 1; ord <= 5; ord++) {
-          initialAtts.push({
-            id: `att-${off.id}-${stdId}-${ord}`,
-            studentId: stdId,
-            offeringId: off.id,
-            sessionOrdinal: ord,
-            status: 'hadir',
-            score: 4,
-            updatedAt: new Date().toISOString(),
-            revision: 1,
-          });
-
-          // Soft skill
-          initialSofts.push({
-            id: `soft-${off.id}-${stdId}-${ord}`,
-            studentId: stdId,
-            offeringId: off.id,
-            sessionOrdinal: ord,
-            scores: {
-              'c-soft-k1': 4,
-              'c-soft-k2': 4,
-              'c-soft-k3': 3,
-              'c-soft-k4': 3,
-            },
-            status: 'lengkap',
-            updatedAt: new Date().toISOString(),
-            revision: 1,
-          });
-        }
-      });
-    });
-
-    this.data.pdfRecords = initialPdfs;
-    this.data.softSkillRecords = initialSofts;
-    this.data.attendanceRecords = initialAtts;
-
+    this.data.exerciseRecords = [];
+    this.data.pdfRecords = [];
+    this.data.softSkillRecords = [];
+    this.data.attendanceRecords = [];
     // Log seed event
     this.data.auditEvents.push({
       id: `audit-${Date.now()}`,

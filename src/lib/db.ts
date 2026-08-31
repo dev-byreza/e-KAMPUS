@@ -438,197 +438,39 @@ export const INITIAL_PRACTICE_VERSIONS: PracticeVersion[] = [
   },
 ];
 
-// Helper to generate seed assessment records for Pekan 5 (Section 10.3 Sample Example verification)
+// Helper to generate seed assessment records (Clean state: empty arrays)
 export function generateSeedRecords() {
-  const exRecords: ExerciseGradeRecord[] = [];
-  const pdfRecords: PdfGradeRecord[] = [];
-  const softRecords: SoftSkillGradeRecord[] = [];
-  const attRecords: AttendanceRecord[] = [];
+  return {
+    exRecords: [] as ExerciseGradeRecord[],
+    pdfRecords: [] as PdfGradeRecord[],
+    softRecords: [] as SoftSkillGradeRecord[],
+    attRecords: [] as AttendanceRecord[],
+  };
+}
 
-  const offeringP05 = INITIAL_OFFERINGS[1]; // Pekan 5
-  const stdFawzan = 'std-22603001'; // Achmad Fawzan
+/**
+ * Clears all assessment records from database to start fresh.
+ */
+export async function clearAllGradeData(): Promise<void> {
+  await db.exerciseRecords.clear();
+  await db.pdfRecords.clear();
+  await db.softSkillRecords.clear();
+  await db.attendanceRecords.clear();
+  await db.snapshots.clear();
+}
 
-  // 1. Fawzan's sample data according to PRD section 10.3:
-  // Latihan: K1=4, K2=3, K3=3, K4=4 (Weighted = 3.40 -> 85.00) for all L01-L10
-  for (let i = 1; i <= 10; i++) {
-    const exCode = `L${i < 10 ? '0' + i : i}`;
-    const exId = `ex-${exCode.toLowerCase()}`;
-    exRecords.push({
-      id: `rec-ex-${stdFawzan}-${exId}`,
-      studentId: stdFawzan,
-      offeringId: offeringP05.id,
-      exerciseId: exId,
-      scores: {
-        'crit-ex-k1': 4,
-        'crit-ex-k2': 3,
-        'crit-ex-k3': 3,
-        'crit-ex-k4': 4,
-      },
-      status: 'dinilai',
-      notes: 'Pengerjaan geometri dan dimensi sangat konsisten.',
-      updatedAt: '2026-08-31T09:15:00Z',
-      revision: 1,
-    });
-  }
+/**
+ * Resets entire database to clean initial state with 36 students.
+ */
+export async function resetDatabase(): Promise<void> {
+  await db.students.clear();
+  await db.offerings.clear();
+  await db.practiceVersions.clear();
+  await clearAllGradeData();
 
-  // PDF for Fawzan: K1=4, K2=3, K3=4, K4=3 (Weighted = 3.60 -> 90.00), Inspection: Diterima
-  pdfRecords.push({
-    id: `rec-pdf-${stdFawzan}`,
-    studentId: stdFawzan,
-    offeringId: offeringP05.id,
-    artifacts: [
-      {
-        id: 'art-fawzan-v1',
-        version: 1,
-        fileName: 'CAD1.1_1C_22603001_Achmad_Fawzan.pdf',
-        fileSize: 4820192,
-        uploadedAt: '2026-08-31T08:30:00Z',
-        uploadedBy: 'Instruktur',
-        fileUrl: '#',
-      },
-    ],
-    activeArtifactVersion: 1,
-    submissionStatus: 'dikumpulkan',
-    inspectionStatus: 'diterima',
-    scores: {
-      'crit-pdf-k1': 4,
-      'crit-pdf-k2': 3,
-      'crit-pdf-k3': 4,
-      'crit-pdf-k4': 3,
-    },
-    notes: 'Kertas A4 landscape terpusat, garis etiket terbaca rapi.',
-    updatedAt: '2026-08-31T09:20:00Z',
-    revision: 1,
-  });
-
-  // Soft skill for Fawzan: H1-H5 K1=4, K2=4, K3=3, K4=3 (Weighted = 3.50 -> 87.50)
-  for (let ord = 1; ord <= 5; ord++) {
-    softRecords.push({
-      id: `rec-soft-${stdFawzan}-h${ord}`,
-      studentId: stdFawzan,
-      offeringId: offeringP05.id,
-      sessionOrdinal: ord,
-      scores: {
-        'crit-soft-k1': 4,
-        'crit-soft-k2': 4,
-        'crit-soft-k3': 3,
-        'crit-soft-k4': 3,
-      },
-      status: 'dinilai',
-      notes: 'Fokus dan menjaga kebersihan workstation.',
-      updatedAt: '2026-08-31T09:22:00Z',
-      revision: 1,
-    });
-  }
-
-  // Attendance for Fawzan: 5 days Hadir (Skor 4 -> 100.00)
-  for (let ord = 1; ord <= 5; ord++) {
-    attRecords.push({
-      id: `rec-att-${stdFawzan}-h${ord}`,
-      studentId: stdFawzan,
-      offeringId: offeringP05.id,
-      sessionOrdinal: ord,
-      status: 'hadir',
-      notes: 'Hadir tepat waktu 08:00 WITA',
-      updatedAt: '2026-08-31T09:00:00Z',
-      revision: 1,
-    });
-  }
-
-  // Seed sample grades for other students in Pekan 5 to create realistic dashboard stats
-  const otherP05Students = offeringP05.studentIds.slice(1);
-  otherP05Students.forEach((stId, idx) => {
-    // Fill first 6 exercises for everyone
-    for (let i = 1; i <= 6; i++) {
-      const exCode = `L${i < 10 ? '0' + i : i}`;
-      const exId = `ex-${exCode.toLowerCase()}`;
-      const isAlt = (idx + i) % 3 === 0;
-      exRecords.push({
-        id: `rec-ex-${stId}-${exId}`,
-        studentId: stId,
-        offeringId: offeringP05.id,
-        exerciseId: exId,
-        scores: {
-          'crit-ex-k1': isAlt ? 3 : 4,
-          'crit-ex-k2': isAlt ? 3 : 4,
-          'crit-ex-k3': isAlt ? 4 : 3,
-          'crit-ex-k4': 4,
-        },
-        status: 'dinilai',
-        notes: isAlt ? 'Perlu ketelitian fillet.' : 'Bagus.',
-        updatedAt: '2026-08-31T09:30:00Z',
-        revision: 1,
-      });
-    }
-
-    // PDF record
-    if (idx < 8) {
-      pdfRecords.push({
-        id: `rec-pdf-${stId}`,
-        studentId: stId,
-        offeringId: offeringP05.id,
-        artifacts: [
-          {
-            id: `art-${stId}-v1`,
-            version: 1,
-            fileName: `CAD1.1_1C_${stId.replace('std-', '')}.pdf`,
-            fileSize: 3200000,
-            uploadedAt: '2026-08-31T08:45:00Z',
-            uploadedBy: 'Instruktur',
-            fileUrl: '#',
-          },
-        ],
-        activeArtifactVersion: 1,
-        submissionStatus: 'dikumpulkan',
-        inspectionStatus: idx < 6 ? 'diterima' : 'perlu_revisi',
-        scores: {
-          'crit-pdf-k1': 3,
-          'crit-pdf-k2': idx < 6 ? 4 : 2,
-          'crit-pdf-k3': 3,
-          'crit-pdf-k4': 4,
-        },
-        notes: idx < 6 ? 'Diterima.' : 'Etiket skala belum disesuaikan.',
-        updatedAt: '2026-08-31T09:35:00Z',
-        revision: 1,
-      });
-    }
-
-    // Soft skill H1..H3
-    for (let ord = 1; ord <= 3; ord++) {
-      softRecords.push({
-        id: `rec-soft-${stId}-h${ord}`,
-        studentId: stId,
-        offeringId: offeringP05.id,
-        sessionOrdinal: ord,
-        scores: {
-          'crit-soft-k1': 4,
-          'crit-soft-k2': 3,
-          'crit-soft-k3': 3,
-          'crit-soft-k4': 4,
-        },
-        status: 'dinilai',
-        notes: 'Mengikuti panduan dengan baik.',
-        updatedAt: '2026-08-31T09:40:00Z',
-        revision: 1,
-      });
-    }
-
-    // Attendance H1..H3
-    for (let ord = 1; ord <= 3; ord++) {
-      attRecords.push({
-        id: `rec-att-${stId}-h${ord}`,
-        studentId: stId,
-        offeringId: offeringP05.id,
-        sessionOrdinal: ord,
-        status: 'hadir',
-        notes: '',
-        updatedAt: '2026-08-31T09:05:00Z',
-        revision: 1,
-      });
-    }
-  });
-
-  return { exRecords, pdfRecords, softRecords, attRecords };
+  await db.students.bulkAdd(INITIAL_STUDENTS);
+  await db.offerings.bulkAdd(INITIAL_OFFERINGS);
+  await db.practiceVersions.bulkAdd(INITIAL_PRACTICE_VERSIONS);
 }
 
 /**
@@ -640,12 +482,6 @@ export async function initializeDatabase(): Promise<void> {
     await db.students.bulkAdd(INITIAL_STUDENTS);
     await db.offerings.bulkAdd(INITIAL_OFFERINGS);
     await db.practiceVersions.bulkAdd(INITIAL_PRACTICE_VERSIONS);
-
-    const seeds = generateSeedRecords();
-    await db.exerciseRecords.bulkAdd(seeds.exRecords);
-    await db.pdfRecords.bulkAdd(seeds.pdfRecords);
-    await db.softSkillRecords.bulkAdd(seeds.softRecords);
-    await db.attendanceRecords.bulkAdd(seeds.attRecords);
 
     // Initial audit event
     await db.auditEvents.add({

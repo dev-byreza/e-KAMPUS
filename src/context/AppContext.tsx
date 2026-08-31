@@ -127,7 +127,18 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
       } catch (err) {
         console.info('[Sync] Running in local offline-first mode with Dexie IndexedDB.');
         setIsServerConnected(false);
-      } finally {
+        // Clear dummy assessment data if present from previous sessions
+        const dummyCleanupKey = 'cad11_dummy_data_cleaned_v2';
+        if (!localStorage.getItem(dummyCleanupKey)) {
+          await db.exerciseRecords.clear().catch(() => {});
+          await db.pdfRecords.clear().catch(() => {});
+          await db.softSkillRecords.clear().catch(() => {});
+          await db.attendanceRecords.clear().catch(() => {});
+          await db.snapshots.clear().catch(() => {});
+          localStorage.setItem(dummyCleanupKey, 'true');
+          console.info('[Init] Data dummy nilai berhasil dibersihkan.');
+        }
+
         // Force sync instructorName in local Dexie
         await db.offerings.toCollection().modify((off) => {
           if (!off.instructorName || off.instructorName.includes('Fahlevi')) {
