@@ -1159,5 +1159,114 @@
   "softSkillRecords": [],
   "attendanceRecords": [],
   "snapshots": [],
-  "auditEvents": []
+  "auditEvents": [
+    {
+      "id": "audit-1788170277552",
+      "timestamp": "2026-08-31T09:57:57.552Z",
+      "actor": "System Auto-Seed",
+      "action": "init_database",
+      "targetType": "system",
+      "targetId": "CAD11-R1",
+      "details": "Database seeded with 36 students, 3 offerings, and CAD11-R1 practice version."
+    },
+    {
+      "id": "audit-1788171835042",
+      "timestamp": "2026-08-31T10:23:55.042Z",
+      "actor": "Instruktur",
+      "action": "toggle_roster_verification",
+      "targetType": "offering",
+      "targetId": "CAD11-2026G-1C-P03",
+      "details": "Status verifikasi roster diubah menjadi: BELUM TERVERIFIKASI"
+    },
+    {
+      "id": "audit-1788171835974",
+      "timestamp": "2026-08-31T10:23:55.974Z",
+      "actor": "Instruktur",
+      "action": "toggle_roster_verification",
+      "targetType": "offering",
+      "targetId": "CAD11-2026G-1C-P03",
+      "details": "Status verifikasi roster diubah menjadi: TERVERIFIKASI"
+    },
+    {
+      "id": "audit-1788171837313",
+      "timestamp": "2026-08-31T10:23:57.313Z",
+      "actor": "Instruktur",
+      "action": "toggle_dates_verification",
+      "targetType": "offering",
+      "targetId": "CAD11-2026G-1C-P03",
+      "details": "Status verifikasi tanggal diubah menjadi: BELUM TERVERIFIKASI"
+    },
+    {
+      "id": "audit-1788171838396",
+      "timestamp": "2026-08-31T10:23:58.396Z",
+      "actor": "Instruktur",
+      "action": "toggle_dates_verification",
+      "targetType": "offering",
+      "targetId": "CAD11-2026G-1C-P03",
+      "details": "Status verifikasi tanggal diubah menjadi: TERVERIFIKASI"
+    },
+    {
+      "id": "audit-1788178030101",
+      "timestamp": "2026-08-31T12:07:10.101Z",
+      "actor": "Instruktur",
+      "action": "toggle_roster_verification",
+      "targetType": "offering",
+      "targetId": "CAD11-2026G-1C-P05",
+      "details": "Status verifikasi roster diubah menjadi: TERVERIFIKASI"
+    },
+    {
+      "id": "audit-1788178034508",
+      "timestamp": "2026-08-31T12:07:14.508Z",
+      "actor": "Instruktur",
+      "action": "toggle_roster_verification",
+      "targetType": "offering",
+      "targetId": "CAD11-2026G-1C-P05",
+      "details": "Status verifikasi roster diubah menjadi: BELUM TERVERIFIKASI"
+    },
+    {
+      "id": "audit-1788178035656",
+      "timestamp": "2026-08-31T12:07:15.656Z",
+      "actor": "Instruktur",
+      "action": "toggle_roster_verification",
+      "targetType": "offering",
+      "targetId": "CAD11-2026G-1C-P05",
+      "details": "Status verifikasi roster diubah menjadi: TERVERIFIKASI"
+    },
+    {
+      "id": "audit-1788181912139",
+      "timestamp": "2026-08-31T13:11:52.139Z",
+      "actor": "System Auto-Seed",
+      "action": "init_database",
+      "targetType": "system",
+      "targetId": "CAD11-R1",
+      "details": "Database seeded with 36 students, 3 offerings, and CAD11-R1 practice version."
+    },
+    {
+      "id": "audit-1788181919362",
+      "timestamp": "2026-08-31T13:11:59.362Z",
+      "actor": "System Auto-Seed",
+      "action": "init_database",
+      "targetType": "system",
+      "targetId": "CAD11-R1",
+      "details": "Database seeded with 36 students, 3 offerings, and CAD11-R1 practice version."
+    },
+    {
+      "id": "audit-1788182212827",
+      "timestamp": "2026-08-31T13:16:52.827Z",
+      "actor": "System Auto-Seed",
+      "action": "init_database",
+      "targetType": "system",
+      "targetId": "CAD11-R1",
+      "details": "Database seeded with 36 students, 3 offerings, and CAD11-R1 practice version."
+    },
+    {
+      "id": "audit-1788182231458",
+      "timestamp": "2026-08-31T13:17:11.458Z",
+      "actor": "System Auto-Seed",
+      "action": "init_database",
+      "targetType": "system",
+      "targetId": "CAD11-R1",
+      "details": "Database seeded with 36 students, 3 offerings, and CAD11-R1 practice version."
+    }
+  ]
 }

@@ -18,17 +18,22 @@ const MainContent: React.FC = () => {
   const { role, view, setView, toastMessage, clearToast } = useApp();
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
 
-  // Sync and listen for #kumpul-tugas URL hash
+  // Sync and listen for /kumpul-tugas or #kumpul-tugas URL routing
   React.useEffect(() => {
-    const handleHash = () => {
+    const handleRouting = () => {
+      const path = window.location.pathname.toLowerCase();
       const hash = window.location.hash.toLowerCase();
-      if (hash.includes('kumpul-tugas') || hash.includes('portal')) {
+      if (path.includes('kumpul-tugas') || hash.includes('kumpul-tugas') || hash.includes('portal')) {
         setView('portal_mahasiswa');
       }
     };
-    handleHash();
-    window.addEventListener('hashchange', handleHash);
-    return () => window.removeEventListener('hashchange', handleHash);
+    handleRouting();
+    window.addEventListener('hashchange', handleRouting);
+    window.addEventListener('popstate', handleRouting);
+    return () => {
+      window.removeEventListener('hashchange', handleRouting);
+      window.removeEventListener('popstate', handleRouting);
+    };
   }, [setView]);
 
   // If viewing student portal, provide a clean dedicated layout

@@ -27,7 +27,7 @@ export const SharePortalModal: React.FC<SharePortalModalProps> = ({
 
   if (!isOpen) return null;
 
-  const portalUrl = `${window.location.origin}/#kumpul-tugas`;
+  const portalUrl = `${window.location.origin}/kumpul-tugas`;
 
   const handleCopy = () => {
     navigator.clipboard.writeText(portalUrl);
@@ -38,7 +38,7 @@ export const SharePortalModal: React.FC<SharePortalModalProps> = ({
 
   const handleOpenPortal = () => {
     onClose();
-    window.open(`${window.location.origin}/#kumpul-tugas`, '_blank');
+    window.open(`${window.location.origin}/kumpul-tugas`, '_blank');
   };
 
   return createPortal(
