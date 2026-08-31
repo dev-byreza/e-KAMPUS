@@ -263,14 +263,16 @@ export const Sidebar: React.FC<SidebarProps> = ({ isCollapsed, setIsCollapsed })
         )}
 
         {/* Instructor Profile Card */}
-        {!isCollapsed && activeOffering && (
+        {!isCollapsed && (
           <div className="p-2.5 rounded-2xl bg-slate-900/60 border border-slate-800/60 flex items-center gap-2.5">
             <div className="w-8 h-8 rounded-xl bg-indigo-950 border border-indigo-700/50 flex items-center justify-center text-indigo-300 font-bold text-xs shrink-0">
               RF
             </div>
             <div className="truncate">
-              <div className="text-xs font-bold text-white truncate">
-                {activeOffering.instructorName}
+              <div className="text-xs font-bold text-white truncate" title="Reza Febriadi Rauf, A.Md.T">
+                {activeOffering?.instructorName && !activeOffering.instructorName.includes('Fahlevi')
+                  ? activeOffering.instructorName
+                  : 'Reza Febriadi Rauf, A.Md.T'}
               </div>
               <div className="text-[10px] text-slate-400 font-medium">
                 Instruktur

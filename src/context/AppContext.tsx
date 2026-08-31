@@ -127,6 +127,13 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
       } catch (err) {
         console.info('[Sync] Running in local offline-first mode with Dexie IndexedDB.');
         setIsServerConnected(false);
+      } finally {
+        // Force sync instructorName in local Dexie
+        await db.offerings.toCollection().modify((off) => {
+          if (!off.instructorName || off.instructorName.includes('Fahlevi')) {
+            off.instructorName = 'Reza Febriadi Rauf, A.Md.T';
+          }
+        }).catch(() => {});
       }
     };
 
