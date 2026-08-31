@@ -1,7 +1,13 @@
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
-import {
+/**
+ * database.ts — Drizzle ORM query helpers replacing the old JSON-file Database class.
+ *
+ * All exported functions are async and return typed data matching
+ * the existing route contracts so routes need minimal changes.
+ */
+import { eq, and } from 'drizzle-orm';
+import { db } from './client';
+import * as t from './schema';
+import type {
   Student,
   Offering,
   PracticeVersion,
@@ -12,137 +18,198 @@ import {
   GradeSnapshot,
   AuditEvent,
 } from '../../../src/types/assessment';
-import {
-  SEED_STUDENTS,
-  SEED_OFFERINGS,
-  SEED_PRACTICE_VERSIONS,
-} from './seedData';
 
-interface DatabaseSchema {
-  students: Student[];
-  offerings: Offering[];
-  practiceVersions: PracticeVersion[];
-  exerciseRecords: ExerciseGradeRecord[];
-  pdfRecords: PdfGradeRecord[];
-  softSkillRecords: SoftSkillGradeRecord[];
-  attendanceRecords: AttendanceRecord[];
-  snapshots: GradeSnapshot[];
-  auditEvents: AuditEvent[];
+// ─────────────────────────────────────────────────────────────────
+// STUDENTS
+// ─────────────────────────────────────────────────────────────────
+export async function getStudents(): Promise<Student[]> {
+  return db.select().from(t.students) as Promise<Student[]>;
 }
 
-const DATA_DIR = path.resolve(process.cwd(), 'server', 'data');
-const DB_FILE = path.join(DATA_DIR, 'db.json');
-
-class Database {
-  private data: DatabaseSchema = {
-    students: [],
-    offerings: [],
-    practiceVersions: [],
-    exerciseRecords: [],
-    pdfRecords: [],
-    softSkillRecords: [],
-    attendanceRecords: [],
-    snapshots: [],
-    auditEvents: [],
-  };
-
-  constructor() {
-    this.init();
-  }
-
-  private init() {
-    try {
-      if (!fs.existsSync(DATA_DIR)) {
-        fs.mkdirSync(DATA_DIR, { recursive: true });
-      }
-
-      if (fs.existsSync(DB_FILE)) {
-        const fileContent = fs.readFileSync(DB_FILE, 'utf-8');
-        this.data = JSON.parse(fileContent);
-
-        // Ensure practiceVersions has complete attendancePolicy and exerciseCriteria
-        const defaultVer = this.data.practiceVersions?.find((pv) => pv.id === 'CAD11-R1');
-        if (!defaultVer || !defaultVer.attendancePolicy) {
-          this.data.practiceVersions = [...SEED_PRACTICE_VERSIONS];
-          this.persist();
-        }
-      } else {
-        this.seed();
-        this.persist();
-      }
-    } catch (err) {
-      console.error('Error initializing database:', err);
-      this.seed();
-      this.persist();
-    }
-  }
-
-  private seed() {
-    console.log('Seeding clean master data (36 students, offerings, CAD11-R1)...');
-    this.data.students = [...SEED_STUDENTS];
-    this.data.offerings = [...SEED_OFFERINGS];
-    this.data.practiceVersions = [...SEED_PRACTICE_VERSIONS];
-    this.data.exerciseRecords = [];
-    this.data.pdfRecords = [];
-    this.data.softSkillRecords = [];
-    this.data.attendanceRecords = [];
-    // Log seed event
-    this.data.auditEvents.push({
-      id: `audit-${Date.now()}`,
-      timestamp: new Date().toISOString(),
-      actor: 'System Auto-Seed',
-      action: 'init_database',
-      targetType: 'system',
-      targetId: 'CAD11-R1',
-      details: 'Database seeded with 36 students, 3 offerings, and CAD11-R1 practice version.',
-    });
-  }
-
-  public persist() {
-    try {
-      if (!fs.existsSync(DATA_DIR)) {
-        fs.mkdirSync(DATA_DIR, { recursive: true });
-      }
-      fs.writeFileSync(DB_FILE, JSON.stringify(this.data, null, 2), 'utf-8');
-    } catch (err) {
-      console.error('Error persisting database:', err);
-    }
-  }
-
-  // Getters for tables
-  public get students() {
-    return this.data.students;
-  }
-  public get offerings() {
-    return this.data.offerings;
-  }
-  public get practiceVersions() {
-    return this.data.practiceVersions;
-  }
-  public get exerciseRecords() {
-    return this.data.exerciseRecords;
-  }
-  public get pdfRecords() {
-    return this.data.pdfRecords;
-  }
-  public get softSkillRecords() {
-    return this.data.softSkillRecords;
-  }
-  public get attendanceRecords() {
-    return this.data.attendanceRecords;
-  }
-  public get snapshots() {
-    return this.data.snapshots;
-  }
-  public get auditEvents() {
-    return this.data.auditEvents;
-  }
-
-  public resetDatabase() {
-    this.seed();
-    this.persist();
-    return this.data;
-  }
+export async function getStudentById(id: string): Promise<Student | null> {
+  const rows = await db.select().from(t.students).where(eq(t.students.id, id));
+  return (rows[0] as Student) || null;
 }
 
-export const db = new Database();
+export async function createStudent(student: Student): Promise<Student> {
+  const rows = await db.insert(t.students).values(student).returning();
+  return rows[0] as Student;
+}
+
+export async function upsertStudent(student: Student): Promise<Student> {
+  const rows = await db
+    .insert(t.students)
+    .values(student)
+    .onConflictDoUpdate({ target: t.students.id, set: { nim: student.nim, name: student.name, class: student.class } })
+    .returning();
+  return rows[0] as Student;
+}
+
+export async function deleteStudent(id: string): Promise<Student | null> {
+  const rows = await db.delete(t.students).where(eq(t.students.id, id)).returning();
+  return (rows[0] as Student) || null;
+}
+
+// ─────────────────────────────────────────────────────────────────
+// OFFERINGS
+// ─────────────────────────────────────────────────────────────────
+export async function getOfferings(): Promise<Offering[]> {
+  return db.select().from(t.offerings) as Promise<Offering[]>;
+}
+
+export async function getOfferingById(id: string): Promise<Offering | null> {
+  const rows = await db.select().from(t.offerings).where(eq(t.offerings.id, id));
+  return (rows[0] as Offering) || null;
+}
+
+export async function updateOffering(id: string, data: Partial<Offering>): Promise<Offering | null> {
+  const rows = await db.update(t.offerings).set(data as any).where(eq(t.offerings.id, id)).returning();
+  return (rows[0] as Offering) || null;
+}
+
+// ─────────────────────────────────────────────────────────────────
+// PRACTICE VERSIONS
+// ─────────────────────────────────────────────────────────────────
+export async function getPracticeVersions(): Promise<PracticeVersion[]> {
+  return db.select().from(t.practiceVersions) as Promise<PracticeVersion[]>;
+}
+
+export async function getPracticeVersionById(id: string): Promise<PracticeVersion | null> {
+  const rows = await db.select().from(t.practiceVersions).where(eq(t.practiceVersions.id, id));
+  return (rows[0] as PracticeVersion) || null;
+}
+
+export async function upsertPracticeVersion(pv: PracticeVersion): Promise<PracticeVersion> {
+  const rows = await db
+    .insert(t.practiceVersions)
+    .values(pv as any)
+    .onConflictDoUpdate({ target: t.practiceVersions.id, set: pv as any })
+    .returning();
+  return rows[0] as PracticeVersion;
+}
+
+// ─────────────────────────────────────────────────────────────────
+// EXERCISE RECORDS
+// ─────────────────────────────────────────────────────────────────
+export async function getExerciseRecordsByOffering(offeringId: string): Promise<ExerciseGradeRecord[]> {
+  return db.select().from(t.exerciseRecords).where(eq(t.exerciseRecords.offeringId, offeringId)) as Promise<ExerciseGradeRecord[]>;
+}
+
+export async function upsertExerciseRecord(record: ExerciseGradeRecord): Promise<ExerciseGradeRecord> {
+  const rows = await db
+    .insert(t.exerciseRecords)
+    .values(record as any)
+    .onConflictDoUpdate({ target: t.exerciseRecords.id, set: record as any })
+    .returning();
+  return rows[0] as ExerciseGradeRecord;
+}
+
+// ─────────────────────────────────────────────────────────────────
+// PDF RECORDS
+// ─────────────────────────────────────────────────────────────────
+export async function getPdfRecordsByOffering(offeringId: string): Promise<PdfGradeRecord[]> {
+  return db.select().from(t.pdfRecords).where(eq(t.pdfRecords.offeringId, offeringId)) as Promise<PdfGradeRecord[]>;
+}
+
+export async function upsertPdfRecord(record: PdfGradeRecord): Promise<PdfGradeRecord> {
+  const rows = await db
+    .insert(t.pdfRecords)
+    .values(record as any)
+    .onConflictDoUpdate({ target: t.pdfRecords.id, set: record as any })
+    .returning();
+  return rows[0] as PdfGradeRecord;
+}
+
+// ─────────────────────────────────────────────────────────────────
+// SOFT SKILL RECORDS
+// ─────────────────────────────────────────────────────────────────
+export async function getSoftSkillRecordsByOffering(offeringId: string): Promise<SoftSkillGradeRecord[]> {
+  return db.select().from(t.softSkillRecords).where(eq(t.softSkillRecords.offeringId, offeringId)) as Promise<SoftSkillGradeRecord[]>;
+}
+
+export async function upsertSoftSkillRecord(record: SoftSkillGradeRecord): Promise<SoftSkillGradeRecord> {
+  const rows = await db
+    .insert(t.softSkillRecords)
+    .values(record as any)
+    .onConflictDoUpdate({ target: t.softSkillRecords.id, set: record as any })
+    .returning();
+  return rows[0] as SoftSkillGradeRecord;
+}
+
+// ─────────────────────────────────────────────────────────────────
+// ATTENDANCE RECORDS
+// ─────────────────────────────────────────────────────────────────
+export async function getAttendanceRecordsByOffering(offeringId: string): Promise<AttendanceRecord[]> {
+  return db.select().from(t.attendanceRecords).where(eq(t.attendanceRecords.offeringId, offeringId)) as Promise<AttendanceRecord[]>;
+}
+
+export async function upsertAttendanceRecord(record: AttendanceRecord): Promise<AttendanceRecord> {
+  const rows = await db
+    .insert(t.attendanceRecords)
+    .values(record as any)
+    .onConflictDoUpdate({ target: t.attendanceRecords.id, set: record as any })
+    .returning();
+  return rows[0] as AttendanceRecord;
+}
+
+// ─────────────────────────────────────────────────────────────────
+// SNAPSHOTS
+// ─────────────────────────────────────────────────────────────────
+export async function getSnapshotsByOffering(offeringId: string): Promise<GradeSnapshot[]> {
+  return db.select().from(t.snapshots).where(eq(t.snapshots.offeringId, offeringId)) as Promise<GradeSnapshot[]>;
+}
+
+export async function insertSnapshots(records: GradeSnapshot[]): Promise<GradeSnapshot[]> {
+  if (records.length === 0) return [];
+  const rows = await db.insert(t.snapshots).values(records as any[]).returning();
+  return rows as GradeSnapshot[];
+}
+
+export async function reopenSnapshots(offeringId: string, reason: string, actor: string, now: string): Promise<void> {
+  await db
+    .update(t.snapshots)
+    .set({ status: 'reopened', reopenReason: reason, reopenedAt: now, reopenedBy: actor })
+    .where(and(eq(t.snapshots.offeringId, offeringId), eq(t.snapshots.status, 'final')));
+}
+
+// ─────────────────────────────────────────────────────────────────
+// AUDIT EVENTS
+// ─────────────────────────────────────────────────────────────────
+export async function getAuditEvents(limit = 100): Promise<AuditEvent[]> {
+  return db.select().from(t.auditEvents).limit(limit) as Promise<AuditEvent[]>;
+}
+
+export async function insertAuditEvent(event: AuditEvent): Promise<void> {
+  await db.insert(t.auditEvents).values(event as any);
+}
+
+// ─────────────────────────────────────────────────────────────────
+// SYSTEM RESET (re-seed master data)
+// ─────────────────────────────────────────────────────────────────
+export async function resetDatabase(): Promise<void> {
+  const { SEED_STUDENTS, SEED_OFFERINGS, SEED_PRACTICE_VERSIONS } = await import('./seedData');
+
+  // Clear grade data (keep students/offerings/versions)
+  await db.delete(t.exerciseRecords);
+  await db.delete(t.pdfRecords);
+  await db.delete(t.softSkillRecords);
+  await db.delete(t.attendanceRecords);
+  await db.delete(t.snapshots);
+
+  // Re-seed master data
+  for (const s of SEED_STUDENTS) await upsertStudent(s);
+  for (const o of SEED_OFFERINGS) {
+    await db.insert(t.offerings).values(o as any).onConflictDoUpdate({ target: t.offerings.id, set: o as any });
+  }
+  for (const pv of SEED_PRACTICE_VERSIONS) await upsertPracticeVersion(pv);
+
+  await insertAuditEvent({
+    id: `audit-reset-${Date.now()}`,
+    timestamp: new Date().toISOString(),
+    actor: 'System',
+    action: 'reset_database',
+    targetType: 'system',
+    targetId: 'all',
+    details: 'Database direset ke data awal (36 mahasiswa, 3 offerings, CAD11-R1).',
+  });
+}

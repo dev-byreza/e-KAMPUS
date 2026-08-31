@@ -1,6 +1,7 @@
+import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
-import { db } from './db/database';
+import { getStudents, getOfferings, getPracticeVersions, resetDatabase } from './db/database';
 import { studentsRouter } from './routes/students';
 import { offeringsRouter } from './routes/offerings';
 import { practiceVersionsRouter } from './routes/practiceVersions';
@@ -17,15 +18,25 @@ app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ extended: true, limit: '50mb' }));
 
 // Health check
-app.get('/api/health', (req, res) => {
-  res.json({
-    status: 'ok',
-    version: '1.1.0',
-    timestamp: new Date().toISOString(),
-    studentsCount: db.students.length,
-    offeringsCount: db.offerings.length,
-    versionsCount: db.practiceVersions.length,
-  });
+app.get('/api/health', async (req, res) => {
+  try {
+    const [students, offerings, versions] = await Promise.all([
+      getStudents(),
+      getOfferings(),
+      getPracticeVersions(),
+    ]);
+    res.json({
+      status: 'ok',
+      version: '1.1.0',
+      database: 'supabase-postgresql',
+      timestamp: new Date().toISOString(),
+      studentsCount: students.length,
+      offeringsCount: offerings.length,
+      versionsCount: versions.length,
+    });
+  } catch (err: any) {
+    res.status(500).json({ status: 'error', message: err.message });
+  }
 });
 
 // Mount Routes
@@ -36,25 +47,26 @@ app.use('/api/grades', gradesRouter);
 app.use('/api/snapshots', snapshotsRouter);
 app.use('/api/audit', auditRouter);
 
-// System Reset Route
-app.post('/api/system/reset-db', (req, res) => {
-  db.resetDatabase();
-  res.json({ success: true, message: 'Database telah direset ke kondisi awal Lampiran A.' });
+// System Reset
+app.post('/api/system/reset-db', async (req, res) => {
+  try {
+    await resetDatabase();
+    res.json({ success: true, message: 'Database telah direset ke kondisi awal.' });
+  } catch (err: any) {
+    res.status(500).json({ success: false, message: err.message });
+  }
 });
 
 // Central Error Handler
 app.use((err: any, req: express.Request, res: express.Response, next: express.NextFunction) => {
   console.error('Server error:', err);
-  res.status(500).json({
-    success: false,
-    message: err.message || 'Terjadi kesalahan internal pada server.',
-  });
+  res.status(500).json({ success: false, message: err.message || 'Terjadi kesalahan internal.' });
 });
 
 app.listen(PORT, () => {
   console.log(`=============================================`);
-  console.log(`🚀 CAD 1.1 REST API Backend Server Running!`);
-  console.log(`📍 Endpoint: http://localhost:${PORT}`);
-  console.log(`🏥 Health Check: http://localhost:${PORT}/api/health`);
+  console.log(`🚀 CAD 1.1 REST API  ·  Drizzle + Supabase`);
+  console.log(`📍 http://localhost:${PORT}`);
+  console.log(`🏥 Health: http://localhost:${PORT}/api/health`);
   console.log(`=============================================`);
 });

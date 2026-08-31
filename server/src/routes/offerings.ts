@@ -1,92 +1,101 @@
 import { Router, Request, Response } from 'express';
-import { db } from '../db/database';
+import * as db from '../db/database';
 import { Offering } from '../../../src/types/assessment';
 
 export const offeringsRouter = Router();
 
-// GET /api/offerings - List all offerings
-offeringsRouter.get('/', (req: Request, res: Response) => {
-  res.json({ success: true, count: db.offerings.length, data: db.offerings });
+// GET /api/offerings
+offeringsRouter.get('/', async (req: Request, res: Response) => {
+  try {
+    const data = await db.getOfferings();
+    res.json({ success: true, count: data.length, data });
+  } catch (err: any) {
+    res.status(500).json({ success: false, message: err.message });
+  }
 });
 
-// GET /api/offerings/:id - Get single offering
-offeringsRouter.get('/:id', (req: Request, res: Response) => {
-  const offering = db.offerings.find((o) => o.id === req.params.id);
-  if (!offering) {
-    res.status(404).json({ success: false, message: 'Offering tidak ditemukan.' });
-    return;
+// GET /api/offerings/:id
+offeringsRouter.get('/:id', async (req: Request, res: Response) => {
+  try {
+    const offering = await db.getOfferingById(req.params.id);
+    if (!offering) {
+      res.status(404).json({ success: false, message: 'Offering tidak ditemukan.' });
+      return;
+    }
+    res.json({ success: true, data: offering });
+  } catch (err: any) {
+    res.status(500).json({ success: false, message: err.message });
   }
-  res.json({ success: true, data: offering });
 });
 
-// PUT /api/offerings/:id - Update offering (dates, roster, version, instructor)
-offeringsRouter.put('/:id', (req: Request, res: Response) => {
-  const idx = db.offerings.findIndex((o) => o.id === req.params.id);
-  if (idx === -1) {
-    res.status(404).json({ success: false, message: 'Offering tidak ditemukan.' });
-    return;
+// PUT /api/offerings/:id
+offeringsRouter.put('/:id', async (req: Request, res: Response) => {
+  try {
+    const updated = await db.updateOffering(req.params.id, req.body);
+    if (!updated) {
+      res.status(404).json({ success: false, message: 'Offering tidak ditemukan.' });
+      return;
+    }
+    res.json({ success: true, data: updated });
+  } catch (err: any) {
+    res.status(500).json({ success: false, message: err.message });
   }
-
-  const updated: Offering = {
-    ...db.offerings[idx],
-    ...req.body,
-    id: db.offerings[idx].id, // keep original ID
-  };
-
-  db.offerings[idx] = updated;
-  db.persist();
-
-  res.json({ success: true, data: updated });
 });
 
-// POST /api/offerings/:id/verify-roster - Toggle roster verified flag
-offeringsRouter.post('/:id/verify-roster', (req: Request, res: Response) => {
-  const offering = db.offerings.find((o) => o.id === req.params.id);
-  if (!offering) {
-    res.status(404).json({ success: false, message: 'Offering tidak ditemukan.' });
-    return;
+// POST /api/offerings/:id/verify-roster
+offeringsRouter.post('/:id/verify-roster', async (req: Request, res: Response) => {
+  try {
+    const offering = await db.getOfferingById(req.params.id);
+    if (!offering) {
+      res.status(404).json({ success: false, message: 'Offering tidak ditemukan.' });
+      return;
+    }
+
+    const updated = await db.updateOffering(req.params.id, {
+      isRosterVerified: !offering.isRosterVerified,
+    } as Partial<Offering>);
+
+    await db.insertAuditEvent({
+      id: `audit-${Date.now()}`,
+      timestamp: new Date().toISOString(),
+      actor: 'Instruktur',
+      action: 'toggle_roster_verification',
+      targetType: 'offering',
+      targetId: req.params.id,
+      details: `Status verifikasi roster: ${updated?.isRosterVerified ? 'TERVERIFIKASI' : 'BELUM TERVERIFIKASI'}`,
+    });
+
+    res.json({ success: true, data: updated });
+  } catch (err: any) {
+    res.status(500).json({ success: false, message: err.message });
   }
-
-  offering.isRosterVerified = !offering.isRosterVerified;
-  db.persist();
-
-  // Audit
-  db.auditEvents.push({
-    id: `audit-${Date.now()}`,
-    timestamp: new Date().toISOString(),
-    actor: 'Instruktur',
-    action: 'toggle_roster_verification',
-    targetType: 'offering',
-    targetId: offering.id,
-    details: `Status verifikasi roster diubah menjadi: ${offering.isRosterVerified ? 'TERVERIFIKASI' : 'BELUM TERVERIFIKASI'}`,
-  });
-  db.persist();
-
-  res.json({ success: true, data: offering });
 });
 
-// POST /api/offerings/:id/verify-dates - Toggle dates verified flag
-offeringsRouter.post('/:id/verify-dates', (req: Request, res: Response) => {
-  const offering = db.offerings.find((o) => o.id === req.params.id);
-  if (!offering) {
-    res.status(404).json({ success: false, message: 'Offering tidak ditemukan.' });
-    return;
+// POST /api/offerings/:id/verify-dates
+offeringsRouter.post('/:id/verify-dates', async (req: Request, res: Response) => {
+  try {
+    const offering = await db.getOfferingById(req.params.id);
+    if (!offering) {
+      res.status(404).json({ success: false, message: 'Offering tidak ditemukan.' });
+      return;
+    }
+
+    const updated = await db.updateOffering(req.params.id, {
+      areDatesVerified: !offering.areDatesVerified,
+    } as Partial<Offering>);
+
+    await db.insertAuditEvent({
+      id: `audit-${Date.now()}`,
+      timestamp: new Date().toISOString(),
+      actor: 'Instruktur',
+      action: 'toggle_dates_verification',
+      targetType: 'offering',
+      targetId: req.params.id,
+      details: `Status verifikasi tanggal: ${updated?.areDatesVerified ? 'TERVERIFIKASI' : 'BELUM TERVERIFIKASI'}`,
+    });
+
+    res.json({ success: true, data: updated });
+  } catch (err: any) {
+    res.status(500).json({ success: false, message: err.message });
   }
-
-  offering.areDatesVerified = !offering.areDatesVerified;
-  db.persist();
-
-  // Audit
-  db.auditEvents.push({
-    id: `audit-${Date.now()}`,
-    timestamp: new Date().toISOString(),
-    actor: 'Instruktur',
-    action: 'toggle_dates_verification',
-    targetType: 'offering',
-    targetId: offering.id,
-    details: `Status verifikasi tanggal diubah menjadi: ${offering.areDatesVerified ? 'TERVERIFIKASI' : 'BELUM TERVERIFIKASI'}`,
-  });
-  db.persist();
-
-  res.json({ success: true, data: offering });
 });
