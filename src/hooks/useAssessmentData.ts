@@ -299,18 +299,20 @@ export function useAssessmentData() {
     triggerAutoSave();
   };
 
-  // Upload/Simulate PDF File
+  // Upload/Simulate PDF File – accepts optional real File for blob storage
   const uploadPdfFile = async (
     studentId: string,
     fileName: string,
-    fileSize: number
+    fileSize: number,
+    fileBlob?: File
   ) => {
     const recordId = `rec-pdf-${studentId}`;
     const existing = await db.pdfRecords.get(recordId);
 
     const currentVersion = (existing?.activeArtifactVersion || 0) + 1;
+    const artifactId = `art-${studentId}-v${currentVersion}`;
     const newArtifact = {
-      id: `art-${studentId}-v${currentVersion}`,
+      id: artifactId,
       version: currentVersion,
       fileName,
       fileSize,
@@ -334,6 +336,16 @@ export function useAssessmentData() {
       updatedAt: new Date().toISOString(),
       revision: (existing?.revision || 0) + 1,
     });
+
+    // Store actual file blob for in-app PDF preview
+    if (fileBlob) {
+      await db.pdfBlobs.put({
+        id: artifactId,
+        artifactId,
+        blob: fileBlob,
+        uploadedAt: new Date().toISOString(),
+      });
+    }
 
     triggerAutoSave();
     showToast(`Berkas PDF v${currentVersion} berhasil diunggah!`, 'success');

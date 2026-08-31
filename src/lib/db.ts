@@ -21,6 +21,7 @@ export class CADAssessmentDB extends Dexie {
   attendanceRecords!: Table<AttendanceRecord, string>;
   snapshots!: Table<GradeSnapshot, string>;
   auditEvents!: Table<AuditEvent, string>;
+  pdfBlobs!: Table<PdfBlobRecord, string>;
 
   constructor() {
     super('CAD11AssessmentDB');
@@ -35,7 +36,28 @@ export class CADAssessmentDB extends Dexie {
       snapshots: 'id, offeringId, studentId',
       auditEvents: 'id, timestamp, actor',
     });
+    // Version 2: add pdfBlobs table for storing actual PDF binary data
+    this.version(2).stores({
+      students: 'id, nim, class',
+      offerings: 'id, practiceCode, semesterWeek, practiceVersionId',
+      practiceVersions: 'id, status',
+      exerciseRecords: 'id, [studentId+exerciseId], offeringId, studentId, exerciseId',
+      pdfRecords: 'id, [studentId+offeringId], studentId, offeringId',
+      softSkillRecords: 'id, [studentId+sessionOrdinal], offeringId, studentId, sessionOrdinal',
+      attendanceRecords: 'id, [studentId+sessionOrdinal], offeringId, studentId, sessionOrdinal',
+      snapshots: 'id, offeringId, studentId',
+      auditEvents: 'id, timestamp, actor',
+      pdfBlobs: 'id, artifactId',
+    });
   }
+}
+
+// Table record type for raw PDF file blobs
+export interface PdfBlobRecord {
+  id: string; // same as artifactId e.g. art-{studentId}-v{version}
+  artifactId: string;
+  blob: Blob;
+  uploadedAt: string;
 }
 
 export const db = new CADAssessmentDB();

@@ -44,6 +44,7 @@ export const PdfAssessment: React.FC<PdfAssessmentProps> = ({ searchQuery }) => 
   const [uploadModalStudent, setUploadModalStudent] = useState<{ id: string; name: string; nim: string } | null>(null);
   const [simulatedFileName, setSimulatedFileName] = useState('');
   const [selectedFileSize, setSelectedFileSize] = useState<number>(4400000);
+  const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [isSharePortalOpen, setIsSharePortalOpen] = useState(false);
 
   if (!activePracticeVersion || !activeOffering) return null;
@@ -350,6 +351,7 @@ export const PdfAssessment: React.FC<PdfAssessmentProps> = ({ searchQuery }) => 
                   if (file) {
                     setSimulatedFileName(file.name);
                     setSelectedFileSize(file.size);
+                    setSelectedFile(file);
                   }
                 }}
               />
@@ -389,8 +391,9 @@ export const PdfAssessment: React.FC<PdfAssessmentProps> = ({ searchQuery }) => 
               </button>
               <button
                 onClick={() => {
-                  uploadPdfFile(uploadModalStudent.id, simulatedFileName, selectedFileSize);
+                  uploadPdfFile(uploadModalStudent.id, simulatedFileName, selectedFileSize, selectedFile || undefined);
                   setUploadModalStudent(null);
+                  setSelectedFile(null);
                 }}
                 className="px-4 py-1.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold shadow-md transition-all"
               >
