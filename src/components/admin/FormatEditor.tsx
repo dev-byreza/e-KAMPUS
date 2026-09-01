@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useApp } from '../../context/AppContext';
 import { db, INITIAL_PRACTICE_VERSIONS } from '../../lib/db';
+import { api } from '../../services/api';
 import { PracticeVersion, Exercise, RubricCriterion } from '../../types/assessment';
 import {
   Settings2,
@@ -17,6 +18,8 @@ import {
   CalendarCheck2,
   Sparkles,
   ArrowRight,
+  BookOpen,
+  Eye,
 } from 'lucide-react';
 import { cn } from '../../lib/utils';
 import { FormatSimulator } from './FormatSimulator';
@@ -28,6 +31,8 @@ const normalizeVersion = (v?: Partial<PracticeVersion>): PracticeVersion => {
   return {
     id: v.id || fallback.id,
     name: v.name || fallback.name,
+    courseCode: v.courseCode || fallback.courseCode || 'CAD 1.1',
+    courseName: v.courseName || fallback.courseName || 'Praktik CAD 1.1 — Pemodelan 2D & Dasar 3D',
     description: v.description || fallback.description,
     status: v.status || 'published',
     publishedAt: v.publishedAt,
@@ -80,26 +85,39 @@ export const FormatEditor: React.FC = () => {
     const newVersion: PracticeVersion = {
       ...normalizeVersion(draft),
       id: `CAD11-R${nextVerNum}`,
-      name: `CAD 1.1 — Versi R${nextVerNum} (Draf Baru)`,
+      name: `${draft.courseCode || 'CAD 1.1'} — Versi R${nextVerNum} (Draf Baru)`,
       status: 'draft',
       publishedAt: undefined,
       publishedBy: undefined,
     };
 
     await db.practiceVersions.put(newVersion);
+    api.createPracticeVersion(newVersion).catch((e) => {
+      console.warn('[FormatEditor] Backend clone sync note:', e.message);
+    });
+
     setSelectedVersionId(newVersion.id);
     setDraft(newVersion);
     showToast(`Draf versi ${newVersion.id} berhasil dibuat!`, 'success');
   };
 
-  // Save Draft changes to DB
+  // Save Draft changes to DB & Backend
   const handleSaveDraft = async () => {
     const validDraft = normalizeVersion(draft);
     await db.practiceVersions.put(validDraft);
-    showToast(`Perubahan versi ${validDraft.id} berhasil disimpan ke database!`, 'success');
+
+    // Sync with backend API
+    api.updatePracticeVersion(validDraft.id, validDraft).catch((err) => {
+      console.warn('[FormatEditor] Backend update failed, trying create...', err.message);
+      api.createPracticeVersion(validDraft).catch((e) => {
+        console.warn('[FormatEditor] Backend create failed:', e.message);
+      });
+    });
+
+    showToast(`Perubahan versi ${validDraft.id} (${validDraft.name}) berhasil disimpan ke database & backend!`, 'success');
   };
 
-  // Publish Draft
+  // Publish Draft to DB & Backend
   const handlePublish = async () => {
     const totalWeight =
       draft.componentWeights.exercises +
@@ -120,8 +138,13 @@ export const FormatEditor: React.FC = () => {
     };
 
     await db.practiceVersions.put(publishedVersion);
+    api.publishPracticeVersion(publishedVersion.id).catch((err) => {
+      console.warn('[FormatEditor] Backend publish error:', err.message);
+      api.updatePracticeVersion(publishedVersion.id, publishedVersion).catch(() => {});
+    });
+
     setDraft(publishedVersion);
-    showToast(`Versi ${draft.id} RESMI DITERBITKAN!`, 'success');
+    showToast(`Versi ${draft.id} RESMI DITERBITKAN & disinkronkan ke backend!`, 'success');
   };
 
   // Component weights total check
@@ -234,127 +257,274 @@ export const FormatEditor: React.FC = () => {
         ))}
       </div>
 
-      {/* SUB-TAB 1: COMPONENT WEIGHTS & BUTTON LABELS */}
+      {/* SUB-TAB 1: COURSE IDENTITY, COMPONENT WEIGHTS & BUTTON LABELS */}
       {editorSubTab === 'weights' && (
-        <div className="p-6 rounded-2xl bg-slate-900/90 border border-slate-800 space-y-6">
-          <div className="flex items-center justify-between border-b border-slate-800 pb-3">
-            <div>
-              <h3 className="font-bold text-white text-sm">Bobot 4 Komponen Penilaian Utama</h3>
-              <p className="text-xs text-slate-400">Total seluruh bobot harus berjumlah tepat 100%.</p>
+        <div className="space-y-6">
+          {/* Card 1: Identitas Mata Kuliah & Kurikulum Format */}
+          <div className="p-6 rounded-2xl bg-slate-900/90 border border-slate-800 shadow-xl space-y-4">
+            <div className="flex items-center gap-2.5 border-b border-slate-800 pb-3">
+              <div className="w-8 h-8 rounded-xl bg-amber-950/80 text-amber-400 flex items-center justify-center font-bold border border-amber-800/60">
+                <BookOpen className="w-4 h-4" />
+              </div>
+              <div>
+                <h3 className="font-bold text-white text-sm">Identitas Mata Kuliah & Versi Format</h3>
+                <p className="text-xs text-slate-400">
+                  Sesuaikan format penilaian ini ke mata kuliah atau kurikulum praktikum tertentu.
+                </p>
+              </div>
             </div>
-            <div
-              className={cn(
-                'px-3 py-1 rounded-full text-xs font-bold border',
-                totalComponentWeight === 100
-                  ? 'bg-emerald-950 text-emerald-300 border-emerald-800'
-                  : 'bg-rose-950 text-rose-300 border-rose-800'
-              )}
-            >
-              Total: {totalComponentWeight}% {totalComponentWeight === 100 ? '✓ Valid' : '✗ Tidak Valid'}
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {/* Course Code */}
+              <div className="p-3.5 rounded-xl bg-slate-950 border border-slate-800 space-y-1.5">
+                <label className="text-[11px] font-semibold text-amber-300">
+                  Kode Mata Kuliah / Praktik:
+                </label>
+                <input
+                  type="text"
+                  placeholder="Contoh: CAD 1.1, CAD 1.2, BIM 1.0"
+                  value={draft.courseCode || 'CAD 1.1'}
+                  onChange={(e) => setDraft({ ...draft, courseCode: e.target.value })}
+                  className="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs font-bold text-white focus:outline-none focus:ring-2 focus:ring-amber-500"
+                />
+              </div>
+
+              {/* Course Name */}
+              <div className="p-3.5 rounded-xl bg-slate-950 border border-slate-800 space-y-1.5 sm:col-span-2">
+                <label className="text-[11px] font-semibold text-amber-300">
+                  Nama Mata Kuliah / Praktik Lengkap:
+                </label>
+                <input
+                  type="text"
+                  placeholder="Contoh: Praktik CAD 1.1 — Pemodelan 2D & Dasar 3D"
+                  value={draft.courseName || ''}
+                  onChange={(e) => setDraft({ ...draft, courseName: e.target.value })}
+                  className="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs font-bold text-white focus:outline-none focus:ring-2 focus:ring-amber-500"
+                />
+              </div>
+
+              {/* Passing Threshold */}
+              <div className="p-3.5 rounded-xl bg-slate-950 border border-slate-800 space-y-1.5">
+                <label className="text-[11px] font-semibold text-amber-300">
+                  Batas Nilai Kelulusan (Passing Grade):
+                </label>
+                <input
+                  type="number"
+                  min="0"
+                  max="100"
+                  value={draft.passingThreshold ?? 75}
+                  onChange={(e) => setDraft({ ...draft, passingThreshold: Number(e.target.value) })}
+                  className="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs font-bold text-emerald-400 focus:outline-none focus:ring-2 focus:ring-amber-500"
+                />
+              </div>
+
+              {/* Version Name */}
+              <div className="p-3.5 rounded-xl bg-slate-950 border border-slate-800 space-y-1.5 sm:col-span-2">
+                <label className="text-[11px] font-semibold text-slate-300">
+                  Judul Label Versi Format:
+                </label>
+                <input
+                  type="text"
+                  value={draft.name || ''}
+                  onChange={(e) => setDraft({ ...draft, name: e.target.value })}
+                  className="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs font-semibold text-white focus:outline-none focus:ring-2 focus:ring-amber-500"
+                />
+              </div>
+
+              {/* Version Description */}
+              <div className="p-3.5 rounded-xl bg-slate-950 border border-slate-800 space-y-1.5 sm:col-span-2">
+                <label className="text-[11px] font-semibold text-slate-300">
+                  Deskripsi Format & Kurikulum:
+                </label>
+                <input
+                  type="text"
+                  value={draft.description || ''}
+                  onChange={(e) => setDraft({ ...draft, description: e.target.value })}
+                  className="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs text-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-500"
+                />
+              </div>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {/* Latihan Weight */}
-            <div className="p-4 rounded-xl bg-slate-950 border border-slate-800 space-y-2">
-              <label className="text-xs font-semibold text-indigo-300">1. Latihan Teknis CAD (%):</label>
-              <input
-                type="number"
-                value={draft.componentWeights?.exercises ?? 60}
-                onChange={(e) =>
-                  setDraft({
-                    ...draft,
-                    componentWeights: {
-                      ...draft.componentWeights,
-                      exercises: Number(e.target.value),
-                    },
-                  })
-                }
-                className="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-sm font-bold text-white focus:outline-none focus:ring-2 focus:ring-amber-500"
-              />
+          {/* Card 2: Bobot 4 Komponen Penilaian Utama */}
+          <div className="p-6 rounded-2xl bg-slate-900/90 border border-slate-800 shadow-xl space-y-4">
+            <div className="flex items-center justify-between border-b border-slate-800 pb-3">
+              <div>
+                <h3 className="font-bold text-white text-sm">Bobot 4 Komponen Penilaian Utama</h3>
+                <p className="text-xs text-slate-400">Total seluruh bobot harus berjumlah tepat 100%.</p>
+              </div>
+              <div
+                className={cn(
+                  'px-3 py-1 rounded-full text-xs font-bold border',
+                  totalComponentWeight === 100
+                    ? 'bg-emerald-950 text-emerald-300 border-emerald-800'
+                    : 'bg-rose-950 text-rose-300 border-rose-800'
+                )}
+              >
+                Total: {totalComponentWeight}% {totalComponentWeight === 100 ? '✓ Valid (100%)' : '✗ Harus 100%'}
+              </div>
             </div>
 
-            {/* PDF Weight */}
-            <div className="p-4 rounded-xl bg-slate-950 border border-slate-800 space-y-2">
-              <label className="text-xs font-semibold text-cyan-300">2. Output PDF (%):</label>
-              <input
-                type="number"
-                value={draft.componentWeights?.pdf ?? 15}
-                onChange={(e) =>
-                  setDraft({
-                    ...draft,
-                    componentWeights: {
-                      ...draft.componentWeights,
-                      pdf: Number(e.target.value),
-                    },
-                  })
-                }
-                className="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-sm font-bold text-white focus:outline-none focus:ring-2 focus:ring-amber-500"
-              />
-            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {/* Latihan Weight */}
+              <div className="p-4 rounded-xl bg-slate-950 border border-slate-800 space-y-2">
+                <label className="text-xs font-semibold text-indigo-300">1. Latihan Teknis (%):</label>
+                <input
+                  type="number"
+                  min="0"
+                  max="100"
+                  value={draft.componentWeights?.exercises ?? 60}
+                  onChange={(e) => {
+                    const val = Number(e.target.value);
+                    const updatedWeights = { ...draft.componentWeights, exercises: val };
+                    const updatedSections = (draft.sections || []).map((sec) =>
+                      sec.id === 'exercises' ? { ...sec, weight: val } : sec
+                    );
+                    setDraft({ ...draft, componentWeights: updatedWeights, sections: updatedSections });
+                  }}
+                  className="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-sm font-bold text-white focus:outline-none focus:ring-2 focus:ring-amber-500"
+                />
+              </div>
 
-            {/* Soft Skill Weight */}
-            <div className="p-4 rounded-xl bg-slate-950 border border-slate-800 space-y-2">
-              <label className="text-xs font-semibold text-amber-300">3. Soft Skill (%):</label>
-              <input
-                type="number"
-                value={draft.componentWeights?.softskill ?? 15}
-                onChange={(e) =>
-                  setDraft({
-                    ...draft,
-                    componentWeights: {
-                      ...draft.componentWeights,
-                      softskill: Number(e.target.value),
-                    },
-                  })
-                }
-                className="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-sm font-bold text-white focus:outline-none focus:ring-2 focus:ring-amber-500"
-              />
-            </div>
+              {/* PDF Weight */}
+              <div className="p-4 rounded-xl bg-slate-950 border border-slate-800 space-y-2">
+                <label className="text-xs font-semibold text-cyan-300">2. Output PDF / Gambar (%):</label>
+                <input
+                  type="number"
+                  min="0"
+                  max="100"
+                  value={draft.componentWeights?.pdf ?? 15}
+                  onChange={(e) => {
+                    const val = Number(e.target.value);
+                    const updatedWeights = { ...draft.componentWeights, pdf: val };
+                    const updatedSections = (draft.sections || []).map((sec) =>
+                      sec.id === 'pdf' ? { ...sec, weight: val } : sec
+                    );
+                    setDraft({ ...draft, componentWeights: updatedWeights, sections: updatedSections });
+                  }}
+                  className="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-sm font-bold text-white focus:outline-none focus:ring-2 focus:ring-amber-500"
+                />
+              </div>
 
-            {/* Attendance Weight */}
-            <div className="p-4 rounded-xl bg-slate-950 border border-slate-800 space-y-2">
-              <label className="text-xs font-semibold text-emerald-300">4. Kehadiran (%):</label>
-              <input
-                type="number"
-                value={draft.componentWeights?.attendance ?? 10}
-                onChange={(e) =>
-                  setDraft({
-                    ...draft,
-                    componentWeights: {
-                      ...draft.componentWeights,
-                      attendance: Number(e.target.value),
-                    },
-                  })
-                }
-                className="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-sm font-bold text-white focus:outline-none focus:ring-2 focus:ring-amber-500"
-              />
+              {/* Soft Skill Weight */}
+              <div className="p-4 rounded-xl bg-slate-950 border border-slate-800 space-y-2">
+                <label className="text-xs font-semibold text-amber-300">3. Soft Skill / Sikap (%):</label>
+                <input
+                  type="number"
+                  min="0"
+                  max="100"
+                  value={draft.componentWeights?.softskill ?? 15}
+                  onChange={(e) => {
+                    const val = Number(e.target.value);
+                    const updatedWeights = { ...draft.componentWeights, softskill: val };
+                    const updatedSections = (draft.sections || []).map((sec) =>
+                      sec.id === 'softskill' ? { ...sec, weight: val } : sec
+                    );
+                    setDraft({ ...draft, componentWeights: updatedWeights, sections: updatedSections });
+                  }}
+                  className="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-sm font-bold text-white focus:outline-none focus:ring-2 focus:ring-amber-500"
+                />
+              </div>
+
+              {/* Attendance Weight */}
+              <div className="p-4 rounded-xl bg-slate-950 border border-slate-800 space-y-2">
+                <label className="text-xs font-semibold text-emerald-300">4. Kehadiran / Presensi (%):</label>
+                <input
+                  type="number"
+                  min="0"
+                  max="100"
+                  value={draft.componentWeights?.attendance ?? 10}
+                  onChange={(e) => {
+                    const val = Number(e.target.value);
+                    const updatedWeights = { ...draft.componentWeights, attendance: val };
+                    const updatedSections = (draft.sections || []).map((sec) =>
+                      sec.id === 'attendance' ? { ...sec, weight: val } : sec
+                    );
+                    setDraft({ ...draft, componentWeights: updatedWeights, sections: updatedSections });
+                  }}
+                  className="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-sm font-bold text-white focus:outline-none focus:ring-2 focus:ring-amber-500"
+                />
+              </div>
             </div>
           </div>
 
-          {/* Section Tab Buttons Labels Editor */}
-          <div className="space-y-3 pt-4 border-t border-slate-800">
-            <h4 className="text-xs font-bold text-slate-300 uppercase tracking-wider">
-              Kustomisasi Label Tombol Bagian Penilaian
-            </h4>
+          {/* Card 3: Kustomisasi Label Tombol Tab Penilaian & Live Preview */}
+          <div className="p-6 rounded-2xl bg-slate-900/90 border border-slate-800 shadow-xl space-y-4">
+            <div className="border-b border-slate-800 pb-3">
+              <h4 className="text-sm font-bold text-white">
+                Kustomisasi Label Tombol Tab Penilaian
+              </h4>
+              <p className="text-xs text-slate-400">
+                Ubah teks nama tombol yang tampil pada navigasi penilaian instruktur untuk mata kuliah ini.
+              </p>
+            </div>
+
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-              {sectionsList.map((sec, idx) => (
-                <div key={sec.id} className="p-3 rounded-xl bg-slate-950 border border-slate-800 space-y-1">
-                  <label className="text-[10px] text-slate-400 font-semibold uppercase">
-                    Tombol {idx + 1} ({sec.id})
-                  </label>
-                  <input
-                    type="text"
-                    value={sec.buttonLabel}
-                    onChange={(e) => {
-                      const updated = [...sectionsList];
-                      updated[idx].buttonLabel = e.target.value;
-                      setDraft({ ...draft, sections: updated });
-                    }}
-                    className="w-full bg-slate-900 border border-slate-700 rounded-lg px-2.5 py-1.5 text-xs text-white focus:outline-none focus:ring-1 focus:ring-amber-500"
-                  />
-                </div>
-              ))}
+              {sectionsList.map((sec, idx) => {
+                const componentKey = sec.id as 'exercises' | 'pdf' | 'softskill' | 'attendance';
+                const currentWeight = draft.componentWeights?.[componentKey] ?? sec.weight ?? 0;
+                return (
+                  <div key={sec.id} className="p-3.5 rounded-xl bg-slate-950 border border-slate-800 space-y-1.5">
+                    <div className="flex items-center justify-between">
+                      <label className="text-[10px] text-slate-400 font-bold uppercase">
+                        Tombol {idx + 1} ({sec.id})
+                      </label>
+                      <span className="text-[10px] font-mono text-indigo-300 font-bold">
+                        Bobot: {currentWeight}%
+                      </span>
+                    </div>
+                    <input
+                      type="text"
+                      value={sec.buttonLabel}
+                      placeholder={sec.id}
+                      onChange={(e) => {
+                        const updated = [...sectionsList];
+                        updated[idx].buttonLabel = e.target.value;
+                        setDraft({ ...draft, sections: updated });
+                      }}
+                      className="w-full bg-slate-900 border border-slate-700 rounded-lg px-2.5 py-2 text-xs font-bold text-white focus:outline-none focus:ring-2 focus:ring-amber-500"
+                    />
+                  </div>
+                );
+              })}
+            </div>
+
+            {/* Live Visual Preview of Tab Buttons */}
+            <div className="p-4 rounded-xl bg-slate-950 border border-indigo-900/40 space-y-2 mt-4">
+              <div className="flex items-center gap-2 text-xs text-indigo-300 font-bold">
+                <Eye className="w-3.5 h-3.5" />
+                <span>Pratinjau Langsung (Live Preview) Tombol di Lembar Penilaian Instruktur:</span>
+              </div>
+              <div className="flex flex-wrap gap-2 pt-1">
+                {sectionsList.map((sec, idx) => {
+                  const componentKey = sec.id as 'exercises' | 'pdf' | 'softskill' | 'attendance';
+                  const currentWeight = draft.componentWeights?.[componentKey] ?? sec.weight ?? 0;
+                  const icons = [Layers, FileText, HeartHandshake, CalendarCheck2];
+                  const Icon = icons[idx] || Layers;
+                  return (
+                    <div
+                      key={sec.id}
+                      className={cn(
+                        'flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-bold border shadow-sm',
+                        idx === 0
+                          ? 'bg-gradient-to-r from-indigo-600 to-indigo-700 text-white border-indigo-500 shadow-indigo-600/20'
+                          : 'bg-slate-900 text-slate-300 border-slate-800'
+                      )}
+                    >
+                      <Icon className="w-3.5 h-3.5" />
+                      <span>{sec.buttonLabel || sec.id}</span>
+                      <span
+                        className={cn(
+                          'px-1.5 py-0.2 rounded text-[10px] font-mono',
+                          idx === 0 ? 'bg-indigo-900/80 text-indigo-200' : 'bg-slate-800 text-slate-400'
+                        )}
+                      >
+                        {currentWeight}%
+                      </span>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>

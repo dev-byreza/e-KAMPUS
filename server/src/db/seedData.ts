@@ -111,6 +111,8 @@ export const SEED_PRACTICE_VERSIONS: PracticeVersion[] = [
   {
     id: 'CAD11-R1',
     name: 'CAD 1.1 — Versi R1 (Standar 10 Latihan)',
+    courseCode: 'CAD 1.1',
+    courseName: 'Praktik CAD 1.1 — Pemodelan 2D & Dasar 3D',
     description: 'Format baku praktik CAD 1.1: 10 Latihan, 1 PDF Gabungan, 4 Aspek Soft Skill, 5 Sesi Absensi.',
     status: 'published',
     publishedAt: '2026-08-15T08:00:00Z',

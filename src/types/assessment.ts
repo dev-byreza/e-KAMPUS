@@ -80,6 +80,8 @@ export interface AttendancePolicy {
 export interface PracticeVersion {
   id: string; // e.g. "CAD11-R1", "CAD11-R2"
   name: string; // "Versi Standar CAD 1.1 R1"
+  courseCode?: string; // e.g. "CAD 1.1", "CAD 1.2", "BIM 1.0", "CAM 1.0"
+  courseName?: string; // e.g. "Praktik CAD 1.1 — Pemodelan 2D & Dasar 3D"
   description: string;
   status: 'draft' | 'published' | 'archived';
   publishedAt?: string;

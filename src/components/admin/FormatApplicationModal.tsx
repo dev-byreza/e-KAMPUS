@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useApp } from '../../context/AppContext';
 import { db } from '../../lib/db';
+import { api } from '../../services/api';
 import { PracticeVersion } from '../../types/assessment';
 import { ShieldCheck, AlertTriangle, CheckCircle2, ArrowRight, X } from 'lucide-react';
 import { cn } from '../../lib/utils';
@@ -49,6 +50,11 @@ export const FormatApplicationModal: React.FC<FormatApplicationModalProps> = ({
       // Update offering's practiceVersionId
       await db.offerings.update(selectedOffering.id, {
         practiceVersionId: version.id,
+      });
+
+      // Sync to backend API
+      api.applyPracticeVersion(version.id, [selectedOffering.id]).catch((e) => {
+        console.warn('[FormatApplicationModal] Backend sync note:', e.message);
       });
 
       // Log audit

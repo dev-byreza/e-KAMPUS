@@ -37,14 +37,22 @@ export const offerings = pgTable('offerings', {
 // ─── Practice Versions ────────────────────────────────────────────────────────
 export const practiceVersions = pgTable('practice_versions', {
   id: text('id').primaryKey(),
-  status: text('status').notNull().default('active'),
+  name: text('name'),
+  courseCode: text('course_code').default('CAD 1.1'),
+  courseName: text('course_name').default('Praktik CAD 1.1'),
+  status: text('status').notNull().default('published'),
   description: text('description'),
   lastUpdated: text('last_updated'),
+  publishedAt: text('published_at'),
+  publishedBy: text('published_by'),
+  sections: jsonb('sections').$type<any[]>().default([]),
+  exercises: jsonb('exercises').$type<any[]>().default([]),
   pdfCriteria: jsonb('pdf_criteria').$type<any[]>().default([]),
   exerciseCriteria: jsonb('exercise_criteria').$type<any[]>().default([]),
   softSkillCriteria: jsonb('soft_skill_criteria').$type<any[]>().default([]),
   attendancePolicy: jsonb('attendance_policy').$type<any>(),
   componentWeights: jsonb('component_weights').$type<any>(),
+  passingThreshold: integer('passing_threshold').default(75),
   passingScore: integer('passing_score').default(60),
 });
 

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useApp } from '../../context/AppContext';
 import { db } from '../../lib/db';
+import { api } from '../../services/api';
 import { Student } from '../../types/assessment';
 import { Users, Upload, Plus, Trash2, Search, FileText, CheckCircle2 } from 'lucide-react';
 
@@ -32,6 +33,10 @@ export const MasterStudentsView: React.FC = () => {
     };
 
     await db.students.put(newStudent);
+    api.createStudent(newStudent).catch((err) => {
+      console.warn('[MasterStudents] Backend sync note:', err.message);
+    });
+
     setNewNim('');
     setNewName('');
     showToast(`Mahasiswa ${newStudent.name} berhasil ditambahkan!`, 'success');
@@ -40,6 +45,9 @@ export const MasterStudentsView: React.FC = () => {
   const handleDelete = async (id: string, name: string) => {
     if (window.confirm(`Hapus data master mahasiswa ${name}?`)) {
       await db.students.delete(id);
+      api.deleteStudent(id).catch((err) => {
+        console.warn('[MasterStudents] Backend delete note:', err.message);
+      });
       showToast(`Data ${name} dihapus dari master.`, 'info');
     }
   };

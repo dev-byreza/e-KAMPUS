@@ -50,9 +50,9 @@ export const TopHeader: React.FC = () => {
         {/* Left: Context Breadcrumb & Offering Status */}
         <div className="flex flex-wrap items-center gap-2 sm:gap-3 text-xs">
           {/* Practice Badge */}
-          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-indigo-950/80 border border-indigo-700/60 text-indigo-200 font-black text-xs shadow-sm">
+          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-indigo-950/80 border border-indigo-700/60 text-indigo-200 font-black text-xs shadow-sm" title={activePracticeVersion?.courseName || activeOffering?.practiceCode || 'Praktik CAD'}>
             <span className="w-2 h-2 rounded-full bg-indigo-400 animate-pulse" />
-            CAD 1.1
+            {activeOffering?.practiceCode || activePracticeVersion?.courseCode || 'CAD 1.1'}
           </div>
 
           {/* Offering info */}

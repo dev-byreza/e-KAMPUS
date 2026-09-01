@@ -14,15 +14,15 @@ export const AssessmentPanel: React.FC = () => {
 
   if (!activePracticeVersion) return null;
 
-  const sections = (activePracticeVersion.sections || []).map((s) => ({
-    ...s,
-    buttonLabel:
-      s.id === 'exercises' && (s.buttonLabel === '10 Latihan' || !s.buttonLabel)
-        ? 'ReDrawn 2D'
-        : s.id === 'pdf' && (s.buttonLabel === 'Output PDF' || !s.buttonLabel)
-        ? 'Layout & Plot'
-        : s.buttonLabel || (s.id === 'exercises' ? 'ReDrawn 2D' : s.id === 'pdf' ? 'Layout & Plot' : s.id),
-  }));
+  const sections = (activePracticeVersion.sections || []).map((s) => {
+    const componentKey = s.id as 'exercises' | 'pdf' | 'softskill' | 'attendance';
+    const weight = activePracticeVersion.componentWeights?.[componentKey] ?? s.weight ?? 0;
+    return {
+      ...s,
+      weight,
+      buttonLabel: s.buttonLabel || s.id,
+    };
+  });
 
   const getTabIcon = (id: string) => {
     switch (id) {

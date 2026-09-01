@@ -63,6 +63,12 @@ class ApiService {
     });
   }
 
+  public async deleteStudent(id: string) {
+    return this.request<{ success: boolean; data: Student }>(`/students/${id}`, {
+      method: 'DELETE',
+    });
+  }
+
   // Offerings
   public async getOfferings() {
     return this.request<{ success: boolean; data: Offering[] }>('/offerings');
