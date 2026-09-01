@@ -56,7 +56,7 @@ export const ContextBar: React.FC = () => {
             >
               {offerings.map((off) => (
                 <option key={off.id} value={off.id} className="bg-slate-900 text-slate-100">
-                  Pekan {off.semesterWeek} • {off.dateRangeText} (Minggu {off.calendarWeek})
+                  {off.practiceCode} • Pekan {off.semesterWeek} ({off.dateRangeText})
                 </option>
               ))}
             </select>

@@ -36,6 +36,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isCollapsed, setIsCollapsed })
     setRole,
     view,
     setView,
+    courses,
     activeOffering,
     activeOfferingId,
     setActiveOfferingId,
@@ -49,9 +50,12 @@ export const Sidebar: React.FC<SidebarProps> = ({ isCollapsed, setIsCollapsed })
     resetDatabase,
   } = useApp();
 
+  const currentCourseCode =
+    activeOffering?.practiceCode || activePracticeVersion?.courseCode || 'CAD 1.1';
+
   const navItems: { id: AppView; label: string; icon: React.ElementType }[] = [
-    { id: 'penilaian', label: 'Penilaian Praktik', icon: Layers },
     { id: 'dashboard_nilai', label: 'Dashboard Nilai & KPI', icon: BarChart3 },
+    { id: 'penilaian', label: 'Lembar Penilaian Siswa', icon: Layers },
     { id: 'peserta_jadwal', label: 'Peserta & Jadwal', icon: Users },
     { id: 'rubrik_aturan', label: 'Rubrik & Aturan', icon: BookOpen },
     { id: 'rekap_ekspor', label: 'Rekap & Ekspor', icon: FileSpreadsheet },
@@ -80,7 +84,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isCollapsed, setIsCollapsed })
                   </span>
                 </div>
                 <p className="text-[11px] text-slate-400 truncate font-medium">
-                  {activeOffering?.practiceCode || activePracticeVersion?.courseCode || 'Praktikum'} • Kelas {activeOffering?.class || '1C'}
+                  {currentCourseCode} • Kelas {activeOffering?.class || '1C'}
                 </p>
               </div>
             )}
@@ -96,26 +100,67 @@ export const Sidebar: React.FC<SidebarProps> = ({ isCollapsed, setIsCollapsed })
           </button>
         </div>
 
-        {/* Offering Week Selector (If not collapsed) */}
+        {/* Real Course & Offering Week Selector (If not collapsed) */}
         {!isCollapsed && role === 'instructor' && (
-          <div className="mt-4 p-2.5 rounded-2xl bg-slate-900/90 border border-slate-800 space-y-1">
-            <label htmlFor="sidebar-week-select" className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block">
-              Mata Kuliah Praktik:
-            </label>
-            <div className="relative">
-              <select
-                id="sidebar-week-select"
-                value={activeOfferingId}
-                onChange={(e) => setActiveOfferingId(e.target.value)}
-                className="w-full appearance-none bg-slate-950 border border-indigo-500/40 text-slate-100 text-xs font-bold rounded-xl pl-3 pr-8 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 cursor-pointer"
+          <div className="mt-4 p-2.5 rounded-2xl bg-slate-900/90 border border-slate-800 space-y-2.5">
+            {/* 1. Real Courses List */}
+            <div className="space-y-1">
+              <label
+                htmlFor="sidebar-course-select"
+                className="text-[10px] font-bold text-amber-400 uppercase tracking-wider block"
               >
-                {offerings.map((off) => (
-                  <option key={off.id} value={off.id}>
-                    {off.practiceCode} • Pekan {off.semesterWeek} ({off.dateRangeText})
-                  </option>
-                ))}
-              </select>
-              <ChevronDown className="w-3.5 h-3.5 text-indigo-400 absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+                Mata Kuliah Praktik:
+              </label>
+              <div className="relative">
+                <select
+                  id="sidebar-course-select"
+                  value={currentCourseCode}
+                  onChange={(e) => {
+                    const selectedCode = e.target.value;
+                    const matchingOffering = offerings.find(
+                      (o) => o.practiceCode?.toLowerCase() === selectedCode.toLowerCase()
+                    );
+                    if (matchingOffering) {
+                      setActiveOfferingId(matchingOffering.id);
+                    } else if (offerings.length > 0) {
+                      setActiveOfferingId(offerings[0].id);
+                    }
+                  }}
+                  className="w-full appearance-none bg-slate-950 border border-amber-500/40 text-slate-100 text-xs font-bold rounded-xl pl-3 pr-8 py-2 focus:outline-none focus:ring-2 focus:ring-amber-500 cursor-pointer"
+                >
+                  {(courses || []).map((c) => (
+                    <option key={c.id} value={c.code}>
+                      {c.code} — {c.name}
+                    </option>
+                  ))}
+                </select>
+                <ChevronDown className="w-3.5 h-3.5 text-amber-400 absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+              </div>
+            </div>
+
+            {/* 2. Pekan Pelaksanaan */}
+            <div className="space-y-1">
+              <label
+                htmlFor="sidebar-week-select"
+                className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block"
+              >
+                Pekan Pelaksanaan:
+              </label>
+              <div className="relative">
+                <select
+                  id="sidebar-week-select"
+                  value={activeOfferingId}
+                  onChange={(e) => setActiveOfferingId(e.target.value)}
+                  className="w-full appearance-none bg-slate-950 border border-indigo-500/40 text-slate-100 text-xs font-bold rounded-xl pl-3 pr-8 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 cursor-pointer"
+                >
+                  {offerings.map((off) => (
+                    <option key={off.id} value={off.id}>
+                      Pekan {off.semesterWeek} • {off.dateRangeText} ({off.practiceCode})
+                    </option>
+                  ))}
+                </select>
+                <ChevronDown className="w-3.5 h-3.5 text-indigo-400 absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+              </div>
             </div>
           </div>
         )}
