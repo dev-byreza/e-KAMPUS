@@ -3,6 +3,7 @@ import {
   Role,
   AppView,
   ActiveTab,
+  Course,
   Offering,
   PracticeVersion,
   Student,
@@ -10,6 +11,7 @@ import {
 import {
   db,
   initializeDatabase,
+  INITIAL_COURSES,
   INITIAL_STUDENTS,
   INITIAL_OFFERINGS,
   INITIAL_PRACTICE_VERSIONS,
@@ -35,6 +37,7 @@ interface AppContextType {
   setActiveSessionOrdinal: (ord: number) => void;
 
   // Data from Dexie
+  courses: Course[];
   offerings: Offering[];
   activeOffering: Offering | undefined;
   practiceVersions: PracticeVersion[];
@@ -105,23 +108,27 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
         const health = await api.checkHealth();
         if (health.status === 'ok') {
           setIsServerConnected(true);
-          console.log('[Sync] Connected to CAD 1.1 Backend Server (v' + health.version + ')');
+          console.log('[Sync] Connected to e-Kampus Backend Server (v' + health.version + ')');
 
           // Sync server data to Dexie
-          const [stdRes, offRes, verRes] = await Promise.all([
-            api.getStudents(),
-            api.getOfferings(),
-            api.getPracticeVersions(),
+          const [crsRes, stdRes, offRes, verRes] = await Promise.all([
+            api.getCourses().catch(() => ({ data: [] })),
+            api.getStudents().catch(() => ({ data: [] })),
+            api.getOfferings().catch(() => ({ data: [] })),
+            api.getPracticeVersions().catch(() => ({ data: [] })),
           ]);
 
-          if (stdRes.data?.length > 0) {
-            await db.students.bulkPut(stdRes.data);
+          if (crsRes.data && crsRes.data.length > 0) {
+            await db.courses.bulkPut(crsRes.data).catch(() => {});
           }
-          if (offRes.data?.length > 0) {
-            await db.offerings.bulkPut(offRes.data);
+          if (stdRes.data && stdRes.data.length > 0) {
+            await db.students.bulkPut(stdRes.data).catch(() => {});
           }
-          if (verRes.data?.length > 0) {
-            await db.practiceVersions.bulkPut(verRes.data);
+          if (offRes.data && offRes.data.length > 0) {
+            await db.offerings.bulkPut(offRes.data).catch(() => {});
+          }
+          if (verRes.data && verRes.data.length > 0) {
+            await db.practiceVersions.bulkPut(verRes.data).catch(() => {});
           }
         }
       } catch (err) {
@@ -152,10 +159,12 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
   }, []);
 
   // Live queries from Dexie with fallback to initial seed
+  const dexieCourses = useLiveQuery(() => db.courses.toArray()) || [];
   const dexieOfferings = useLiveQuery(() => db.offerings.toArray()) || [];
   const dexiePracticeVersions = useLiveQuery(() => db.practiceVersions.toArray()) || [];
   const dexieStudents = useLiveQuery(() => db.students.toArray()) || [];
 
+  const courses = dexieCourses.length > 0 ? dexieCourses : INITIAL_COURSES;
   const offerings = dexieOfferings.length > 0 ? dexieOfferings : INITIAL_OFFERINGS;
   const practiceVersions = dexiePracticeVersions.length > 0 ? dexiePracticeVersions : INITIAL_PRACTICE_VERSIONS;
   const students = dexieStudents.length > 0 ? dexieStudents : INITIAL_STUDENTS;
@@ -277,6 +286,7 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
         setActiveExerciseId,
         activeSessionOrdinal,
         setActiveSessionOrdinal,
+        courses,
         offerings,
         activeOffering,
         practiceVersions,

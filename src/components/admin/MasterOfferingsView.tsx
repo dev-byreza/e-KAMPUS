@@ -9,7 +9,7 @@ export const MasterOfferingsView: React.FC = () => {
     <div className="space-y-6">
       <div className="p-6 rounded-2xl bg-slate-900/90 border border-slate-800 shadow-xl">
         <h3 className="font-bold text-white text-sm mb-1">
-          Master Pelaksanaan Praktik CAD 1.1 per Pekan
+          Master Pelaksanaan Praktikum per Pekan
         </h3>
         <p className="text-xs text-slate-400">
           Kelola offering pelaksanaan, pembagian 12 peserta per kelompok, dan verifikasi tanggal sesi.

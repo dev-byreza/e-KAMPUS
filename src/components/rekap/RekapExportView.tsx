@@ -75,7 +75,7 @@ export const RekapExportView: React.FC = () => {
             </span>
           </div>
           <h2 className="text-lg font-black text-white">
-            Rekap Lengkap Nilai Praktik CAD 1.1 — Kelas {activeOffering.class}
+            Rekap Lengkap Nilai {activeOffering.practiceCode || activePracticeVersion.courseCode || 'Praktikum'} — Kelas {activeOffering.class}
           </h2>
           <p className="text-xs text-slate-400">
             Pekan {activeOffering.semesterWeek} • {activeOffering.dateRangeText} • Format {activePracticeVersion.name}
@@ -289,7 +289,7 @@ export const RekapExportView: React.FC = () => {
             <div className="font-bold border-t border-black pt-1">( .................................................... )</div>
           </div>
           <div className="space-y-16 text-center">
-            <div>Makassar, 31 Agustus 2026<br />Instruktur Praktik CAD 1.1</div>
+            <div>Makassar, 31 Agustus 2026<br />Instruktur {activeOffering.practiceCode || activePracticeVersion.courseCode || 'Praktikum'}</div>
             <div className="font-bold border-t border-black pt-1">
               <strong>{activeOffering.instructorName}</strong>
             </div>

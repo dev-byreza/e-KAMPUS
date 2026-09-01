@@ -93,7 +93,7 @@ export const StudentDetailModal: React.FC<StudentDetailModalProps> = ({ student,
                 </span>
               </div>
               <p className="text-xs text-slate-400 mt-0.5">
-                Pekan {activeOffering.semesterWeek} • {activeOffering.dateRangeText} • Roster CAD 1.1
+                Pekan {activeOffering.semesterWeek} • {activeOffering.dateRangeText} • Roster {activeOffering.practiceCode || 'Praktikum'}
               </p>
             </div>
           </div>

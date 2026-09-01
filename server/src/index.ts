@@ -2,6 +2,7 @@ import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
 import { getStudents, getOfferings, getPracticeVersions, resetDatabase } from './db/database';
+import { coursesRouter } from './routes/courses';
 import { studentsRouter } from './routes/students';
 import { offeringsRouter } from './routes/offerings';
 import { practiceVersionsRouter } from './routes/practiceVersions';
@@ -79,6 +80,7 @@ app.get('/api/health', async (req, res) => {
 });
 
 // Mount Routes
+app.use('/api/courses', coursesRouter);
 app.use('/api/students', studentsRouter);
 app.use('/api/offerings', offeringsRouter);
 app.use('/api/practice-versions', practiceVersionsRouter);

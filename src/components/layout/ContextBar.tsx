@@ -33,7 +33,7 @@ export const ContextBar: React.FC = () => {
           {/* Practice Badge */}
           <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-indigo-950/70 border border-indigo-700/50 text-indigo-200 font-bold text-xs">
             <span className="w-2 h-2 rounded-full bg-indigo-400 animate-pulse" />
-            CAD 1.1
+            {activeOffering?.practiceCode || activePracticeVersion?.courseCode || 'Praktikum'}
           </div>
 
           {/* Semester & Class */}

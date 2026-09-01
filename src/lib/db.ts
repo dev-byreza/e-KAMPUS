@@ -1,5 +1,6 @@
 import Dexie, { type Table } from 'dexie';
 import {
+  Course,
   Student,
   Offering,
   PracticeVersion,
@@ -12,6 +13,7 @@ import {
 } from '../types/assessment';
 
 export class CADAssessmentDB extends Dexie {
+  courses!: Table<Course, string>;
   students!: Table<Student, string>;
   offerings!: Table<Offering, string>;
   practiceVersions!: Table<PracticeVersion, string>;
@@ -49,6 +51,20 @@ export class CADAssessmentDB extends Dexie {
       auditEvents: 'id, timestamp, actor',
       pdfBlobs: 'id, artifactId',
     });
+    // Version 3: add courses table for multi-course management
+    this.version(3).stores({
+      courses: 'id, code, name',
+      students: 'id, nim, class',
+      offerings: 'id, practiceCode, semesterWeek, practiceVersionId',
+      practiceVersions: 'id, status, courseCode',
+      exerciseRecords: 'id, [studentId+exerciseId], offeringId, studentId, exerciseId',
+      pdfRecords: 'id, [studentId+offeringId], studentId, offeringId',
+      softSkillRecords: 'id, [studentId+sessionOrdinal], offeringId, studentId, sessionOrdinal',
+      attendanceRecords: 'id, [studentId+sessionOrdinal], offeringId, studentId, sessionOrdinal',
+      snapshots: 'id, offeringId, studentId',
+      auditEvents: 'id, timestamp, actor',
+      pdfBlobs: 'id, artifactId',
+    });
   }
 }
 
@@ -62,7 +78,39 @@ export interface PdfBlobRecord {
 
 export const db = new CADAssessmentDB();
 
-// --- INITIAL SEED DATA (Lampiran A PRD) ---
+// --- INITIAL SEED DATA ---
+
+export const INITIAL_COURSES: Course[] = [
+  {
+    id: 'crs-cad11',
+    code: 'CAD 1.1',
+    name: 'Praktik CAD 1.1 — Pemodelan 2D & Dasar 3D',
+    sks: 2,
+    description: 'Mata kuliah dasar pemodelan gambar teknik dan CAD 2D.',
+    defaultFormatId: 'CAD11-R1',
+  },
+  {
+    id: 'crs-cad12',
+    code: 'CAD 1.2',
+    name: 'Praktik CAD 1.2 — Pemodelan 3D Lanjut & Surface',
+    sks: 2,
+    description: 'Mata kuliah pemodelan 3D solid and surface CAD.',
+  },
+  {
+    id: 'crs-bim10',
+    code: 'BIM 1.0',
+    name: 'Praktik BIM 1.0 — Building Information Modeling',
+    sks: 3,
+    description: 'Pemodelan terintegrasi arsitektur dan struktur.',
+  },
+  {
+    id: 'crs-cam10',
+    code: 'CAM 1.0',
+    name: 'Praktik CAM 1.0 — Pemrograman CNC & Manufaktur',
+    sks: 2,
+    description: 'Simulasi dan pemrograman lintasan pahat CNC.',
+  },
+];
 
 export const INITIAL_STUDENTS: Student[] = [
   // Pekan 3 (12 mahasiswa)
@@ -501,8 +549,14 @@ export async function resetDatabase(): Promise<void> {
  * Initializes and seeds the database if empty.
  */
 export async function initializeDatabase(): Promise<void> {
+  const courseCount = await db.courses.count().catch(() => 0);
+  if (courseCount === 0) {
+    await db.courses.bulkPut(INITIAL_COURSES).catch(() => {});
+  }
+
   const studentCount = await db.students.count();
   if (studentCount === 0) {
+    await db.courses.bulkPut(INITIAL_COURSES);
     await db.students.bulkAdd(INITIAL_STUDENTS);
     await db.offerings.bulkAdd(INITIAL_OFFERINGS);
     await db.practiceVersions.bulkAdd(INITIAL_PRACTICE_VERSIONS);
@@ -518,6 +572,8 @@ export async function initializeDatabase(): Promise<void> {
       details: 'Inisialisasi 36 mahasiswa kelas 1C untuk Pekan 3, 5, dan 7.',
     });
   } else {
+    // Ensure courses are seeded
+    await db.courses.bulkPut(INITIAL_COURSES).catch(() => {});
     // Synchronize instructorName on existing offerings
     await db.offerings.toCollection().modify({ instructorName: 'Reza Febriadi Rauf, A.Md.T' });
   }

@@ -54,20 +54,20 @@ export const Navbar: React.FC = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo & App Title */}
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 via-indigo-600 to-indigo-800 flex items-center justify-center shadow-lg shadow-indigo-500/20 text-white font-black text-lg tracking-wider border border-indigo-400/30">
-              CAD
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 via-indigo-600 to-indigo-800 flex items-center justify-center shadow-lg shadow-indigo-500/20 text-white font-black text-sm tracking-wider border border-indigo-400/30">
+              e-K
             </div>
             <div>
               <div className="flex items-center gap-2">
                 <span className="font-extrabold text-lg text-white tracking-tight">
-                  CAD 1.1
+                  e-Kampus
                 </span>
                 <span className="px-2 py-0.5 text-[10px] font-bold rounded-full bg-indigo-950 text-indigo-300 border border-indigo-700/50 uppercase tracking-wide">
-                  v1.1 React+Vite
+                  Sistem Praktikum
                 </span>
               </div>
               <p className="text-xs text-slate-400 font-medium">
-                Web App Penilaian Praktik & Dashboard Admin
+                Sistem Penilaian & Manajemen Praktikum Terpadu
               </p>
             </div>
           </div>

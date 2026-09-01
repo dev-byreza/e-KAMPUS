@@ -7,6 +7,16 @@ import {
   timestamp,
 } from 'drizzle-orm/pg-core';
 
+// ─── Courses (Mata Kuliah) ───────────────────────────────────────────────────
+export const courses = pgTable('courses', {
+  id: text('id').primaryKey(),
+  code: text('code').notNull().unique(),
+  name: text('name').notNull(),
+  sks: integer('sks').default(2),
+  description: text('description'),
+  defaultFormatId: text('default_format_id'),
+});
+
 // ─── Students ────────────────────────────────────────────────────────────────
 export const students = pgTable('students', {
   id: text('id').primaryKey(),

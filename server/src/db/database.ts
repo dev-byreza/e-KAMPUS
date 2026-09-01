@@ -8,6 +8,7 @@ import { eq, and } from 'drizzle-orm';
 import { db } from './client';
 import * as t from './schema';
 import type {
+  Course,
   Student,
   Offering,
   PracticeVersion,
@@ -18,6 +19,41 @@ import type {
   GradeSnapshot,
   AuditEvent,
 } from '../../../src/types/assessment';
+
+// ─────────────────────────────────────────────────────────────────
+// COURSES (MATA KULIAH)
+// ─────────────────────────────────────────────────────────────────
+export async function getCourses(): Promise<Course[]> {
+  return db.select().from(t.courses) as Promise<Course[]>;
+}
+
+export async function getCourseById(id: string): Promise<Course | null> {
+  const rows = await db.select().from(t.courses).where(eq(t.courses.id, id));
+  return (rows[0] as Course) || null;
+}
+
+export async function upsertCourse(course: Course): Promise<Course> {
+  const rows = await db
+    .insert(t.courses)
+    .values(course as any)
+    .onConflictDoUpdate({
+      target: t.courses.id,
+      set: {
+        code: course.code,
+        name: course.name,
+        sks: course.sks,
+        description: course.description,
+        defaultFormatId: course.defaultFormatId,
+      },
+    })
+    .returning();
+  return rows[0] as Course;
+}
+
+export async function deleteCourse(id: string): Promise<Course | null> {
+  const rows = await db.delete(t.courses).where(eq(t.courses.id, id)).returning();
+  return (rows[0] as Course) || null;
+}
 
 // ─────────────────────────────────────────────────────────────────
 // STUDENTS
@@ -187,7 +223,7 @@ export async function insertAuditEvent(event: AuditEvent): Promise<void> {
 // SYSTEM RESET (re-seed master data)
 // ─────────────────────────────────────────────────────────────────
 export async function resetDatabase(): Promise<void> {
-  const { SEED_STUDENTS, SEED_OFFERINGS, SEED_PRACTICE_VERSIONS } = await import('./seedData');
+  const { SEED_COURSES, SEED_STUDENTS, SEED_OFFERINGS, SEED_PRACTICE_VERSIONS } = await import('./seedData');
 
   // Clear grade data (keep students/offerings/versions)
   await db.delete(t.exerciseRecords);
@@ -197,6 +233,7 @@ export async function resetDatabase(): Promise<void> {
   await db.delete(t.snapshots);
 
   // Re-seed master data
+  for (const c of SEED_COURSES) await upsertCourse(c);
   for (const s of SEED_STUDENTS) await upsertStudent(s);
   for (const o of SEED_OFFERINGS) {
     await db.insert(t.offerings).values(o as any).onConflictDoUpdate({ target: t.offerings.id, set: o as any });

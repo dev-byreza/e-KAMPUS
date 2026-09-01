@@ -150,7 +150,7 @@ export const PdfSplitScreenModal: React.FC<PdfSplitScreenModalProps> = ({
             <div>
               <div className="flex items-center gap-2">
                 <h2 className="text-sm font-black text-white tracking-tight flex items-center gap-2">
-                  <span>Split-Screen Pemeriksaan & Penilaian PDF CAD 1.1</span>
+                  <span>Split-Screen Pemeriksaan & Penilaian PDF {activeOffering?.practiceCode || 'Praktikum'}</span>
                   <span className="px-2 py-0.5 rounded-md bg-indigo-950 text-indigo-300 border border-indigo-700/60 text-[10px] font-mono">
                     ISO A4 LANDSCAPE
                   </span>

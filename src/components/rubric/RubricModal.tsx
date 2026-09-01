@@ -34,7 +34,7 @@ export const RubricModal: React.FC = () => {
             </div>
             <div>
               <h2 className="text-base font-bold text-white">
-                Panduan Rubrik Penilaian CAD 1.1
+                Panduan Rubrik Penilaian {activePracticeVersion.courseCode || 'Praktikum'}
               </h2>
               <p className="text-xs text-slate-400">
                 Format: <span className="text-indigo-300 font-semibold">{activePracticeVersion.name}</span> • Skala Input 0–4 → Hasil 0–100

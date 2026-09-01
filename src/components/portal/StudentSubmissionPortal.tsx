@@ -142,20 +142,20 @@ export const StudentSubmissionPortal: React.FC = () => {
       {/* Top Header Navbar Banner */}
       <div className="p-5 rounded-3xl bg-slate-900/90 border border-slate-800 shadow-xl flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div className="flex items-center gap-4">
-          <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-indigo-500 via-indigo-600 to-indigo-800 flex items-center justify-center text-white font-black text-xl shadow-lg shadow-indigo-600/30 shrink-0">
-            CAD
+          <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-indigo-500 via-indigo-600 to-indigo-800 flex items-center justify-center text-white font-black text-sm shadow-lg shadow-indigo-600/30 shrink-0">
+            e-K
           </div>
           <div>
             <div className="flex items-center gap-2.5">
               <h1 className="text-base sm:text-lg font-black text-white tracking-tight">
-                Portal Pengumpulan Mandiri Mahasiswa
+                e-Kampus — Portal Pengumpulan Mandiri
               </h1>
               <span className="px-2.5 py-0.5 rounded-full bg-indigo-950 text-indigo-300 font-mono text-[10px] font-bold border border-indigo-800">
-                CAD 1.1 • Kelas 1C
+                {activeOffering?.practiceCode || 'Praktikum'} • Kelas {activeOffering?.class || '1C'}
               </span>
             </div>
             <p className="text-xs text-slate-400 mt-0.5">
-              Pengumpulan Berkas Hasil Plot PDF Jobsheet L01–L10 • Format Standar & Verifikasi Otomatis
+              Pengumpulan Berkas Hasil Plot PDF / Proyek Tugas • Format Standar & Verifikasi Otomatis
             </p>
           </div>
         </div>

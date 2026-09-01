@@ -1,4 +1,5 @@
 import {
+  Course,
   Student,
   Offering,
   PracticeVersion,
@@ -38,6 +39,35 @@ class ApiService {
   // Health check
   public async checkHealth() {
     return this.request<{ status: string; version: string }>('/health');
+  }
+
+  // Courses (Mata Kuliah)
+  public async getCourses() {
+    return this.request<{ success: boolean; count: number; data: Course[] }>('/courses');
+  }
+
+  public async getCourseById(id: string) {
+    return this.request<{ success: boolean; data: Course }>(`/courses/${id}`);
+  }
+
+  public async createCourse(course: Partial<Course>) {
+    return this.request<{ success: boolean; data: Course }>('/courses', {
+      method: 'POST',
+      body: JSON.stringify(course),
+    });
+  }
+
+  public async updateCourse(id: string, updates: Partial<Course>) {
+    return this.request<{ success: boolean; data: Course }>(`/courses/${id}`, {
+      method: 'PUT',
+      body: JSON.stringify(updates),
+    });
+  }
+
+  public async deleteCourse(id: string) {
+    return this.request<{ success: boolean; data: Course }>(`/courses/${id}`, {
+      method: 'DELETE',
+    });
   }
 
   // Students

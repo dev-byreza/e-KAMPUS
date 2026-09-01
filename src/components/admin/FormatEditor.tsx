@@ -19,6 +19,7 @@ import {
   Sparkles,
   ArrowRight,
   BookOpen,
+  FileCode2,
   Eye,
 } from 'lucide-react';
 import { cn } from '../../lib/utils';
@@ -50,20 +51,50 @@ const normalizeVersion = (v?: Partial<PracticeVersion>): PracticeVersion => {
   };
 };
 
-export const FormatEditor: React.FC = () => {
-  const { practiceVersions, showToast } = useApp();
+interface FormatEditorProps {
+  initialCourseCode?: string;
+}
 
-  const [selectedVersionId, setSelectedVersionId] = useState<string>(
-    practiceVersions[0]?.id || 'CAD11-R1'
+export const FormatEditor: React.FC<FormatEditorProps> = ({ initialCourseCode }) => {
+  const { practiceVersions, courses, showToast } = useApp();
+
+  const [selectedCourseCode, setSelectedCourseCode] = useState<string>(
+    initialCourseCode || 'ALL'
   );
 
-  const activeRawVersion = practiceVersions.find((v) => v.id === selectedVersionId) || practiceVersions[0];
+  const filteredVersions = practiceVersions.filter((v) => {
+    if (selectedCourseCode === 'ALL') return true;
+    return (
+      (v.courseCode && v.courseCode.toLowerCase() === selectedCourseCode.toLowerCase()) ||
+      v.id.toLowerCase().includes(selectedCourseCode.toLowerCase().replace(/[^a-z0-9]/g, ''))
+    );
+  });
+
+  const [selectedVersionId, setSelectedVersionId] = useState<string>(
+    filteredVersions[0]?.id || practiceVersions[0]?.id || 'CAD11-R1'
+  );
+
+  const activeRawVersion =
+    practiceVersions.find((v) => v.id === selectedVersionId) ||
+    filteredVersions[0] ||
+    practiceVersions[0];
 
   // Local draft state for editing
   const [draft, setDraft] = useState<PracticeVersion>(() => normalizeVersion(activeRawVersion));
-  const [editorSubTab, setEditorSubTab] = useState<'weights' | 'exercises' | 'criteria' | 'pdf' | 'soft' | 'attendance'>('weights');
+  const [editorSubTab, setEditorSubTab] = useState<
+    'weights' | 'exercises' | 'criteria' | 'pdf' | 'soft' | 'attendance'
+  >('weights');
   const [showSimulator, setShowSimulator] = useState(false);
   const [showApplyModal, setShowApplyModal] = useState(false);
+  const [showNewFormatModal, setShowNewFormatModal] = useState(false);
+
+  // New Format Modal State
+  const [newFormatCourse, setNewFormatCourse] = useState(
+    courses[0]?.code || 'CAD 1.1'
+  );
+  const [newFormatId, setNewFormatId] = useState('');
+  const [newFormatName, setNewFormatName] = useState('');
+  const [newFormatExercisesCount, setNewFormatExercisesCount] = useState(10);
 
   // Sync draft when switching version
   const handleSelectVersion = (id: string) => {
@@ -82,10 +113,11 @@ export const FormatEditor: React.FC = () => {
   // Clone active version to new draft
   const handleCloneVersion = async () => {
     const nextVerNum = (practiceVersions || []).length + 1;
+    const cleanCourseCode = (draft.courseCode || 'MK').replace(/[^a-zA-Z0-9]/g, '');
     const newVersion: PracticeVersion = {
       ...normalizeVersion(draft),
-      id: `CAD11-R${nextVerNum}`,
-      name: `${draft.courseCode || 'CAD 1.1'} — Versi R${nextVerNum} (Draf Baru)`,
+      id: `${cleanCourseCode}-R${nextVerNum}`,
+      name: `${draft.courseCode || 'Mata Kuliah'} — Versi R${nextVerNum} (Draf Baru)`,
       status: 'draft',
       publishedAt: undefined,
       publishedBy: undefined,
@@ -99,6 +131,57 @@ export const FormatEditor: React.FC = () => {
     setSelectedVersionId(newVersion.id);
     setDraft(newVersion);
     showToast(`Draf versi ${newVersion.id} berhasil dibuat!`, 'success');
+  };
+
+  // Create brand new format for selected course
+  const handleCreateNewFormat = async (e: React.FormEvent) => {
+    e.preventDefault();
+    const matchedCourse = courses.find((c) => c.code === newFormatCourse) || {
+      code: newFormatCourse,
+      name: `Praktik ${newFormatCourse}`,
+    };
+
+    const cleanCode = matchedCourse.code.replace(/[^a-zA-Z0-9]/g, '');
+    const generatedId = newFormatId.trim() || `${cleanCode}-R1`;
+    const generatedName =
+      newFormatName.trim() ||
+      `${matchedCourse.code} — Versi Standar (${newFormatExercisesCount} Latihan)`;
+
+    const newExercises: Exercise[] = Array.from(
+      { length: newFormatExercisesCount },
+      (_, i) => ({
+        id: `L${String(i + 1).padStart(2, '0')}`,
+        code: `L${String(i + 1).padStart(2, '0')}`,
+        title: `Latihan ${String(i + 1).padStart(2, '0')}`,
+        topic: `Materi Praktik ${i + 1}`,
+        weight: Math.round(100 / newFormatExercisesCount),
+        instructions: `Tugas latihan praktikum ${matchedCourse.code} nomor ${i + 1}.`,
+        isReady: true,
+      })
+    );
+
+    const brandNewVersion: PracticeVersion = {
+      ...normalizeVersion(draft),
+      id: generatedId,
+      name: generatedName,
+      courseCode: matchedCourse.code,
+      courseName: matchedCourse.name,
+      status: 'draft',
+      exercises: newExercises,
+      publishedAt: undefined,
+      publishedBy: undefined,
+    };
+
+    await db.practiceVersions.put(brandNewVersion);
+    api.createPracticeVersion(brandNewVersion).catch((e) => {
+      console.warn('[FormatEditor] Backend create sync note:', e.message);
+    });
+
+    setSelectedCourseCode(matchedCourse.code);
+    setSelectedVersionId(brandNewVersion.id);
+    setDraft(brandNewVersion);
+    setShowNewFormatModal(false);
+    showToast(`Format baru ${brandNewVersion.id} berhasil dibuat untuk ${matchedCourse.code}!`, 'success');
   };
 
   // Save Draft changes to DB & Backend
@@ -162,19 +245,49 @@ export const FormatEditor: React.FC = () => {
 
   return (
     <div className="space-y-6">
-      {/* Version Selector & Header Controls */}
+      {/* Primary Top Bar: Course Filter, Version Selector & Actions */}
       <div className="p-6 rounded-2xl bg-slate-900/90 border border-slate-800 shadow-xl flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
         <div className="flex flex-wrap items-center gap-3">
+          {/* Filter Mata Kuliah */}
+          <div>
+            <label className="text-[11px] font-semibold text-amber-400 block mb-1">
+              Mata Kuliah:
+            </label>
+            <select
+              value={selectedCourseCode}
+              onChange={(e) => {
+                const code = e.target.value;
+                setSelectedCourseCode(code);
+                const firstMatch = practiceVersions.find(
+                  (v) => code === 'ALL' || v.courseCode?.toLowerCase() === code.toLowerCase()
+                );
+                if (firstMatch) {
+                  setSelectedVersionId(firstMatch.id);
+                  setDraft(normalizeVersion(firstMatch));
+                }
+              }}
+              className="bg-slate-950 border border-amber-800/60 rounded-xl px-3 py-2 text-xs font-bold text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-500 cursor-pointer"
+            >
+              <option value="ALL">Semua Mata Kuliah</option>
+              {(courses || []).map((c) => (
+                <option key={c.id} value={c.code}>
+                  {c.code} — {c.name}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          {/* Version Selector */}
           <div>
             <label className="text-[11px] font-semibold text-slate-400 block mb-1">
-              Pilih Versi Format:
+              Versi Format Penilaian:
             </label>
             <select
               value={draft.id}
               onChange={(e) => handleSelectVersion(e.target.value)}
               className="bg-slate-950 border border-slate-700 rounded-xl px-3 py-2 text-xs font-bold text-white focus:outline-none focus:ring-2 focus:ring-amber-500 cursor-pointer"
             >
-              {(practiceVersions || []).map((v) => (
+              {filteredVersions.map((v) => (
                 <option key={v.id} value={v.id}>
                   {v.id} — {v.name} ({v.status?.toUpperCase() || 'PUBLISHED'})
                 </option>
@@ -182,13 +295,28 @@ export const FormatEditor: React.FC = () => {
             </select>
           </div>
 
-          <button
-            onClick={handleCloneVersion}
-            className="flex items-center gap-1.5 px-3 py-2 mt-4 rounded-xl bg-slate-950 hover:bg-slate-800 border border-slate-700 text-slate-200 text-xs font-semibold transition-colors"
-          >
-            <Copy className="w-3.5 h-3.5 text-amber-400" />
-            <span>Salin Versi (Buat Draf)</span>
-          </button>
+          <div className="flex items-center gap-2 mt-4">
+            <button
+              onClick={() => {
+                setNewFormatCourse(draft.courseCode || courses[0]?.code || 'CAD 1.1');
+                setNewFormatId('');
+                setNewFormatName('');
+                setShowNewFormatModal(true);
+              }}
+              className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-amber-600/20 hover:bg-amber-600/30 border border-amber-600/50 text-amber-300 text-xs font-bold transition-colors"
+            >
+              <Plus className="w-3.5 h-3.5" />
+              <span>+ Format Baru</span>
+            </button>
+
+            <button
+              onClick={handleCloneVersion}
+              className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-950 hover:bg-slate-800 border border-slate-700 text-slate-200 text-xs font-semibold transition-colors"
+            >
+              <Copy className="w-3.5 h-3.5 text-amber-400" />
+              <span>Salin Versi</span>
+            </button>
+          </div>
         </div>
 
         {/* Action Buttons: Save, Simulator, Publish, Apply */}
@@ -229,15 +357,44 @@ export const FormatEditor: React.FC = () => {
         </div>
       </div>
 
+      {/* Primary Hierarchy Notice Bar */}
+      <div className="p-4 rounded-2xl bg-gradient-to-r from-amber-950/40 via-slate-900 to-indigo-950/40 border border-amber-800/40 flex items-center justify-between gap-4">
+        <div className="flex items-center gap-3">
+          <div className="w-8 h-8 rounded-xl bg-amber-600 text-white flex items-center justify-center font-bold text-xs shadow-md shrink-0">
+            {draft.courseCode || 'MK'}
+          </div>
+          <div>
+            <div className="flex items-center gap-2">
+              <h4 className="text-xs font-black text-white uppercase tracking-wider">
+                Format Penilaian: {draft.courseCode} — {draft.name}
+              </h4>
+              <span
+                className={cn(
+                  'px-2 py-0.2 rounded text-[10px] font-bold uppercase',
+                  draft.status === 'published'
+                    ? 'bg-emerald-950 text-emerald-300 border border-emerald-800'
+                    : 'bg-amber-950 text-amber-300 border border-amber-800'
+                )}
+              >
+                {draft.status}
+              </span>
+            </div>
+            <p className="text-[11px] text-slate-400 mt-0.5">
+              Struktur format adalah <strong>Blueprint Utama</strong>. Kriteria latihan, rubrik deskriptor 0–4, kriteria PDF, dan soft skill di bawah dihasilkan dari format ini.
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* Live Simulator View (if opened) */}
       {showSimulator && <FormatSimulator version={draft} />}
 
-      {/* Sub-Tabs for Format Configuration */}
+      {/* Hierarchical Sub-Tabs for Format Configuration */}
       <div className="flex border-b border-slate-800 bg-slate-900/60 rounded-xl p-1 gap-1 overflow-x-auto">
         {[
-          { id: 'weights', label: '1. Bobot & Tab Tombol' },
+          { id: 'weights', label: '1. Format & Bobot Komponen (Utama)' },
           { id: 'exercises', label: `2. Daftar Latihan (${exercisesList.length})` },
-          { id: 'criteria', label: `3. Kriteria Latihan (${exerciseCriteriaList.length})` },
+          { id: 'criteria', label: `3. Kriteria Latihan 0–4 (${exerciseCriteriaList.length})` },
           { id: 'pdf', label: `4. Kriteria PDF (${pdfCriteriaList.length})` },
           { id: 'soft', label: `5. Soft Skill (${softSkillCriteriaList.length})` },
           { id: 'attendance', label: '6. Kebijakan Absensi' },
@@ -906,6 +1063,107 @@ export const FormatEditor: React.FC = () => {
                 className="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-sm font-bold text-white focus:outline-none focus:ring-2 focus:ring-amber-500"
               />
             </div>
+          </div>
+        </div>
+      )}
+
+      {/* Modal Buat Format Baru untuk Mata Kuliah */}
+      {showNewFormatModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm animate-in fade-in">
+          <div className="bg-slate-900 border border-slate-700 rounded-2xl w-full max-w-lg p-6 space-y-4 shadow-2xl">
+            <div className="flex items-center justify-between border-b border-slate-800 pb-3">
+              <div className="flex items-center gap-2 text-amber-400 font-bold text-sm">
+                <FileCode2 className="w-4 h-4" />
+                <span>Buat Blueprint Format Penilaian Baru</span>
+              </div>
+              <button
+                onClick={() => setShowNewFormatModal(false)}
+                className="text-slate-400 hover:text-white font-bold"
+              >
+                ✕
+              </button>
+            </div>
+
+            <form onSubmit={handleCreateNewFormat} className="space-y-4">
+              <div className="p-3 rounded-xl bg-amber-950/30 border border-amber-800/40 text-xs text-amber-300">
+                Format penilaian adalah <strong>struktur utama</strong>. Jumlah butir latihan dan kriteria yang dinilai akan diinisialisasi berdasarkan rancangan format ini.
+              </div>
+
+              <div className="space-y-1.5">
+                <label className="text-xs font-semibold text-slate-300">
+                  Target Mata Kuliah / Praktikum *:
+                </label>
+                <select
+                  value={newFormatCourse}
+                  onChange={(e) => setNewFormatCourse(e.target.value)}
+                  className="w-full bg-slate-950 border border-slate-700 rounded-xl p-2.5 text-xs text-white focus:outline-none focus:ring-2 focus:ring-amber-500 font-bold"
+                >
+                  {(courses || []).map((c) => (
+                    <option key={c.id} value={c.code}>
+                      {c.code} — {c.name}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              <div className="grid grid-cols-2 gap-3">
+                <div className="space-y-1.5">
+                  <label className="text-xs font-semibold text-slate-300">
+                    ID Versi Format *:
+                  </label>
+                  <input
+                    type="text"
+                    placeholder={`Contoh: ${newFormatCourse.replace(/[^a-zA-Z0-9]/g, '')}-R1`}
+                    value={newFormatId}
+                    onChange={(e) => setNewFormatId(e.target.value)}
+                    className="w-full bg-slate-950 border border-slate-700 rounded-xl p-2.5 text-xs text-white focus:outline-none focus:ring-2 focus:ring-amber-500 font-bold uppercase"
+                  />
+                </div>
+
+                <div className="space-y-1.5">
+                  <label className="text-xs font-semibold text-slate-300">
+                    Jumlah Butir Latihan / Jobsheet:
+                  </label>
+                  <input
+                    type="number"
+                    min="1"
+                    max="20"
+                    value={newFormatExercisesCount}
+                    onChange={(e) => setNewFormatExercisesCount(Number(e.target.value))}
+                    className="w-full bg-slate-950 border border-slate-700 rounded-xl p-2.5 text-xs text-white focus:outline-none focus:ring-2 focus:ring-amber-500 font-bold"
+                  />
+                </div>
+              </div>
+
+              <div className="space-y-1.5">
+                <label className="text-xs font-semibold text-slate-300">
+                  Judul Label Format Penilaian:
+                </label>
+                <input
+                  type="text"
+                  placeholder={`Contoh: ${newFormatCourse} — Versi Standar Kurikulum 2026`}
+                  value={newFormatName}
+                  onChange={(e) => setNewFormatName(e.target.value)}
+                  className="w-full bg-slate-950 border border-slate-700 rounded-xl p-2.5 text-xs text-white focus:outline-none focus:ring-2 focus:ring-amber-500 font-medium"
+                />
+              </div>
+
+              <div className="flex justify-end gap-2 pt-3 border-t border-slate-800">
+                <button
+                  type="button"
+                  onClick={() => setShowNewFormatModal(false)}
+                  className="px-4 py-2 rounded-xl text-xs font-semibold text-slate-400 hover:text-white"
+                >
+                  Batal
+                </button>
+                <button
+                  type="submit"
+                  className="px-5 py-2 rounded-xl bg-amber-600 hover:bg-amber-500 text-white text-xs font-bold shadow-md transition-all"
+                >
+                  Buat & Rancang Format
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       )}

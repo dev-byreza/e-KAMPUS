@@ -65,18 +65,18 @@ export const Sidebar: React.FC<SidebarProps> = ({ isCollapsed, setIsCollapsed })
       <div className="p-4 border-b border-slate-800/80">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3 overflow-hidden">
-            <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-indigo-500 via-indigo-600 to-indigo-800 flex items-center justify-center shadow-lg shadow-indigo-500/25 text-white font-black text-lg tracking-wider border border-indigo-400/30 shrink-0">
-              CAD
+            <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-indigo-500 via-indigo-600 to-indigo-800 flex items-center justify-center shadow-lg shadow-indigo-500/25 text-white font-black text-sm tracking-wider border border-indigo-400/30 shrink-0">
+              e-K
             </div>
             {!isCollapsed && (
               <div className="truncate">
                 <div className="flex items-center gap-2">
                   <span className="font-extrabold text-sm text-white tracking-tight">
-                    CAD 1.1 e-KAMPUS
+                    e-Kampus
                   </span>
                 </div>
-                <p className="text-[11px] text-slate-400 truncate">
-                  Kelas 1C • Ganjil 2026/2027
+                <p className="text-[11px] text-slate-400 truncate font-medium">
+                  {activeOffering?.practiceCode || activePracticeVersion?.courseCode || 'Praktikum'} • Kelas {activeOffering?.class || '1C'}
                 </p>
               </div>
             )}

@@ -2,6 +2,15 @@
 
 export type Role = 'admin' | 'instructor';
 
+export interface Course {
+  id: string; // e.g. "crs-cad11", "crs-cad12", "crs-bim10"
+  code: string; // e.g. "CAD 1.1", "CAD 1.2", "BIM 1.0", "CAM 1.0"
+  name: string; // e.g. "Praktik CAD 1.1 — Pemodelan 2D & Dasar 3D"
+  sks?: number; // e.g. 2
+  description?: string;
+  defaultFormatId?: string; // e.g. "CAD11-R1"
+}
+
 export interface Student {
   id: string; // UUID
   nim: string; // Stored strictly as text

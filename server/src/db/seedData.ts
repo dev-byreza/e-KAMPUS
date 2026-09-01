@@ -1,4 +1,36 @@
-import { Student, Offering, PracticeVersion } from '../../../src/types/assessment';
+import { Course, Student, Offering, PracticeVersion } from '../../../src/types/assessment';
+
+export const SEED_COURSES: Course[] = [
+  {
+    id: 'crs-cad11',
+    code: 'CAD 1.1',
+    name: 'Praktik CAD 1.1 — Pemodelan 2D & Dasar 3D',
+    sks: 2,
+    description: 'Mata kuliah dasar pemodelan gambar teknik dan CAD 2D.',
+    defaultFormatId: 'CAD11-R1',
+  },
+  {
+    id: 'crs-cad12',
+    code: 'CAD 1.2',
+    name: 'Praktik CAD 1.2 — Pemodelan 3D Lanjut & Surface',
+    sks: 2,
+    description: 'Mata kuliah pemodelan 3D solid and surface CAD.',
+  },
+  {
+    id: 'crs-bim10',
+    code: 'BIM 1.0',
+    name: 'Praktik BIM 1.0 — Building Information Modeling',
+    sks: 3,
+    description: 'Pemodelan terintegrasi arsitektur dan struktur.',
+  },
+  {
+    id: 'crs-cam10',
+    code: 'CAM 1.0',
+    name: 'Praktik CAM 1.0 — Pemrograman CNC & Manufaktur',
+    sks: 2,
+    description: 'Simulasi dan pemrograman lintasan pahat CNC.',
+  },
+];
 
 export const SEED_STUDENTS: Student[] = [
   // Pekan 3 (12 Mahasiswa)
