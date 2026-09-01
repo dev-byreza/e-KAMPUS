@@ -96,7 +96,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isCollapsed, setIsCollapsed })
         {!isCollapsed && role === 'instructor' && (
           <div className="mt-4 p-2.5 rounded-2xl bg-slate-900/90 border border-slate-800 space-y-1">
             <label htmlFor="sidebar-week-select" className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block">
-              Pekan Praktik Aktif:
+              Mata Kuliah Praktik:
             </label>
             <div className="relative">
               <select
@@ -107,7 +107,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isCollapsed, setIsCollapsed })
               >
                 {offerings.map((off) => (
                   <option key={off.id} value={off.id}>
-                    Pekan {off.semesterWeek} • {off.dateRangeText}
+                    {off.practiceCode} • Pekan {off.semesterWeek} ({off.dateRangeText})
                   </option>
                 ))}
               </select>
