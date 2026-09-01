@@ -235,25 +235,15 @@ export const StudentSubmissionPortal: React.FC = () => {
             </div>
           </div>
 
-          <div className="flex justify-center gap-3 pt-2">
+          <div className="flex justify-center pt-2">
             <button
               onClick={() => {
                 setSubmittedReceipt(null);
                 setFile(null);
               }}
-              className="px-5 py-2.5 rounded-xl bg-slate-950 hover:bg-slate-800 border border-slate-700 text-xs font-bold text-slate-200 transition-colors"
+              className="w-full sm:w-auto px-6 py-2.5 rounded-xl bg-slate-950 hover:bg-slate-800 border border-slate-700 text-xs font-bold text-slate-200 transition-colors shadow-md"
             >
               Kirim Revisi / Unggah Ulang
-            </button>
-
-            <button
-              onClick={() => {
-                window.location.hash = '';
-                setView('penilaian');
-              }}
-              className="px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-bold shadow-lg transition-all"
-            >
-              Lihat di Lembar Penilaian Instruktur
             </button>
           </div>
         </div>
