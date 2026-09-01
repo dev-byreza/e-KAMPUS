@@ -17,6 +17,7 @@ import {
 } from '../types/assessment';
 import { calculateStudentGrade } from '../lib/calcEngine';
 import { api } from '../services/api';
+import { uploadPdfToStorage } from '../lib/supabase';
 
 export function useAssessmentData() {
   const {
@@ -299,7 +300,7 @@ export function useAssessmentData() {
     triggerAutoSave();
   };
 
-  // Upload/Simulate PDF File – accepts optional real File for blob storage
+  // Upload PDF File — uploads to Supabase Storage (cloud) or falls back to IndexedDB blob
   const uploadPdfFile = async (
     studentId: string,
     fileName: string,
@@ -311,6 +312,25 @@ export function useAssessmentData() {
 
     const currentVersion = (existing?.activeArtifactVersion || 0) + 1;
     const artifactId = `art-${studentId}-v${currentVersion}`;
+
+    // Try uploading to Supabase Storage
+    let fileUrl = '#';
+    if (fileBlob) {
+      const nim = studentId.replace('std-', '');
+      const storageUrl = await uploadPdfToStorage(
+        fileBlob,
+        activeOfferingId,
+        nim,
+        currentVersion
+      );
+      if (storageUrl) {
+        fileUrl = storageUrl;
+        console.log(`✅ PDF uploaded to Supabase Storage: ${storageUrl}`);
+      } else {
+        console.warn('⚠️ Supabase Storage upload failed, falling back to IndexedDB blob.');
+      }
+    }
+
     const newArtifact = {
       id: artifactId,
       version: currentVersion,
@@ -318,7 +338,7 @@ export function useAssessmentData() {
       fileSize,
       uploadedAt: new Date().toISOString(),
       uploadedBy: 'Instruktur',
-      fileUrl: '#',
+      fileUrl,
     };
 
     const artifacts = [...(existing?.artifacts || []), newArtifact];
@@ -337,8 +357,8 @@ export function useAssessmentData() {
       revision: (existing?.revision || 0) + 1,
     });
 
-    // Store actual file blob for in-app PDF preview
-    if (fileBlob) {
+    // Fallback: store blob in IndexedDB if Supabase upload failed
+    if (fileBlob && fileUrl === '#') {
       await db.pdfBlobs.put({
         id: artifactId,
         artifactId,

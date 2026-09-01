@@ -17,6 +17,45 @@ app.use(cors({ origin: true, credentials: true }));
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ extended: true, limit: '50mb' }));
 
+// Root API index
+app.get('/api', (req, res) => {
+  res.json({
+    name: 'e-KAMPUS CAD 1.1 API',
+    version: '1.1.0',
+    database: 'supabase-postgresql + drizzle-orm',
+    endpoints: [
+      'GET  /api/health',
+      'GET  /api/students',
+      'POST /api/students',
+      'POST /api/students/bulk-import',
+      'DELETE /api/students/:id',
+      'GET  /api/offerings',
+      'GET  /api/offerings/:id',
+      'PUT  /api/offerings/:id',
+      'POST /api/offerings/:id/verify-roster',
+      'POST /api/offerings/:id/verify-dates',
+      'GET  /api/practice-versions',
+      'GET  /api/practice-versions/:id',
+      'POST /api/practice-versions',
+      'PUT  /api/practice-versions/:id',
+      'POST /api/practice-versions/:id/publish',
+      'POST /api/practice-versions/:id/apply',
+      'GET  /api/grades/:offeringId',
+      'POST /api/grades/exercise',
+      'POST /api/grades/pdf',
+      'POST /api/grades/softskill',
+      'POST /api/grades/attendance',
+      'POST /api/grades/attendance/bulk-present',
+      'GET  /api/snapshots/:offeringId',
+      'POST /api/snapshots/finalize',
+      'POST /api/snapshots/reopen',
+      'GET  /api/audit',
+      'POST /api/audit',
+      'POST /api/system/reset-db',
+    ],
+  });
+});
+
 // Health check
 app.get('/api/health', async (req, res) => {
   try {

@@ -63,15 +63,24 @@ export const PdfSplitScreenModal: React.FC<PdfSplitScreenModalProps> = ({
     (a) => a.version === rec.activeArtifactVersion
   );
 
-  // Load real PDF blob from IndexedDB whenever artifact changes
+  // Load PDF: prioritize Supabase Storage URL, fallback to IndexedDB blob
   useEffect(() => {
-    let revoked = false;
     if (blobUrlRef.current) {
       URL.revokeObjectURL(blobUrlRef.current);
       blobUrlRef.current = null;
-      setPdfBlobUrl(null);
     }
+    setPdfBlobUrl(null);
+
     if (!activeArtifact?.id) return;
+
+    // Priority 1: Supabase Storage URL (cross-device, cloud)
+    if (activeArtifact.fileUrl && activeArtifact.fileUrl !== '#') {
+      setPdfBlobUrl(activeArtifact.fileUrl);
+      return;
+    }
+
+    // Priority 2: IndexedDB blob (local browser only, fallback)
+    let revoked = false;
     (async () => {
       try {
         const blobRecord = await db.pdfBlobs.get(activeArtifact.id);
@@ -81,13 +90,12 @@ export const PdfSplitScreenModal: React.FC<PdfSplitScreenModalProps> = ({
           setPdfBlobUrl(url);
         }
       } catch {
-        // no blob stored yet
+        // no blob stored
       }
     })();
-    return () => {
-      revoked = true;
-    };
-  }, [activeArtifact?.id]);
+    return () => { revoked = true; };
+  }, [activeArtifact?.id, activeArtifact?.fileUrl]);
+
 
   useEffect(() => {
     if (rec?.notes) {
