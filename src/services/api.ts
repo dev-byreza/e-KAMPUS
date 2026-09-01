@@ -93,6 +93,13 @@ class ApiService {
     });
   }
 
+  public async updateStudent(id: string, updates: Partial<Student>) {
+    return this.request<{ success: boolean; data: Student }>(`/students/${id}`, {
+      method: 'PUT',
+      body: JSON.stringify(updates),
+    });
+  }
+
   public async deleteStudent(id: string) {
     return this.request<{ success: boolean; data: Student }>(`/students/${id}`, {
       method: 'DELETE',
@@ -104,10 +111,23 @@ class ApiService {
     return this.request<{ success: boolean; data: Offering[] }>('/offerings');
   }
 
+  public async createOffering(offering: Partial<Offering>) {
+    return this.request<{ success: boolean; data: Offering }>('/offerings', {
+      method: 'POST',
+      body: JSON.stringify(offering),
+    });
+  }
+
   public async updateOffering(id: string, updates: Partial<Offering>) {
     return this.request<{ success: boolean; data: Offering }>(`/offerings/${id}`, {
       method: 'PUT',
       body: JSON.stringify(updates),
+    });
+  }
+
+  public async deleteOffering(id: string) {
+    return this.request<{ success: boolean; data: Offering }>(`/offerings/${id}`, {
+      method: 'DELETE',
     });
   }
 

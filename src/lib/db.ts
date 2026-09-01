@@ -65,6 +65,20 @@ export class CADAssessmentDB extends Dexie {
       auditEvents: 'id, timestamp, actor',
       pdfBlobs: 'id, artifactId',
     });
+    // Version 4: add courseCode and semester to students indexes
+    this.version(4).stores({
+      courses: 'id, code, name',
+      students: 'id, nim, class, courseCode, semester',
+      offerings: 'id, practiceCode, semesterWeek, practiceVersionId, semester, class',
+      practiceVersions: 'id, status, courseCode',
+      exerciseRecords: 'id, [studentId+exerciseId], offeringId, studentId, exerciseId',
+      pdfRecords: 'id, [studentId+offeringId], studentId, offeringId',
+      softSkillRecords: 'id, [studentId+sessionOrdinal], offeringId, studentId, sessionOrdinal',
+      attendanceRecords: 'id, [studentId+sessionOrdinal], offeringId, studentId, sessionOrdinal',
+      snapshots: 'id, offeringId, studentId',
+      auditEvents: 'id, timestamp, actor',
+      pdfBlobs: 'id, artifactId',
+    });
   }
 }
 

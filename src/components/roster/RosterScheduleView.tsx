@@ -45,7 +45,7 @@ export const RosterScheduleView: React.FC = () => {
             </span>
           </div>
           <h2 className="text-lg font-black text-white">
-            Jadwal Praktik & Daftar Peserta Pekan {activeOffering.semesterWeek}
+            Jadwal Praktik {activeOffering.practiceCode} & Daftar Peserta Pekan {activeOffering.semesterWeek}
           </h2>
           <p className="text-xs text-slate-400">
             Rentang Pelaksanaan: <strong className="text-slate-200">{activeOffering.dateRangeText}</strong> (Minggu Kalender {activeOffering.calendarWeek}) • Instruktur: <span className="text-indigo-300 font-medium">{activeOffering.instructorName}</span>

@@ -27,7 +27,7 @@ interface RosterImportModalProps {
 }
 
 export const RosterImportModal: React.FC<RosterImportModalProps> = ({ onClose }) => {
-  const { offerings, showToast } = useApp();
+  const { offerings, activeOffering, showToast } = useApp();
   const [file, setFile] = useState<File | null>(null);
   const [parsedRows, setParsedRows] = useState<ParsedRosterRow[]>([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -61,12 +61,14 @@ export const RosterImportModal: React.FC<RosterImportModalProps> = ({ onClose })
     if (validRows.length === 0) return;
 
     try {
-      // 1. Upsert students to db.students
+      // 1. Upsert students to db.students with courseCode and semester
       const newStudents: Student[] = validRows.map((r) => ({
         id: `std-${r.nim}`,
         nim: r.nim,
         name: r.nama,
-        class: r.kelas || '1C',
+        class: r.kelas || activeOffering?.class || '1C',
+        courseCode: r.kodePraktik || activeOffering?.practiceCode || 'CAD 1.1',
+        semester: r.semester || activeOffering?.semester || 'Ganjil 2026/2027',
       }));
 
       await db.students.bulkPut(newStudents);

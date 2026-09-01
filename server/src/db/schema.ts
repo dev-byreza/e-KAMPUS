@@ -23,6 +23,8 @@ export const students = pgTable('students', {
   nim: text('nim').notNull().unique(),
   name: text('name').notNull(),
   class: text('class').notNull().default('1C'),
+  courseCode: text('course_code').default('CAD 1.1'),
+  semester: text('semester').default('Ganjil 2026/2027'),
 });
 
 // ─── Offerings ────────────────────────────────────────────────────────────────

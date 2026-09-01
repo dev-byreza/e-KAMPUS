@@ -15,7 +15,9 @@ export interface Student {
   id: string; // UUID
   nim: string; // Stored strictly as text
   name: string;
-  class: string; // e.g. "1C"
+  class: string; // e.g. "1C", "2A"
+  courseCode?: string; // e.g. "CAD 1.1", "CAD 1.2", "BIM 1.0", "CAM 1.0"
+  semester?: string; // e.g. "Ganjil 2026/2027", "Genap 2026/2027"
   avatarUrl?: string;
 }
 
