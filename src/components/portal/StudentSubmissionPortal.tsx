@@ -20,6 +20,8 @@ import {
   Calendar,
   Check,
   DownloadCloud,
+  Sun,
+  Moon,
 } from 'lucide-react';
 import { cn, formatScore } from '../../lib/utils';
 import { Student } from '../../types/assessment';
@@ -33,6 +35,8 @@ export const StudentSubmissionPortal: React.FC = () => {
     activePracticeVersion,
     setView,
     showToast,
+    theme,
+    toggleTheme,
   } = useApp();
 
   const { pdfRecords, uploadPdfFile } = useAssessmentData();
@@ -166,6 +170,19 @@ export const StudentSubmissionPortal: React.FC = () => {
             <strong className="text-emerald-400 font-bold">{submittedCount}</strong>
             <span className="text-slate-500">/ {enrolledStudents.length} Peserta</span>
           </div>
+
+          <button
+            onClick={toggleTheme}
+            className="flex items-center gap-1.5 p-2 rounded-xl bg-slate-950 hover:bg-slate-800 text-amber-400 hover:text-amber-300 border border-slate-700 transition-colors shadow-sm"
+            title={theme === 'dark' ? 'Mode Terang (Light Theme)' : 'Mode Gelap (Dark Theme)'}
+            aria-label="Toggle Theme"
+          >
+            {theme === 'dark' ? (
+              <Sun className="w-4 h-4 text-amber-400" />
+            ) : (
+              <Moon className="w-4 h-4 text-indigo-400" />
+            )}
+          </button>
 
           <button
             onClick={() => {

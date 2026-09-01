@@ -12,6 +12,8 @@ import {
   Settings2,
   Share2,
   FileUp,
+  Sun,
+  Moon,
 } from 'lucide-react';
 import { getCurrentWitaTime, cn } from '../../lib/utils';
 import { SharePortalModal } from '../portal/SharePortalModal';
@@ -30,6 +32,8 @@ export const TopHeader: React.FC = () => {
     offeringStudents,
     saveStatus,
     lastSavedTime,
+    theme,
+    toggleTheme,
     openRubricModal,
     toggleRosterVerification,
   } = useApp();
@@ -118,6 +122,19 @@ export const TopHeader: React.FC = () => {
           >
             <BookOpen className="w-3.5 h-3.5 text-indigo-400" />
             <span>Panduan Rubrik 0–4</span>
+          </button>
+
+          <button
+            onClick={toggleTheme}
+            className="flex items-center gap-1.5 p-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-amber-400 hover:text-amber-300 border border-slate-700 transition-colors shadow-sm"
+            title={theme === 'dark' ? 'Ganti ke Mode Terang (Light Theme)' : 'Ganti ke Mode Gelap (Dark Theme)'}
+            aria-label="Toggle Theme"
+          >
+            {theme === 'dark' ? (
+              <Sun className="w-4 h-4 text-amber-400" />
+            ) : (
+              <Moon className="w-4 h-4 text-indigo-400" />
+            )}
           </button>
 
           <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-900/90 border border-slate-800 text-slate-300 font-mono text-xs">

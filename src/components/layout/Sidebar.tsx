@@ -19,6 +19,8 @@ import {
   ChevronDown,
   Sparkles,
   FileUp,
+  Sun,
+  Moon,
 } from 'lucide-react';
 import { cn, getCurrentWitaTime } from '../../lib/utils';
 import { AppView } from '../../types/assessment';
@@ -41,6 +43,8 @@ export const Sidebar: React.FC<SidebarProps> = ({ isCollapsed, setIsCollapsed })
     activePracticeVersion,
     saveStatus,
     lastSavedTime,
+    theme,
+    toggleTheme,
     openRubricModal,
     resetDatabase,
   } = useApp();
@@ -225,6 +229,24 @@ export const Sidebar: React.FC<SidebarProps> = ({ isCollapsed, setIsCollapsed })
           >
             <BookOpen className="w-4 h-4 text-indigo-400 shrink-0" />
             {!isCollapsed && <span>Panduan Rubrik</span>}
+          </button>
+
+          <button
+            onClick={toggleTheme}
+            className={cn(
+              'w-full flex items-center gap-3 px-3.5 py-2 rounded-2xl text-xs font-semibold text-slate-400 hover:text-amber-300 hover:bg-slate-900 transition-colors',
+              isCollapsed && 'justify-center px-0'
+            )}
+            title={theme === 'dark' ? 'Mode Terang (Light Theme)' : 'Mode Gelap (Dark Theme)'}
+          >
+            {theme === 'dark' ? (
+              <Sun className="w-4 h-4 text-amber-400 shrink-0" />
+            ) : (
+              <Moon className="w-4 h-4 text-indigo-400 shrink-0" />
+            )}
+            {!isCollapsed && (
+              <span>{theme === 'dark' ? 'Mode Terang' : 'Mode Gelap'}</span>
+            )}
           </button>
 
           <button

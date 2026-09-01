@@ -54,6 +54,11 @@ interface AppContextType {
   setSaveStatus: (status: SaveState) => void;
   triggerAutoSave: () => void;
 
+  // Theme
+  theme: 'dark' | 'light';
+  setTheme: (theme: 'dark' | 'light') => void;
+  toggleTheme: () => void;
+
   // Modals & Drawers
   isRubricModalOpen: boolean;
   setIsRubricModalOpen: (open: boolean) => void;
@@ -92,6 +97,44 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
   const [isRubricModalOpen, setIsRubricModalOpen] = useState<boolean>(false);
   const [rubricModalFocusSection, setRubricModalFocusSection] = useState<ActiveTab | undefined>();
   const [isConflictModalOpen, setIsConflictModalOpen] = useState<boolean>(false);
+
+  const [theme, setThemeState] = useState<'dark' | 'light'>(() => {
+    const saved = typeof window !== 'undefined' ? localStorage.getItem('ekampus_theme') : null;
+    if (saved === 'light' || saved === 'dark') return saved;
+    return 'dark';
+  });
+
+  const setTheme = (newTheme: 'dark' | 'light') => {
+    setThemeState(newTheme);
+    localStorage.setItem('ekampus_theme', newTheme);
+    if (typeof document !== 'undefined') {
+      document.documentElement.setAttribute('data-theme', newTheme);
+      if (newTheme === 'light') {
+        document.documentElement.classList.add('light');
+        document.documentElement.classList.remove('dark');
+      } else {
+        document.documentElement.classList.add('dark');
+        document.documentElement.classList.remove('light');
+      }
+    }
+  };
+
+  const toggleTheme = () => {
+    setTheme(theme === 'dark' ? 'light' : 'dark');
+  };
+
+  useEffect(() => {
+    if (typeof document !== 'undefined') {
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'light') {
+        document.documentElement.classList.add('light');
+        document.documentElement.classList.remove('dark');
+      } else {
+        document.documentElement.classList.add('dark');
+        document.documentElement.classList.remove('light');
+      }
+    }
+  }, [theme]);
 
   const [toastMessage, setToastMessage] = useState<{
     text: string;
@@ -298,6 +341,9 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
         lastSavedTime,
         setSaveStatus,
         triggerAutoSave,
+        theme,
+        setTheme,
+        toggleTheme,
         isRubricModalOpen,
         setIsRubricModalOpen,
         rubricModalFocusSection,
